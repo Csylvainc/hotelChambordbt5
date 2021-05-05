@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Hotel Chambord</title>
+</head>
+
+<body>
+
+    <!-- Slide Bar de Navigation -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbard-brand text-light mt-5">
+            <img src="/img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt5 w-100">
+            <li class="nav-item w-100">
+                <a href="/index.html" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="chambreDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Chambres</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="chambreDropdown">
+                    <li><a href="/chambres.html#classique" class="dropdown-item text-light pl-4 p-2">Classique</a></li>
+                    <li><a href="/chambres.html#confort" class="dropdown-item text-light pl-4 p-2">Confort</a></li>
+                    <li><a href="/chambres.html#deluxe" class="dropdown-item text-light pl-4 p-2">Deluxe</a></li>
+                    <li><a href="/chambres.html#suite" class="dropdown-item text-light pl-4 p-2">Suite</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
+                    <li><a href="/restaurant.html#gastronomique"
+                            class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="/restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
+                    <li><a href="/restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="spaDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Spa</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/spa.html#detente" class="dropdown-item text-light pl-4 p-2">Détente</a></li>
+                    <li><a href="/spa.html#decouverte" class="dropdown-item text-light pl-4 p-2">Découverte</a></li>
+                    <li><a href="/spa.html#relaxant" class="dropdown-item text-light pl-4 p-2">Relaxant</a></li>
+                    <li><a href="/spa.html#plaisir" class="dropdown-item text-light pl-4 p-2">Plaisir</a></li>
+                    <li><a href="/spa.html#evasion" class="dropdown-item text-light pl-4 p-2">Evasion</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
+                    </li>
+                    <li><a href="/hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/evenements.html" class="nav-link text-light pl-4">Evènements et presse</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/contact.html" class="nav-link text-light pl-4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
+    <header class="sticky-top">
+        <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
+            style="background-color:rgb(95, 34, 49, 0.8);">
+            <img src="/img/logo.png" alt="logo" style="width: 50px;">
+            <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+            <!-- bouton reserver -->
+            <div id="reservation" class="p-2">
+                <a href="/reservation.html"
+                    style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+            </div>
+            <!-- fin bouton reserver -->
+            <div id="panier" class="p-2">
+                <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+            </div>
+            <div id="flag" class="p-2">
+                <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
+                    onmouseover="this.style.cursor='pointer'">
+                <img src="img/gb.png" style="width:20px;" alt="gb" id="en" onmouseover="this.style.cursor='pointer'">
+            </div>
+
+            <!-- Menu Fixe reservation panier langue -->
+
+        </div>
+        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+    </header>
+    <!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->
+    <main class="p-4 mainContent" id="mainContent">
+        <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
+        <div id="principale" class="row text-center justify-content-between">
+            <!-- Entete du main a garder dans toutes les pages -->
+            <!-- Les Chambres  -->
+            <!--Début Chambre Classique-->
+            <div id="classique" class="my-5">
+                <h4>La chambre classique</h4>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-5 ">
+                        <img src="img/chambreclassique1.jpg" alt="présentation chambre classique" id="imgClassique" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 text-left mt-5">
+                        <div class="p-2 p-md-5">
+                            <p>La chambre Classique se définit par son ambiance cosy. Profitez du calme et de la
+                                plénitude qu’offre cette catégorie de chambre.</p>
+                            <p>Vous pourrez compter sur un confort absolu et un équipement de haute technologie.</p>
+                        </div>
+                        <button type="button" class="bouton btn-secondary text-center visible ">En Savoir plus</button>
+                        <a href="reservation.html"><button type="button"
+                            class="bouton btn-secondary text-center ">Réserver</button></a>
+                    </div>
+
+                </div>
+                <div id="chambreClassique" class="cache">
+                    <div class="align-content-center my-5">
+                        <div class="row py-5">
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/bed--v1.png"
+                                            alt="Lit queen size" /> Lit queen size</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/air-conditioner--v2.png"
+                                            alt="Climatisation" /> Climatisation</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/waiter.png"
+                                            alt="Service de chambre" /> Service de chambre</li>
+                                    <li><img src="https://img.icons8.com/ios/50/000000/tv-on.png" alt="Écran plat" />
+                                        Écran plat</li>
+                                    <li><img src="https://img.icons8.com/android/24/000000/wifi.png"
+                                            alt="Wifi libre accès" /> Wifi libre accès</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/wired/64/000000/safe.png" alt="Coffre-fort" />
+                                        Coffre-fort</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/mini-bar.png"
+                                            alt="Mini bar" /> Mini bar</li>
+                                    <li><img src="https://img.icons8.com/metro/26/000000/shower.png" alt="Douche" />
+                                        Douche</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/towel.png"
+                                            alt="Peignoir" /> Peignoir</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/pet-commands-summon.png"
+                                            alt="Animaux bienvenus" /> Animaux bienvenus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container my-5 roomClassic flipCard">
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreclassique2.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreclassique3.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreclassique1.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                    </div>
+
+                    <div class="container row align-content-center my-5 ">
+                        <div class=" col-6 col-md-4 ">
+                            <div class="p-2">
+                                <h4>Les Options</h4>
+                                <ul>
+                                    <li>Coffret sensuel : 35€</li>
+                                    <li>Bouquet : 35€</li>
+                                    <li>Bouqet de champagne : 50€</li>
+                                    <li>Privatisation du Spa : 35€/pers./heure</li>
+                                    <li>«Spa en semaine» : 2nde heure offerte</li>
+                                    <li>«Spa de Minuit» : 1h30 de bonheur, 129€</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="p-2">
+                                <h4>Informations</h4>
+                                <ul>
+                                    <li>Arrivée à partir de 16h30</li>
+                                    <li>Chambre à libérer pour 11h30</li>
+                                    <li>Chambre non fumeur</li>
+                                    <li>Petit déjeuner copieux : 16€</li>
+                                    <li>Dînette dans l'intimité de votre chambre : 38€/pers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-12">
+                            <h4>À partir de</h4>
+                            <p><b>650€/nuit</b></p>
+                            <a href="reservation.html"><button type="button"
+                                    class="bouton btn-secondary text-center ">Réserver</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Chambre Classique-->
+            <!--Début Chambre Confort-->
+
+            <div id="confort" class="my-5">
+                <h4>La chambre confort</h4>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-5 ">
+                        <img src="img/chambreconfort2.jpg" alt="présentation chambre confort" id="imgConfort" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 text-left mt-5">
+                        <div class="p-2 p-md-5">
+                            <p>Un décor épuré et résolument contemporain vous accueille dans la Chambre Deluxe. Séparée
+                                de la chambre par des portes en verre dépoli, la salle de bain offre une ambiance
+                                apaisante.</p>
+                            <p>L’alliance du mobilier contemporain et des équipements de la plus haute technologie lui
+                                confère élégance et confort absolu</p>
+                        </div>
+                        <button type="button" class="bouton btn-secondary text-center visible1 ">En Savoir plus</button>
+                        <a href="reservation.html"><button type="button"
+                            class="bouton btn-secondary text-center ">Réserver</button></a>
+                    </div>
+
+                </div>
+                <div id="chambreConfort" class="cache">
+                    <div class="align-content-center my-5">
+                        <div class="row py-5">
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/bed--v1.png"
+                                            alt="Lit queen size" /> Lit queen size</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/air-conditioner--v2.png"
+                                            alt="Climatisation" /> Climatisation</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/waiter.png"
+                                            alt="Service de chambre" /> Service de chambre</li>
+                                    <li><img src="https://img.icons8.com/ios/50/000000/tv-on.png" alt="Écran plat" />
+                                        Écran plat</li>
+                                    <li><img src="https://img.icons8.com/android/24/000000/wifi.png"
+                                            alt="Wifi libre accès" /> Wifi libre accès</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/wired/64/000000/safe.png" alt="Coffre-fort" />
+                                        Coffre-fort</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/mini-bar.png"
+                                            alt="Mini bar" /> Mini bar</li>
+                                    <li><img src="https://img.icons8.com/metro/26/000000/shower.png" alt="Douche" />
+                                        Douche</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/towel.png"
+                                            alt="Peignoir" /> Peignoir</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/pet-commands-summon.png"
+                                            alt="Animaux bienvenus" /> Animaux bienvenus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container my-5 roomClassic flipCard">
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreconfort3.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreconfort1.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreconfort2.jpg" alt="chambre classique"
+                                    class="flipCardImg"></a>
+                        </div>
+                    </div>
+
+                    <div class="container row align-content-center my-5 ">
+                        <div class=" col-6 col-md-4 ">
+                            <div class="p-2">
+                                <h4>Les Options</h4>
+                                <ul>
+                                    <li>Coffret sensuel : 35€</li>
+                                    <li>Bouquet : 35€</li>
+                                    <li>Bouqet de champagne : 50€</li>
+                                    <li>Privatisation du Spa : 35€/pers./heure</li>
+                                    <li>«Spa en semaine» : 2nde heure offerte</li>
+                                    <li>«Spa de Minuit» : 1h30 de bonheur, 129€</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="p-2">
+                                <h4>Informations</h4>
+                                <ul>
+                                    <li>Arrivée à partir de 16h30</li>
+                                    <li>Chambre à libérer pour 11h30</li>
+                                    <li>Chambre non fumeur</li>
+                                    <li>Petit déjeuner copieux : 16€</li>
+                                    <li>Dînette dans l'intimité de votre chambre : 38€/pers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-12">
+                            <h4>À partir de</h4>
+                            <p><b>950€/nuit</b></p>
+                            <a href="reservation.html"><button type="button"
+                                    class="bouton btn-secondary text-center ">Réserver</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Chambre Confort-->
+            <!--Début Chambre Luxe-->
+
+            <div id="luxe" class="my-5">
+                <h4>La chambre Luxe</h4>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-5 ">
+                        <img src="img/chambreluxe2.jpg" alt="présentation chambre confort" id="imgLuxe" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 text-left mt-5">
+                        <div class="p-2 p-md-5">
+                            <p>Un décor épuré et résolument contemporain vous accueille dans la Chambre Deluxe. Séparée
+                                de la chambre par des portes en verre dépoli, la salle de bain offre une ambiance
+                                apaisante.</p>
+                            <p>L’alliance du mobilier contemporain et des équipements de la plus haute technologie lui
+                                confère élégance et confort absolu</p>
+                        </div>
+                        <button type="button" class="bouton btn-secondary text-center visible2 ">En Savoir plus</button>
+                        <a href="reservation.html"><button type="button"
+                            class="bouton btn-secondary text-center ">Réserver</button></a>
+                    </div>
+
+                </div>
+                <div id="chambreLuxe" class="cache">
+                    <div class="align-content-center my-5">
+                        <div class="row py-5">
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/bed--v1.png"
+                                            alt="Lit queen size" class="img-fluid"/> Lit queen size</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/air-conditioner--v2.png"
+                                            alt="Climatisation" /> Climatisation</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/waiter.png"
+                                            alt="Service de chambre" /> Service de chambre</li>
+                                    <li><img src="https://img.icons8.com/ios/50/000000/tv-on.png" alt="Écran plat" />
+                                        Écran plat</li>
+                                    <li><img src="https://img.icons8.com/android/24/000000/wifi.png"
+                                            alt="Wifi libre accès" /> Wifi libre accès</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/sun-lounger.png"
+                                            alt="Terrasse" /> Terrasse</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/wired/64/000000/safe.png" alt="Coffre-fort" />
+                                        Coffre-fort</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/mini-bar.png"
+                                            alt="Mini bar" /> Mini bar</li>
+                                    <li><img src="https://img.icons8.com/metro/26/000000/shower.png" alt="Douche" />
+                                        Douche</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/towel.png"
+                                            alt="Peignoir" /> Peignoir</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/pet-commands-summon.png"
+                                            alt="Animaux bienvenus" /> Animaux bienvenus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container my-5 roomClassic flipCard">
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreluxe4.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreluxe3.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambreluxe2.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                    </div>
+
+                    <div class="container row align-content-center my-5 ">
+                        <div class=" col-6 col-md-4 ">
+                            <div class="p-2">
+                                <h4>Les Options</h4>
+                                <ul>
+                                    <li>Coffret sensuel : 35€</li>
+                                    <li>Bouquet : 35€</li>
+                                    <li>Bouqet de champagne : 50€</li>
+                                    <li>Privatisation du Spa : 35€/pers./heure</li>
+                                    <li>«Spa en semaine» : 2nde heure offerte</li>
+                                    <li>«Spa de Minuit» : 1h30 de bonheur, 129€</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="p-2">
+                                <h4>Informations</h4>
+                                <ul>
+                                    <li>Arrivée à partir de 16h30</li>
+                                    <li>Chambre à libérer pour 11h30</li>
+                                    <li>Chambre non fumeur</li>
+                                    <li>Petit déjeuner copieux : 16€</li>
+                                    <li>Dînette dans l'intimité de votre chambre : 38€/pers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-12">
+                            <h4>À partir de</h4>
+                            <p><b>1200€/nuit</b></p>
+                            <a href="reservation.html"><button type="button"
+                                    class="bouton btn-secondary text-center ">Réserver</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Chambre Luxe-->
+            <!--Début Chambre Suite-->
+
+            <div id="suite" class="my-5">
+                <h4>La Suite</h4>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-5 ">
+                        <img src="img/chambresuite1.jpg" alt="présentation la suite" id="imgSuite" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 text-left mt-5">
+                        <div class="p-2 p-md-5">
+                            <p>Profitez d’une vue exceptionnelle depuis votre lit sur la Tour Eiffel et l'Esplanade du
+                                Trocadéro .</p>
+                            <p>Vivez l'expérience d’un loft d'architecte.</p>
+                            <p>La Suite Duplex peut être transformée en appartement privé avec la chambre attenante,
+                                l'ensemble offrant aux familles une sensation domestique.</p>
+                        </div>
+                        <button type="button" class="bouton btn-secondary text-center visible3 ">En Savoir plus</button>
+                        <a href="reservation.html"><button type="button"
+                            class="bouton btn-secondary text-center ">Réserver</button></a>
+                    </div>
+
+                </div>
+                <div id="chambreSuite" class="cache">
+                    <div class="align-content-center my-5">
+                        <div class="row py-5">
+                            <div class="col-6 col-md-4 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/bed--v1.png"
+                                            alt="Lit queen size" /> Lit queen size</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/air-conditioner--v2.png"
+                                            alt="Climatisation" /> Climatisation</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/waiter.png"
+                                            alt="Service de chambre" /> Service de chambre</li>
+                                    <li><img src="https://img.icons8.com/ios/50/000000/tv-on.png" alt="Écran plat" />
+                                        Écran plat</li>
+                                    <li><img src="https://img.icons8.com/dotty/80/000000/jacuzzi.png" alt="Jacuzzi" />
+                                        Jacuzzi</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/sun-lounger.png"
+                                            alt="Terrasse" /> Terrasse</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 text-end">
+                                <ul>
+                                    <li><img src="https://img.icons8.com/android/24/000000/wifi.png"
+                                            alt="Wifi libre accès" /> Wifi libre accès</li>
+                                    <li><img src="https://img.icons8.com/wired/64/000000/safe.png" alt="Coffre-fort" />
+                                        Coffre-fort</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/mini-bar.png"
+                                            alt="Mini bar" /> Mini bar</li>
+                                    <li><img src="https://img.icons8.com/metro/26/000000/shower.png" alt="Douche" />
+                                        Douche</li>
+                                    <li><img src="https://img.icons8.com/pastel-glyph/64/000000/towel.png"
+                                            alt="Peignoir" /> Peignoir</li>
+                                    <li><img src="https://img.icons8.com/ios-filled/50/000000/pet-commands-summon.png"
+                                            alt="Animaux bienvenus" /> Animaux bienvenus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container my-5 roomClassic flipCard">
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambresuite3.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambresuite2.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                        <div class="flipCard p-2">
+                            <a href="reservation.html"><img src="img/chambresuite1.jpg" alt="chambre luxe"
+                                    class="flipCardImg"></a>
+                        </div>
+                    </div>
+
+                    <div class="container row align-content-center my-5 ">
+                        <div class=" col-6 col-md-4 ">
+                            <div class="p-2">
+                                <h4>Les Options</h4>
+                                <ul>
+                                    <li>Coffret sensuel : 35€</li>
+                                    <li>Bouquet : 35€</li>
+                                    <li>Bouqet de champagne : 50€</li>
+                                    <li>Privatisation du Spa : 35€/pers./heure</li>
+                                    <li>«Spa en semaine» : 2nde heure offerte</li>
+                                    <li>«Spa de Minuit» : 1h30 de bonheur, 129€</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="p-2">
+                                <h4>Informations</h4>
+                                <ul>
+                                    <li>Arrivée à partir de 16h30</li>
+                                    <li>Chambre à libérer pour 11h30</li>
+                                    <li>Chambre non fumeur</li>
+                                    <li>Petit déjeuner copieux : 16€</li>
+                                    <li>Dînette dans l'intimité de votre chambre : 38€/pers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-12">
+                            <h4>À partir de</h4>
+                            <p><b>2600€/nuit</b></p>
+                            <a href="reservation.html"><button type="button"
+                                    class="bouton btn-secondary text-center ">Réserver</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Chambre Suite-->
+        </div>
+        <!--Fin Chambres-->
+    </main>
+    <!-- Fin principale -->
+     <!-- bouton de recherche Jeffrey -->
+     <div id="jeffrey" class="d-block align-items-center nav-item">
+        <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
+        <form action="#" id="search">
+            <input type="search" name="cherche">
+            <button type='submit' class="check"></button>
+        </form>
+    </div>
+    <!-- fin bouton de recherche Jeffrey -->
+    <!-- bouton de partage -->
+    <div class="box">
+        <input type="checkbox" id="checkbox" />
+        <div class="menu">
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- fin bouton partage -->
+
+
+    <!-- Début pied de page -->
+    <hr>
+    <footer id="foot" class="container-fluid">
+        <!-- Récapitulatif -->
+        <div class="row">
+            <div id="footChambre" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Chambres</h6>
+                <a href="/chambres.html#classique">Classique</a><span> | </span>
+                <a href="/chambres.html#confort">Confort</a><span> | </span>
+                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                <a href="/chambres.html#suite">Suites</a><span> | </span>
+            </div>
+            <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Restaurant</h6>
+                <a href="/restaurant.html#bar">Gastronomique</a><span> | </span>
+                <a href="/restaurant.html#brasserie">Bistro</a><span> | </span>
+                <a href="/restaurant.html#degustation">Cave</a><span> | </span>
+            </div>
+            <div id="footSpa" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Spa</h6>
+                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+            </div>
+            <div id="footHotel" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Hôtel</h6>
+                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                <a href="/hotel.html#acces">Acces</a><span> | </span>
+                <a href="/hotel.html#evenements">Evenements</a><span> | </span>
+                <a href="/hotel.html#presse">Presse</a><span> | </span>
+                <a href="/hotel.html#actualites">Actualités</a><span> | </span>
+            </div>
+        </div>
+        <!-- Fin Récapitulatif -->
+        <hr />
+        <!-- Début lien divers CVG...NewsLetter... -->
+        <div id="liensDivers" class="row mb-5">
+            <div id="recrutement" class="col-6 col-md text-center">
+                <a href="/recrutement.html">Recrutement</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/mention.html"> Mention Legales</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/cvg.html"> CGV </a>
+            </div>
+            <!-- Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                    Newsletter </a>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <label for="emailId">Votre Email</label>
+                                    <input type="email" name="mail" id="emailId">
+                                    <button type="submit" class="btn btn-secondary">Inscription</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p>Vous pourrez vous déinscrire à tout moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/planDuSite.html"> Avis </a>
+            </div>
+        </div>
+        <!-- fin lien divers CVG...NewsLetter... -->
+    </footer>
+    <!-- Fin pied de page -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

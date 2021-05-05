@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Hotel Chambord</title>
+</head>
+
+<body>
+
+    <!-- Slide Bar de Navigation -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbard-brand text-light mt-5">
+            <img src="/img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt5 w-100">
+            <li class="nav-item w-100">
+                <a href="/index.html" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="chambreDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Chambres</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="chambreDropdown">
+                    <li><a href="/chambres.html#classique" class="dropdown-item text-light pl-4 p-2">Classique</a></li>
+                    <li><a href="/chambres.html#confort" class="dropdown-item text-light pl-4 p-2">Confort</a></li>
+                    <li><a href="/chambres.html#deluxe" class="dropdown-item text-light pl-4 p-2">Deluxe</a></li>
+                    <li><a href="/chambres.html#suite" class="dropdown-item text-light pl-4 p-2">Suite</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
+                    <li><a href="/restaurant.html#gastronomique"
+                            class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="/restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
+                    <li><a href="/restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="spaDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Spa</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/spa.html#detente" class="dropdown-item text-light pl-4 p-2">Détente</a></li>
+                    <li><a href="/spa.html#decouverte" class="dropdown-item text-light pl-4 p-2">Découverte</a></li>
+                    <li><a href="/spa.html#relaxant" class="dropdown-item text-light pl-4 p-2">Relaxant</a></li>
+                    <li><a href="/spa.html#plaisir" class="dropdown-item text-light pl-4 p-2">Plaisir</a></li>
+                    <li><a href="/spa.html#evasion" class="dropdown-item text-light pl-4 p-2">Evasion</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
+                    </li>
+                    <li><a href="/hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/evenements.html" class="nav-link text-light pl-4">Evènements et presse</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/contact.html" class="nav-link text-light pl-4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
+    <header class="sticky-top">
+        <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
+            style="background-color:rgb(95, 34, 49, 0.8);">
+            <img src="/img/logo.png" alt="logo" style="width: 50px;">
+            <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+            <!-- bouton reserver -->
+            <div id="reservation" class="p-2">
+                <a href="/reservation.html"
+                    style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+            </div>
+            <!-- fin bouton reserver -->
+            <div id="panier" class="p-2">
+                <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+            </div>
+            <div id="flag" class="p-2">
+                <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
+                    onmouseover="this.style.cursor='pointer'">
+                <img src="img/gb.png" style="width:20px;" alt="gb" id="en" onmouseover="this.style.cursor='pointer'">
+            </div>
+
+            <!-- Menu Fixe reservation panier langue -->
+
+        </div>
+        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+    </header>
+    <!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->
+    <main class="p-4 mainContent" id="mainContent">
+        <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
+        <div id="principale" class="row text-center justify-content-between">
+            <!-- Entete du main a garder dans toutes les pages -->
+            <h2 class="text-center my-5">Les avis</h2>
+            <hr>
+
+            <div class="text-center my-5">
+                <button onclick="window.location ='avis.html#votreAvis';" type="button"
+                    class="bouton btn-secondary text-center">Cliquez ici pour partager votre avis</button>
+            </div>
+
+            <ul class="nav nav-tabs my-5"  role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active"  data-bs-toggle="tab" href="#avis-hotel" role="tab"
+                        aria-controls="home-tab" aria-selected="true">L'hôtel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  data-bs-toggle="tab" href="#avis-chambres" role="tab" aria-controls="rooms-tab"
+                        aria-selected="false">Chambres</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link"  data-bs-toggle="tab" href="#avis-restaurant" role="tab"
+                        aria-controls="profile-tab" aria-selected="false">Restaurant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  data-bs-toggle="tab" href="#avis-spa" role="tab"
+                        aria-controls="contact-tab" aria-selected="false">Spa</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Avis Hotelt-->
+                <div class="tab-pane fade show active reviews" id="avis-hotel" role="tabpanel"
+                    aria-labelledby="home-tab">
+
+                    <div class="subReviews">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/zh2.jpg" alt="Zalatan Huntelar" title="Zalatan Huntelar">
+                            <h6>Zalatan Huntelar a écrit un avis (Janvier 2021)</h6>
+                        </div>
+                        <h4>Ett av de absolut finaste hotellen i Paris</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Här var vi på en weekend jag och min hustru. Hotellet ligger rätt så långt ner på Champs
+                            Élysées
+                            på den välkända gatan med alla lyxigaste och mest ansedda butikerna som tex LV och även
+                            Chanel,
+                            Dior mfl. Hotellet syns verkligen med sina röda färgglada markiser.
+                            Här finns också en av världens mest ansedda barer som är gjord som en is-bar, mycket
+                            häftigt.
+                            Hit kommer ofta kändisar för att antingen parta före eller efter nattens infall.
+                            Hotellet har otroligt trevliga rum, vi hade valt en svit som var otroligt fräck med en stor
+                            spegel med guld ram som egentligen var en TV. Allt här är klassiskt och superfint inrett,
+                            mycket
+                            påminner om Grand Hotells egna rum.</p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#modalCenter">Traduction</a>
+                            <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="modalCenter" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>L'un des meilleurs hôtels de Paris</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Ici, nous étions un week-end moi et ma femme. L'hôtel est situé juste
+                                                    proche
+                                                    des Champ Elysée dans la rue bien connue avec tous les magasins
+                                                    les plus luxueux et prestigieux tels que LV et aussi Chanel, Dior et
+                                                    autres.
+                                                    Voici également l'un des bars les plus prestigieux au monde qui est
+                                                    fait comme
+                                                    un bar de glace, très cool. Les célébrités viennent souvent ici pour
+                                                    faire la fête avant ou après la tombée de la nuit.
+                                                    L'hôtel a des chambres incroyablement belles, nous avions choisi une
+                                                    suite qui était incroyablement effrontée avec un grand miroir avec
+                                                    cadre
+                                                    doré qui était en fait une télévision. Tout ici est classique et
+                                                    super
+                                                    joliment décoré, rappelant beaucoup les chambres du Grand Hotel.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 22/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/paulo.jpg" alt="Paulo Maldini" title="Paulo Maldini">
+                            <h6>Paulo Maldini a écrit un avis (Janvier 2021)</h6>
+                        </div>
+                        <h4>Romantico</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Location speciale nel cuore di Parigi a pochi passi dalla Senna e dalla Tour Eiffel. Staff
+                            gentilissimo e puntualissimo nel room service, menu ampio e ricco. Camere spaziose,
+                            ricercate,
+                            pulizia impeccabile.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter2">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Romantique</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Emplacement spécial au cœur de Paris à deux pas de la Seine et de la
+                                                    Tour
+                                                    Eiffel. Le
+                                                    personnel du room service est extrêmement gentil et ponctuel, le
+                                                    menu
+                                                    est large et
+                                                    riche. Des chambres spacieuses, raffinées, d'une propreté
+                                                    impeccable.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 22/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/hamilton.jpg" alt="Lewis Hamilton" title="Lewis Hamilton">
+                            <h6>Lewis Hamilton a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Stay like King !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>I spent almost two weeks there and it was an amazing experience!
+                            From the door man to the room service and the gym this hotel is the best one in Paris by
+                            far.
+                            The only thing that is pretty but I think that exists better is the main restaurant. Is too
+                            expensive for what they offer but is certainly beautiful, but is to post a pic on Instagram
+                            and
+                            then go eat somewhere else.
+                            The room breakfast is very good and the food is amazing.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter4">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter4" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Séjour digne d'un Roi !</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>J'y ai passé presque deux semaines et c'était une expérience
+                                                    fabuleuse!
+                                                    Du portier au
+                                                    room service, cet hôtel est de loin l'un des meilleurs à Paris.
+                                                    Le petit
+                                                    déjeuner en chambre est très bon et la nourriture est excellent.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 30/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/watson.jpg" alt="Clara Watson" title="Claire Lawson">
+                            <h6>Claire Lawson a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Great weekend at Hôtel Chambord</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Went in October to celebrate my husband birthday and we had the most amazing time there. The
+                            staff were so attentive and the hotel itself is a gem. Amazing property and location - made
+                            our
+                            city break super special
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter3">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Week-end fantastique au Hôtel Montaigne</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Nous y sommes allés en octobre pour fêter l'anniversaire de mon mari
+                                                    et
+                                                    nous avons
+                                                    passé un excellent moment là-bas. Le personnel était vraiment aux
+                                                    petits
+                                                    soins et
+                                                    l'hôtel est tout aussi épatant. Un bâtiment et un emplacement
+                                                    extraordinaire - a
+                                                    rendu notre visite dans cette ville précieuse à nos yeux.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 16/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/lg.jpg" alt="Laurent Gris" title="Laurent Gris">
+                            <h6>Laurent Grist a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Une fois dans sa vie ... au moins !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Tout simplement l'un des plus beaux et charmants hôtels que vous trouverez. Situé juste à
+                            côté
+                            des Champs-Elysées et à proximité de la Tour Eiffel et autres attractions principales. Le
+                            service est incroyable et le personnel nous a bien accueilli et à l'aise, accueil
+                            exceptionnel
+                            de concierge mènent par Charles et romain qui a fait tout ce qu'ils pouvaient pour rendre
+                            notre
+                            séjour agréable. Nous avions une suite interne du tribunal qui était spacieuse et
+                            magnifiquement
+                            aménagées, calme et paisible. Le service du petit déjeuner était élégante, et la nourriture
+                            délicieuse. Nous avons vraiment apprécié le bar et le salon ainsi. Cet hôtel est absolument
+                            extraordinaire dans un style parisien classique. Tout autour un séjour incroyable qui ne
+                            viennent à un tribunal substantielle, mais nous avons eu l'impression que c'était de
+                            l'argent
+                            bien dépensé. Séjourner dans cet hôtel est une expérience en soi ..
+                        </p>
+                        <p><small>le 16/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/ringer.jpg" alt="Caroline Ringer" title="Caroline Ringer">
+                            <h6>Caroline Ringer a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Parfait</h4> <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Encore un de mes hôtels préférés dans le monde. Cinq étoiles sur tous les niveaux de service,
+                            la
+                            nourriture et le design. Un service chaleureux et amical est expérimenté dans tout l'hôtel
+                            et
+                            l'attention portée aux détails était incroyable. Le bar de l'hôtel est une expérience à ne
+                            pas
+                            manquer. Si vous avez besoin d'être à Paris, pour les affaires ou le plaisir, c'est
+                            l'endroit où
+                            séjournerC'est un endroit très agréable pour séjourner à Paris, c'est donc proche de la Tour
+                            Eiffel, en fait vous pouvez le voir en dehors de votre chambre. Beeds sont vraiment
+                            confortables et les chambres sont très
+                            propres. Je peux vous dire que pour moi c'est un service très important quand je voyage donc
+                            mes
+                            félicitations pour le personnel. Je recommanderai hautement. parce que j'ai tout simplement
+                            adoré.
+                        </p>
+                        <p><small>le 17/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/diego1.jpg" alt="Diego y Carla Armendo" title="Diego y Carla Armendo">
+                            <h6>Diego y Carla Armendo a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>¿Cómo describir el paraíso?</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Desde el momento de la reserva hasta el último adiós, fue un constante maravillarnos por
+                            todos
+                            los detalles, cortesía y atención sin igual de este lugar. Especial agradecimiento a
+                            Patrice,
+                            cuya calidez humana nos hizo sentir en casa y con amigos desde el primer instante. Nos han
+                            regalado un fantástico upgrade, champagne, chocolates, imprimieron nuestras fotos de
+                            sorpresa,
+                            nos hicieron un collage con ellas y nos regalaron un vino maravilloso. Simplemente no hay
+                            palabras. Citando al hotel... perfection just happens. Y tanto.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter5">traduction</a>
+                            <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter5" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Comment décrire le paradis</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Dès le moment de la réservation jusqu'au dernier au revoir, nous
+                                                    avons
+                                                    été charmés
+                                                    par tous les détails, la politesse et qualité de service sans égal
+                                                    de
+                                                    cet endroit.
+                                                    Un remerciement tout particulier à Patrice, qui avec sa chaleur
+                                                    humaine
+                                                    nous a fait
+                                                    sentir comme chez nous et avec des amis depuis le début. Il nous ont
+                                                    fait le cadeau
+                                                    d'un surclassement, champagne, chocolats, ils ont imprimé nos photos
+                                                    par
+                                                    surprise,
+                                                    ils ont réalisé un collage avec elles et ils nous ont offert un vin
+                                                    merveilleux. Il
+                                                    n'y a tout simplement pas d'autres mots. Pour citer l'hôtel...
+                                                    perfection just
+                                                    happens. Et à un tel niveau.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 12/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/lee.jpg" alt="Lee Xing" title="Lee Xing">
+                            <h6>Lee Xing a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Suite有着无敌的景观，服务也让人窝心满意</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>
+                            住在Suite两个晚上，阳台可以看到巴黎铁塔，整个房间的装饰与布置古典又新颖，房间光线充足，从柜台、门房、客房服务都让人感受到贴心与舒服，饭店位于蒙恬大道，地理位置很好治安也很佳，在预算许可的情形下，这家饭店会是我再度拜访的首选。早餐在一楼
+                            三星餐厅用餐，餐点品质佳，用餐环境非常华美，值得期待。
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter6">traduction</a>
+                            <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter6" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>"La Suite a une vue imprenable et le service est également satisfaisant"
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Si vous séjournez dans une suite junior pendant deux nuits, vous
+                                                    pouvez
+                                                    voir la tour
+                                                    Eiffel depuis le balcon. La décoration et le mobilier de toute la
+                                                    chambre sont
+                                                    classiques et originaux. La chambre est bien éclairée. Le comptoir,
+                                                    le
+                                                    portier et le
+                                                    service d'étage font que les gens se sentent intimes et
+                                                    confortables.
+                                                    L'hôtel est
+                                                    situé sur l'avenue Montan.
+                                                    L'emplacement est très bon et la sécurité est également très bonne.
+                                                    Lorsque le budget
+                                                    le permet, cet hôtel sera mon premier choix pour une autre visite.
+                                                    Le
+                                                    petit-déjeuner
+                                                    est servi au restaurant trois étoiles au premier étage, la qualité
+                                                    du
+                                                    repas est
+                                                    bonne et l'ambiance gastronomique est très belle, ce qui vaut la
+                                                    peine
+                                                    d'être
+                                                    attendu.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 13/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="img/mario.jpg" alt="Mario Ballo" title="Mario Ballo">
+                            <h6>Mario Ballo a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Tutto è perfetto</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Un albergo di altissimo profilo dove tutto è un po’ di più di quello che ci si aspetta.
+                            Servizio
+                            impeccabile, camera spaziosa con un bagno esagerato, prima colazione ricca e non a buffet.
+                            Il
+                            personale si sforza sempre di venire in aiuto per ogni esigenza.
+                            Inutile dire che tutto si paga, ma non può essere altrimenti.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter7">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter7" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Tout est parfait</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Un hôtel haut de gamme où tout est plus que ce à quoi on s'attend.
+                                                    Service
+                                                    impeccable, chambre spacieuse avec une baignoire démesurée, le petit
+                                                    déjeuner est
+                                                    délicieux et pas en buffet. Le personnel fait son maximum pour venir
+                                                    en
+                                                    aide de
+                                                    toutes les exigences. Inutile de dire que tout se paye, mais il ne
+                                                    peut
+                                                    pas en être
+                                                    autrement.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 13/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Klass Yhan" title="Klass Yhan">
+                            <h6>Klass Yhan a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>En vecka i en kokong</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>En mycket härlig vistelse på den fantastiska Hôtel Montaigne i Paris. Inget kan jämföras med
+                            stolthet
+                            och charmiga värd av dess personal och en känsla av att man är hemma. Fantastisk service och
+                            ursnygga nya rum i den nyförvärvade delen av byggnaden.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter8">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter8" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Une semaine dans un cocon</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>
+                                                    Un très bon séjour au fantastique Hôtel Montaigne à Paris. Rien
+                                                    n'est
+                                                    comparable à la
+                                                    fierté et au charme de son personnel et au sentiment d'être chez
+                                                    soi.
+                                                    Service
+                                                    fantastique et nouvelles chambres magnifiques dans la partie
+                                                    nouvellement acquise du
+                                                    bâtiment.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 17/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Crista Rolando" title="Crista Rolando">
+                            <h6>Crista Rolando a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Perfeito !!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Foi minha primeira visita a Paris e o hotel me proporcionou uma experiência maravilhosa!!...
+                            A
+                            localização é ótima, num bairro super charmoso, perto de vários pontos turísticos. A
+                            decoração
+                            por dentro é maravilhosa e o atendimento dos funcionários é impecável!! Quartos amplos e
+                            confortáveis, se tiver vista pra torre então, incrível!!... Café da manhã delicioso!
+                            Pretendo
+                            voltar e com certeza me hospedarei lá novamente. Depois que vc conhece, difícil escolher
+                            outro
+                            lugar
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter9">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter9" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Parfait !!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>C'était ma première visite à Paris et l'hôtel m'a fait vivre une
+                                                    expérience
+                                                    merveilleuse!! ... La localisation est excellente, dans un quartier
+                                                    plein de charme,
+                                                    proche de divers points d'intérêts touristiques.
+                                                    La décoration intérieure est merveilleuse et l'accueil du personnel
+                                                    est
+                                                    impeccable!! Des chambres grandes et confortables, si elle donne sur
+                                                    la
+                                                    tour Eiffel,
+                                                    alors c'est incroyable!!..
+                                                    Le café du matin est délicieux! J'ai l'intention de revenir et
+                                                    certainement de
+                                                    descendre dans cet hôtel. Une fois que vous connaissez, il est
+                                                    difficile
+                                                    de choisir
+                                                    un autre endroit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 19/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Andreï Styschev" title="Andreï Styschev">
+                            <h6>Andreï Styschev a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Место, в которое хочется возвращаться снова и снова....</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Невероятный, сказочный отель с удивительной атмосферой, в которую ты окунаешься с головой.
+                            Внимательный персонал, профессионализм обслуживающего персонала на 5+. Уютные и красивые
+                            номера.
+                            Живописный уличный дворик с галереей картин. Стоит ли посетить это место? - однозначно Да !
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter10">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter10" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Un endroit où vous voulez revenir encore et encore ...</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Un hôtel incroyable et fabuleux avec une atmosphère incroyable dans
+                                                    laquelle plonger.
+                                                    Personnel attentif, professionnalisme du personnel de service pour
+                                                    5+.
+                                                    Chambres
+                                                    confortables et belles. Cour de rue pittoresque avec galerie de
+                                                    peintures.
+                                                    Devriez-vous visiter cet endroit? - définitivement oui!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 20/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Karlemo Anthony" title="Karlemo Anthony">
+                            <h6>Karlemo Anthony a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Exceptional</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>From the moment of arrival - front desk is amazing! Nicole was kind, caring and went out of
+                            their way to get us a room early after long journey. The food is exceptional and service by
+                            all of the staff is above and beyond. It is by far the nicest hotel we have ever stayed at
+                            in any country. Paris is magical - but this hotel is a dream. We can't say enough about the
+                            comfort of room, we don't want to leave.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter11">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter11" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Exceptionnel</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Dès le moment de notre arrivée - le service d'accueil est fabuleux!
+                                                    Nicole était gentille, attentive et a fait tout son possible pour
+                                                    nous trouver une chambre tôt après notre périple. La nourriture est
+                                                    exceptionnelle et la qualité de service de l'ensemble du personnel
+                                                    et au-delà de toutes les attentes. C'est de loin le meilleur hôtel
+                                                    dans lequel nous ayons séjourné dans un pays. Paris est magique -
+                                                    mais cet hôtel est un rêve.
+                                                    Nous n'avons pas les mots pour parler du confort de la chambre, nous
+                                                    n'avons pas envie d'en partir.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 22/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Florentino Peres" title="Florentino Peres">
+                            <h6>Florentino Peres a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>De lo mejor</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>El Panorama del Sena y el de la Torre Eiffel surgen al acercase a los balcones de las
+                            habitaciones después la sofisticación de los desayunos al aire libre en el patio interno
+                            todo es elegancia de los mejores del Mundo
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter12">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter12" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Ce qu'il y a de mieux</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Le Panorama de la Seine et la Tour Eiffel surgissent dès que vous
+                                                    sortez
+                                                    sur les
+                                                    balcons des chambres après la satisfaction des déjeuners en plein
+                                                    air
+                                                    sur la cour
+                                                    interne, tout est d'une élégance sans pareil au Monde.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 28/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Cristina Maldenovic" title="Cristina Maldenovic">
+                            <h6>Cristina Maldenovic a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>Шикарный отель с видом</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Шикарный отель с не менее шикарным видом из окна и балкона. Безумно красивые интерьеры,
+                            роскошь и
+                            французский шарм. Наверное один из самых идеальных отелей в Париже для проведения выходных в
+                            двоем. Романтичность зашкаливает, но так и должно быть в Париже.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter13">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter13" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Hôtel de luxe avec vue</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Un hôtel chic avec une vue tout aussi chic depuis la fenêtre et le
+                                                    balcon. Intérieurs
+                                                    incroyablement beaux, luxe et charme français. Probablement l'un des
+                                                    hôtels les plus
+                                                    idéaux de Paris pour un week-end à deux. La romance est hors du
+                                                    commun,
+                                                    mais c'est
+                                                    comme ça que ça devrait être à Paris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 02/04/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Kim Sun Yong" title="Kim Sun Yong">
+                            <h6>Kim Sun Yong a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>지금 까지 경험해본 호텔중 최고라고 말할수 있어요！</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>일단 호텔이 너무 이뻐서 방문해보고 싶었던 호텔중 하나 였고 파리의 3번째 호텔이 였다
+
+                            여러가지 섬세한게 우리를 챙겨주고 있다는 느낌이들어 너무 행복했다
+                            만약 내 친구가 파리에 간다면 꼭 이 호텔에서 지내라고 하고 싶다
+                            내년 휴가때 또 지내고 싶은호텔이다
+
+                            유럽 여행중 호텔의 불친절함으로 인해 여행기분을 여러번 망쳤던 나의경험으로서 여기는 최고의 호텔이다
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter14">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter14" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Je peux dire que c'est le meilleur hôtel que j'aie jamais connu.</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>L'hôtel était tellement beau que c'était l'un des hôtels que je
+                                                    voulais
+                                                    visiter, et
+                                                    c'était le 3ème hôtel de Paris. J'étais tellement contente
+                                                    d'apprendre
+                                                    que si mon
+                                                    ami va à Paris, j'aimerais vraiment séjourner dans cet hôtel et
+                                                    j'aimerais y
+                                                    retourner pendant mes vacances l'année prochaine.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 05/04/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Giannis Anthetokupo" title="Giannis Anthetokupo">
+                            <h6>Giannis Anthetokupo a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>Μοναδικό</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Υπέροχος και πολυτελής χώρος.
+                            Άψογη εξηπηρετηση.
+                            Η εσωτερικη αυλή μοναδική... λειτουργεί και ως εκθεσιακός χώρος.
+                            Απόλαυση η σάλα για τον καφέ με την μουσική της άρπας να σε χαλαρώνει!
+                            Η δε τοποθεσία πολύ βολική διότι είναι κοντά στα ηλισια πεδία απο τη μια. και από τον Πύργο
+                            του
+                            Άιφελ από την άλλη...την παράσταση κλέβει το αναριχωμενο φυτό εσωτερικα στην αυλή με τις
+                            υπέροχες ολανθιστες ζαρντινιερες σε όλα τα μπαλκόνια.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter15">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter15" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Unique</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Espace merveilleux et luxueux. Service impeccable. La cour intérieure
+                                                    est
+                                                    unique ...
+                                                    elle sert également d'espace d'exposition. Profitez de la salle pour
+                                                    prendre un café
+                                                    avec la musique de la harpe pour vous détendre!
+                                                    L'emplacement est très pratique car il est proche des champs
+                                                    ensoleillés
+                                                    d'une part. et de la Tour Eiffel de l'autre ... le spectacle est
+                                                    volé par la
+                                                    plante grimpante à l'intérieur de la cour avec les magnifiques
+                                                    jardinières
+                                                    fleuries sur tous les balcons.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 06/04/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Karl Lagerfield" title="Karl Lagerfield">
+                            <h6>Karl Lagerfield a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>5 Sterne sind zuwenig....</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Für diesen Luxustempel! Summa cum laude! Mehr und oder besser geht nicht! Mit diesem
+                            Aufenthalt
+                            haben wir uns DEN Hoteltraum in Paris erfüllt, genauso unvergesslich und atemberaubend, wie
+                            vor
+                            Jahren im Burj Al Arab in Dubai! Träumen, mitten in der Stadt der Liebe, auf Wolke 7!
+                            Unbeschreiblich, muss man selbst erlebt und verinnerlicht haben! Wer es sich leisten kann
+                            oder
+                            will, das Must HAVE Hotel in Paris.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter16">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter16" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter16" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>5 étoiles ne suffisent pas ...</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Pour ce temple de luxe! Summa cum laude! Vous ne pouvez pas obtenir
+                                                    plus
+                                                    ou mieux!
+                                                    Avec ce séjour, nous avons réalisé LE rêve d'hôtel à Paris, tout
+                                                    aussi
+                                                    inoubliable
+                                                    et époustouflant qu'il y a des années au Burj Al Arab à Dubaï!
+                                                    Rêvez, au
+                                                    milieu de
+                                                    la ville de l'amour, sur un nuage neuf! Indescriptible, il faut
+                                                    l'avoir
+                                                    vécu et
+                                                    intériorisé soi-même! Si vous pouvez ou voulez vous le permettre, le
+                                                    Must HAVE Hotel
+                                                    à Paris!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 07/04/2021</small></p>
+                        <hr>
+                    </div>
+                </div>
+
+
+
+                <!--Fin Avis Hôtel-->
+                <!--Début Avis Chambres-->
+
+
+
+
+                <div class="tab-pane fade show reviews" id="avis-chambres" role="tabpanel" aria-labelledby="rooms-tab">
+
+                    <div class="subReviews">
+                        <div class="row">
+                            <img src="" alt="Marine Fois" title="Marine Fois">
+                            <h6>Marine Fois a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Palace de l'excellence</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>C'est la 2ème fois que nous logeons deux nuits et c'est encore le même charme qui opère. Tout
+                            est
+                            parfait : propreté, élégance, prévenance, cuisine, un personnel aimable et disponible, un
+                            cadre
+                            légendaire cosy luxueux et discret, où il est nécessaire de se rendre pour connaitre ou
+                            redécouvrir l'Excellence... Le restaurant de cet hôtel fabuleux est juste divin ! Les plats
+                            proposés relèvent de la cuisine fine. Le service est rapide, le cadre somptueux et
+                            particulièrement reposant.
+                        </p>
+                        <p><small>le 10/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Jason Brown" title="Jason Brown">
+                            <h6>Jason Brown écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Crème de la crème</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Breathtaking classy hotel in the heart of Paris. Our 1 bedroom suite was traditionally French
+                            and
+                            elegant. We had too balconies with geraniums and view for Eiffel tower. Close to
+                            Champs-Élysée,
+                            Seine river and luxurious shops.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter17">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter17" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter17" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Crème de la crème</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Un hôtel haut de gamme à couper le souffle en plein cœur de Paris.
+                                                    Notre
+                                                    suite était
+                                                    de style français et élégant. Nous avions des balcons avec des
+                                                    géraniums
+                                                    et une vue
+                                                    sur la Tour Eiffel. Proche des Champs-Élysées, la Seine et les
+                                                    boutiques
+                                                    de luxe.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 11/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Didier Blanc" title="Didier Blanc">
+                            <h6>Didier Blanc a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Un souvenir mémorable pour mon épouse</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Nous avons fait ce séjour à 'hôtel pour 2 événements particulier l'anniversaire de ma femme
+                            et
+                            pour nos fiançailles.
+                            Ce séjour a été mémorable dès l'instant ou nous avons franchit la porte de l'hôtel, le
+                            personnel
+                            a été tout simplement adorable avec nous du début à la fin.
+                            L'endroit est juste magnifique et grandiose, la cour intérieure est vraiment splendide, les
+                            chambres sont au top il n'y a vraiment rien à redire sur cet établissement de grande classe.
+
+                            Tout a été parfait y compris les petites surprises et attentions du personnel pour ma femme.
+                            Je ne sais comment tous vous remercier pour ce week-end fantastique au sein de votre
+                            établissement.
+                        </p>
+                        <p><small>le 16/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Monica Bing" title="Monica Bing">
+                            <h6>Monica Bing a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Truly outstanding hotel</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Located in the heart of the fashion center of Paris on Avenue Montaigne, this hotel gives you
+                            an
+                            ideal location as well as all the creature comforts you need. The staff is warm, welcoming
+                            and
+                            truly accommodating. If your budget can stand it, this hotel will make your Paris stay
+                            outstanding.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter18">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter18" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter18" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Hôtel vraiment exceptionnel</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Situé en plein cœur du centre de la mode de Paris sur l'Avenue
+                                                    Montaigne,
+                                                    cet hôtel
+                                                    vous offre non seulement un emplacement idéal, mais aussi tout le
+                                                    confort dont vous
+                                                    avez besoin. Le personnel est chaleureux, accueillant et vraiment
+                                                    arrangeant. Si
+                                                    votre budget vous le permet, cet hôtel rendra votre séjour à Paris
+                                                    exceptionnel.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 18/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Charlotte Rempling" title="Charlotte Rempling">
+                            <h6>Charlotte Rempling a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Hôtel de prestige</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Cet établissement est exceptionnel dans tout ce qu'il propose à sa clientèle.
+                            Ce cadre magnifique, surplombant, se suffit à lui-même pour satisfaire toutes les
+                            conditions, la
+                            qualité du séjour vient juste parfaire cette magnificence.
+                            La chambre ainsi que la literie sont irréprochables ; la qualité et le confort sont bien au
+                            rendez-vous.
+                            Le brunch et le tea-time ont été un moment privilégiés à la hauteur des attentes.
+                        </p>
+                        <p><small>le 19/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Esteban Oconne" title="Esteban Oconne">
+                            <h6>Esteban Oconne a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>L'excellence dans tous les domaines</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Palace magnifique où tout est sublime: les différents espaces, la qualité du service avec un
+                            personnel d'une politesse et d'un professionnalisme à son paroxysme, tout y est soigné,
+                            agréable
+                            pour les yeux et les papilles! Cet établissement est une si belle réussite, un grand MERCI à
+                            chaque membre du personnel pour vos efforts afin d'offrir une telle expérience dans notre
+                            capitale...
+                        </p>
+                        <p><small>le 21/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Charles Bietry" title="Charles Bietry">
+                            <h6>Charles Bietry a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Fabuleux</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Impossible de trouver un défaut dans cet Hôtel de prestige, le service, les chambres et
+                            l'attention sont tout simplement merveilleux, c'est véritablement l'excellence dans les
+                            moindres
+                            détails le restaurant gastronomique est absolument fantastique, nous n'avons pas connu
+                            meilleur
+                            qualité de prestation. Quand l’excellence dépasse l’excellence !!! Que dire, sauf que tout
+                            était
+                            parfait.
+                        </p>
+                        <p><small>le 25/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Roberta Schmitt" title="Roberta Schmitt">
+                            <h6>Roberta Schmitt a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Wunderbares Grand Hotel</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Was ein wundervolles Hotel! Äußerst zuvorkommendes und charmantes Personal, grandiose
+                            Räumlichkeiten und trotzdessen fühlt man sich sehr geborgen: ‚comme chez soi‘. Die Zimmer
+                            sind
+                            äußerst luxuriös, aber auch gemütlich-fast heimelig und das Wichtigste absolut ruhig. Sehr
+                            genossen haben wir das Frühstück im grandiosen Restaurant - einmalig! Ein rundum
+                            fantastischer
+                            Aufenthalt.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter19">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter19" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter19" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Magnifique grand Hôtel</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Quel hôtel merveilleux! Personnel extrêmement courtois et charmant,
+                                                    locaux grandioses
+                                                    et néanmoins vous vous sentez très en sécurité: «comme chez soi».
+                                                    Les
+                                                    chambres sont
+                                                    extrêmement luxueuses, mais aussi confortables et presque simples et
+                                                    le
+                                                    plus
+                                                    important est absolument calme. Nous avons vraiment apprécié le
+                                                    petit
+                                                    déjeuner dans
+                                                    le grandiose restaurant Ducasse - unique! Un séjour fantastique.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 27/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Corrinne Simon" title="Corrinne Simon">
+                            <h6>Corrinne Simon a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Quel service !!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>C'est toujours un plaisir de descendre dans ce lieu aussi splendide. Le personnel est
+                            accueillant
+                            et au petit soin et le service irréprochable. Les petits petits-déjeuners sont succulents et
+                            copieux, les pâtisseries pour le goûter sont à se damner !! Très agréable de prendre un
+                            verre en
+                            terrasse.
+                        </p>
+                        <p><small>le 03/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Jessica Moreau" title="Jessica Moreau">
+                            <h6>Jessica Moreau a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>L'excellence</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>L'appelation "Palace" décernée au Hôtel Chambord (comme 31 autres établissements en France)
+                            tient ici
+                            toutes ses promesses. En premier lieu, l'extraordinaire compétence, gentillesse et
+                            disponibilité
+                            du tout le personnel. La vraie volonté du travail bien fait est omniprésente et c'est un pur
+                            bonheur, à tous les niveaux. Les moindres détails sont pris en compte, depuis l'accueil
+                            personnalisé jusqu'aux attentions du départ. Un sans faute et le sentiment de toucher la
+                            perfection. La literie est fantastique, le service en chambre irréprochable, le petit
+                            déjeuner
+                            hors du commun, l'hôtel est d'une beauté incroyable, le service de Conciergerie au top,
+                            etc...
+                            que dire.. ? L'excellence, simplement.
+                        </p>
+                        <p><small>le 05/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Erika Molodov" title="Erika Molodov">
+                            <h6>Erika Molodov a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Незабываемо!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>
+                            Шикарно с момента входа в отель до момента когда ты не хочешь уезжать!
+                            Шикарное убранство интерьеров заставляет переместиться в разные эпохи жизни Парижа.
+                            Шикарный вид на проспект и Эйфелеву Башню,сердце замирает вечером когда сотни огней освещают
+                            её!
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter20">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter20" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter20" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Inoubliable</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>IMagnifique du moment où vous entrez dans l'hôtel jusqu'au moment où
+                                                    vous
+                                                    ne voulez
+                                                    plus partir! La décoration luxueuse des intérieurs vous fait passer
+                                                    à
+                                                    différentes
+                                                    époques de la vie parisienne.
+                                                </p>
+                                                <p>Une vue magnifique sur l'avenue et la tour Eiffel, le cœur s'arrête
+                                                    le
+                                                    soir quand des
+                                                    centaines de lumières l'illuminent!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 18/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Guillaume Hoareau" title="Guillaume Hoareau">
+                            <h6>Guillaume Hoareau a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Magnifique mieux que le Mandarin Oriental !!! PALACE !!!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Juste magnifique !!! Le mot palace est très bien choisi, le hall d'entrée est splendide, les
+                            concierges sont accueillants, je vous le conseille fortement et je le trouve même mieux que
+                            le
+                            Mandarin Oriental ou le Royal Monceau Avenue Hoche !
+                        </p>
+                        <p><small>le 02/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Dimitris Smirnov" title="Dimitris Smirnov">
+                            <h6>Dimitris Smirnov a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Для романтиков</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Я могу сказать, что Hôtel Chabord мой любимый отель в Париже, в нем безусловно есть своё
+                            очарование:
+                            узнаваемые красные цветы на окнах, уютные небольшие номера, идеальное расположение на авеню
+                            Монтень и чудесный внутренний дворик, где так приятно выпить бокал шампанского...
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter21">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter21" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter21" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Pour les romantiques</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Je peux dire que Hôtel Chambord est mon hôtel préféré à Paris, il a
+                                                    certainement son propre
+                                                    charme: des fleurs rouges reconnaissables aux fenêtres, de petites
+                                                    chambres
+                                                    confortables, un emplacement idéal sur l'avenue Montaigne et une
+                                                    magnifique cour où
+                                                    vous pourrez déguster une coupe de champagne. ...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 05/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Martha Hikins" title="Martha Hikins">
+                            <h6>Martha Hikins a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>What a magical place</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>I stayed here with my husband and felt like a second honeymoon. This place is very exclusive,
+                            quiet and very sophisticated. I love how the always say “with pleasure” you literally feel
+                            like
+                            a queen. My favorite vacation ever.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter22">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter22" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter22" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Quel endroit magique</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>J'ai séjourné ici avec mon mari et c'était comme une seconde lune de
+                                                    miel. Cet
+                                                    endroit est très exclusif, calme et très raffiné. J'aime le fait
+                                                    qu'ils
+                                                    disent tout
+                                                    le temps “avec plaisir”, vous vous sentez exactement comme une
+                                                    reine.
+                                                    Les meilleures
+                                                    vacances de ma vie.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 07/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Richard Pierre" title="Richard Pierre">
+                            <h6>Richard Pierre a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>Un séjour de rêve dans une ville qui ne dort presque jamais</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Nous avons séjourné pour affaires dans ce Palace parisien et j'avais une superbe chambre sur
+                            cour. Formidable! Pour moi c'était un rêve car on pouvait s'y reposer à toute heure même si
+                            à
+                            l'extérieur le trafic vrombissait dans l'avenue.
+                        </p>
+                        <p><small>le 04/04/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="g" alt="Nagamoto" title="Nagamoto">
+                            <h6>Nagamoto a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>最高！</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>評判通り、立地、内装、部屋、サービス、食事、全てにおいて非の打ちどころがなく、優雅な滞在ができる。大変満足。</p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter23">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter23" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter23" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Le meilleur!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Réputé, emplacement, intérieur, chambre, service, nourriture, tout
+                                                    est
+                                                    impeccable et
+                                                    un séjour élégant. Très satisfait.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 10/04/2021</small></p>
+
+                        <hr>
+
+
+
+                    </div>
+                </div>
+
+                <!--Fin Avis Chambres-->
+                <!--Début Avis Restaurant-->
+
+
+
+
+                <div class="tab-pane fade reviews" id="avis-restaurant" role="tabpanel" aria-labelledby="profile-tab">
+
+                    <div class="subReviews">
+                        <div class="row">
+                            <img src="" alt="Hugo Vincent" title="Hugo Vincent">
+                            <h6>Hugo Vincent a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Somptueux</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>La maîtrise de l'excellence, un pur moment de bonheur, de l'accueil jusqu'à notre départ.
+                            Le petit-déjeuner était parfait, un équilibre subtile des saveurs, la fraicheur des produits
+                            et
+                            un cadre somptueux.
+                        </p>
+                        <p><small>le 10/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Jordan Clarkson" title="Jordan Clarkson">
+                            <h6>Jordan Clarkson a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Favorite in Paris</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>This place is just perfect for a trip in Paris. Everything from start to end is so amazing.
+                            Each
+                            year we come to enjoy our time in Paris and we sleep in Hôtel Chambord. Also the restaurant
+                            is for me
+                            in my top 3 in France. Thanks so much.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter26">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter26" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter26" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Mon préféré à Paris</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Cet endroit est parfait pour un séjour à Paris. Tout est fabuleux, du
+                                                    début
+                                                    jusqu'à
+                                                    la fin. Chaque année nous venons prendre du bon temps à Paris et
+                                                    nous
+                                                    séjournons au
+                                                    Hôtel Chambord. Le restaurant est également dans mon top 3 en
+                                                    France. Merci
+                                                    beaucoup.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 15/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Kevin Roubeau" title="Kevin Roubeau">
+                            <h6>Kevin Roubeau a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Le temps s'arrête</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Quel bonheur de passer un moment au Hôtel Chambord. Nous avons dégusté le tea time. Les
+                            pâtisseries
+                            étaient délicieuses, raffinées, goûteuses, l’extase!! Nous avons pris l’éclair tout
+                            chocolat, le
+                            finger chocolat caramel et la tarte tatin. Le personnel est attentionné, agréable et a bien
+                            pris
+                            soin de notre fille (2 ans et demi). Bien évidemment le décor est parfait, on s’y sent bien
+                            tout
+                            simplement. Nous y retournerons bien sûr !! Merci à tous pour ce délicieux moment passé à
+                            vos
+                            côtés.
+                        </p>
+                        <p><small>le 19/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Magalie Forte" title="Magalie Forte">
+                            <h6>Magalie Forte a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Parfait</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Delicieuses pâtisseries, chocolat chaud fait "maison", fantastique, personnel au Top de chez
+                            top,
+                            que du bonheur dans ce magnifique endroit!!! Terrasse sur l'Avenue Montaigne, il faut
+                            absolument
+                            decouvrir ce lieu!!!
+                        </p>
+                        <p><small>le 20/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Louison Montron" title="Louison Montron">
+                            <h6>Louison Montron a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Perfection</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Je voulais vous dire combien nous avions passé un moment délicieux dans votre établissement.
+                            Nous
+                            avons eu un excellent tea time avec des bonnes pâtisseries. Le personnel est adorable et
+                            attentionné.
+                        </p>
+                        <p><small>le 25/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Rebecca Bryant" title="Rebecca Bryant">
+                            <h6>Rebecca Bryant a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Excellent Brunch at the Hôtel Chambord</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Amazing brunch in the restaurant of the Hôtel Chambord on Sunday noon! The food is of high
+                            quality
+                            with flavorful delicacies. You can enjoy this brunch with your friends or family in a warm
+                            ambiance accompanied by a music band. The staff is excellent and friendly, you can start or
+                            end
+                            your brunch with a cup of champagne! I really recommend it! For me, the brunch at the Hôtel
+                            Chambord
+                            is the best brunch you can find in Paris.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter27">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter27" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter27" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Brunch excellent au Hôtel Chambord</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Brunch fantastique au restaurant du Hôtel Chambord un dimanche midi!
+                                                    De la
+                                                    nourriture de
+                                                    grande qualité avec des spécialités succulentes. Vous pouvez
+                                                    profiter de
+                                                    ce
+                                                    brunch
+                                                    avec vos amis ou en famille dans une ambiance chaleureuse accompagné
+                                                    par
+                                                    un
+                                                    groupe
+                                                    musical. Le personnel est excellent est très prévenant, vous pouvez
+                                                    commencer ou
+                                                    finir votre brunch avec un verre de champagne! Je le recommande
+                                                    fortement!
+                                                    Pour moi,
+                                                    le brunch au Hôtel Chambord est le meilleur brunch que vous puissiez
+                                                    trouver à
+                                                    Paris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 05/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Michel Brun" title="Michel Brun">
+                            <h6>Michel Brun a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Très bon petit déjeuner</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Bien évidemment la première chose à dire est que c’est un lieu exceptionnel, vraiment très
+                            beau !
+                            Puis le service est digne des plus grands restaurants, toujours quelqu’un pour vous aider à
+                            comprendre le menu, pour pour resservir votre jus ou pour demander si tout se passe bien.
+                            Les produits sont de qualité, vraiment frais et très bien présentés
+                            Les formules nous proposent un large choix, on ne reste pas sur sa faim !
+                            Merci pour ce bon moment.
+                        </p>
+                        <p><small>le 10/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Murielle Vico" title="Murielle Vico">
+                            <h6>Murielle Vico a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Luxe calme et volupté</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Je suis allée plusieurs fois déjeuner au Hôtel Chambord
+                            Et a chaque fois c'est un rêve. Tout est parfait. Le service, les plats et le lieu.
+                            On revient à chaque fois avec plaisir. Le brunch du dimanche est un incontournable.
+                        </p>
+                        <p><small>le 17/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Marks Wolff" title="Marks Wolff">
+                            <h6>Marks Wolff a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Eine Klasse für sich</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Dieses Hotel zählt mit Recht zur absoluten Weltspitze. Das Hotel liegt in Sichtweite des
+                            Eifelturms, nur eine Gehminute vom Champs-Elysées entfernt. Es befindet sich in einem
+                            historischen, aufwendig renovierten Gebäude und bietet alle top Services eines
+                            internationalen
+                            Luxus Hotels.
+
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter28">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter28" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter28" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Une classe à part</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Cet hôtel est à juste titre l'un des leaders mondiaux absolus.
+                                                    L'hôtel
+                                                    est en vue de la Tour Eiffel, à seulement une minute à pied des
+                                                    Champs-Elysées. Il est situé dans un bâtiment historique entièrement
+                                                    rénové et offre tous les services de haut niveau d'un hôtel de luxe
+                                                    international.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 12/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Coralie Jean" title="Coralie Jean">
+                            <h6>Coralie Jean a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>L'excellence</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>C'est toujours un plaisir de descendre dans ce lieu aussi splendide. Le personnel est
+                            accueillant
+                            et au petit soin et le service irréprochable. Les petits petits-déjeuners sont succulents et
+                            copieux, les pâtisseries pour le goûter sont à se damner !! Très agréable de prendre un
+                            verre en
+                            terrasse.
+                        </p>
+                        <p><small>le 15/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Fernando Torres" title="Fernando Torres">
+                            <h6>Fernando Torres a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Hotel espectacular</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Este hotel es de los más bonitos , elegantes y con personalidad que he conocido . Las
+                            habitaciones que dan al patio interior tienen una vista impresionante de las terrazas de las
+                            otras habitaciones con flores rojas . El restaurante para el desayuno es algo espectacular
+                            con
+                            unas lámparas maravillosas . Todo es magnífico en este hotel , el spa es único . De lo mejor
+                            de
+                            lo mejor.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter29">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter29" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter29" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Hôtel spectaculaire</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>C'est hôtel est parmi les plus beaux, élégants et ceux qui ont le
+                                                    plus de
+                                                    personnalités de tout ceux que je connais. Les chambres qui donnent
+                                                    sur
+                                                    la
+                                                    cour
+                                                    intérieure offrent une vue impressionante sur les terrasses des
+                                                    autres
+                                                    chambres avec
+                                                    des fleurs rouges. Le restaurant pour le petit-déjeuner a quelque
+                                                    chose
+                                                    de
+                                                    spectaculaire avec des lampes merveilleuses. Tout y est magnifique,
+                                                    le
+                                                    spa
+                                                    est
+                                                    unique. Ce qu'il y a de meilleur au monde.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 20/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Louise Bourgoin" title="Louise Bourgoin">
+                            <h6>Louise Bourgoin a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Excellence</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Un petit déjeuner pris en ce lieu magnifique.
+                            Tout est luxe, beauté et volupté.
+                            Un très bon accueil, un personnel aux petits soins.
+                            Le lieu, l'implantation géographique fait que l'on se trouve bien aux pieds de tout Paris.
+                        </p>
+                        <p><small>le 25/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Ronaldo Da Simiento" title="Ronaldo Da Simiento">
+                            <h6>Ronaldo Da Simiento a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>Muito bom</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Atendimento impecável. Hotel muito bonito. Restaurante com estrela Michelin. Melhor
+                            localização
+                            impossível, bem de frente para a Torre Eiffel. Pelo valor, esperava muito mais do quarto.
+                            Grande
+                            mas ok, nada demais comparado ao valor.
+                        </p>
+                        <div class="txt-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter30">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter30" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter30" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Très bon</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Service impeccable. Hôtel très joli. Restaurant étoilé au guide
+                                                    Michelin.
+                                                    Meilleure
+                                                    emplacement impossible, bien en face de la Tour Eiffel. Pour sa
+                                                    valeur,
+                                                    c'est tout
+                                                    ce à quoi je m'attendais de la chambre.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 03/04/2021</small></p>
+
+                        <hr>
+
+                    </div>
+                </div>
+                <!-- Fin Avis Restaurant-->
+                <!--Début Avis SPA-->
+
+
+                <div class="tab-pane fade reviews" id="avis-spa" role="tabpanel" aria-labelledby="contact-tab">
+
+                    <div class="subReviews">
+                        <div class="row">
+                            <img src="" alt="Emiline Barreau" title="Emiline Barreau">
+                            <h6>Emiline Barreau a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Spa - Soin parfait</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>J'ai testé le spa de l'hôtel. Accueil très professionnel. On m'a dirigé vers la zone "femmes"
+                            pour me changer. J'ai été étonnée de la modernité et du raffinement des équiments. En outre,
+                            le
+                            peignoir est très doux et l'espace blanc est vraiment agréable. Ensuite, j'ai été dirigée
+                            vers
+                            la salle de repos avant mon soin pour boire un thé accompagné d'un mini-muffin noisettes
+                            vraiment tentant. Le soin était parfait, très professionnel. J'étais sous une couette qui
+                            invitait au repos et la détente totale, c'était super. Très bon soin. Puis enfin, thé et
+                            nouveau
+                            muffin avant de me changer. Contrairement au spa du Ritz, pouvoir profiter gratuitement des
+                            équipement.
+                        </p>
+                        <p><small>le 10/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Yumy Qwang" title="Yumy Qwang">
+                            <h6>Yumy Qwang a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>棒极了！</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>我和我的家人在巴黎玩了5天。离塞纳河很近，离 香榭丽舍大道不远。酒店提供一流的服务，有一家Spa。这里绝对值得你住一住</p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter35">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter35" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter35" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Excellent!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Ma famille et moi avons passé 5 jours à Paris. Il est très proche de
+                                                    la
+                                                    Seine
+                                                    et non
+                                                    loin des Champs Elysées (à distance de marche). L'hôtel propose un
+                                                    service
+                                                    de
+                                                    première classe et il y a aussi un spa Dior en bas. Cela vaut
+                                                    vraiment
+                                                    votre
+                                                    séjour!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 15/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Agnes Pierre" title="Agnes Pierre">
+                            <h6>Agnes Pierre a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Quel souvenir !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Magnifique et magique séjour au Hôtel Chambord, chambre magnifique, dîner au gastro
+                            exceptionnel avec
+                            un personnel charmant et attentionné, le spa est de toute beauté avec des soignantes très
+                            compétentes. Merci à tous les membres du Hôtel Chambord pour ce séjour.
+                        </p>
+                        <p><small>le 16/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Eugénie Luis" title="Eugénie Luis">
+                            <h6>Eugénie Luis a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Spa très agréable ...</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Après midi avec une amie au spa du Hôtel Chambord .... Très bon accueil, un massage
+                            professionnel et
+                            agréable, un soin parfait, un salon de repos divin ! Le personnel est au petit soin et
+                            compétent. Les infrastructures parfaites.
+                        </p>
+                        <p><small>le 25/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Monica Oliviera" title="Monica Oliviera">
+                            <h6>Monica Oliviera a écrit un avis (janvier 2021)</h6>
+                        </div>
+                        <h4>Experiência única!</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Experiência única! Charme, luxo, sofisticação tudo isso em um mesmo lugar. Atendimento
+                            impecável. Muito bem localizado, fica na Av. Montaigne, próximo aos principais pontos
+                            turísticos
+                            e as lojas de grifes. Também possui o estrelado restaurante estupendo e um SPA que dispensa
+                            comentários com un serviço incrível.
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter36">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter36" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter36" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Expérience unique!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>Expérience unique! Charme, luxe, raffinement tout cela dans un seul
+                                                    et
+                                                    même
+                                                    endroit.
+                                                    Service impeccable. Très bien situé, il se trouve sur l'Avenue
+                                                    Montaigne,
+                                                    proche des
+                                                    principaux points touristiques et des boutiques de marques. Il
+                                                    dispose
+                                                    également
+                                                    d'un restaurant étoilé fantastique et d'un spa qui mérite tous ses
+                                                    commentaires avec
+                                                    un service incroyable.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 30/01/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Bénedicte Borne" title="Bénedicte Borne">
+                            <h6>Bénedicte Borne a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Un monde d'attentions dans un palace mythique</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Nous avons passé un week-end (à l'occasion de notre anniversaire) d'exception dans ce lieu
+                            haute-couture. Le personnel du Hôtel Chambord nous a accompagnés à chaque instant pour faire
+                            de notre
+                            séjour un moment inoubliable. A réservation, la charmante Édith Perrier; à la réception, le
+                            sourire et le professionnalisme de Linda; au spa, les mains expertes de Marine et d'Albane.
+                            Enfin, un Brunch gastronomique avec un ballet de mets magiques orchestré avec panache par
+                            Florent et David ! Merci à tous pour toutes vos délicates et généreuses attentions ...
+                        </p>
+                        <p><small>le 02/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Cédric Longueau" title="Cédric Longueau">
+                            <h6>Cédric Longueau a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>L'excellence du savoir-faire français !</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Nous avons passé un séjour incroyable au Hôtel Chambord ! Tout est fait pour que les clients
+                            se
+                            sentent chez eux, le service sur mesure est exceptionnel. Un grand merci aux concierges,
+                            ainsi
+                            qu'à l'équipe du Spa, de la Réception et du Room Service. En plus de disposer d'un cadre
+                            somptueux, le Hôtel Chambord dispose d'une équipe de professionnels qui maîtrise l'art de
+                            recevoir à
+                            la française, et c'est ce qui fait la différence !
+                        </p>
+                        <p><small>le 10/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Helene Martins" title="Helene Martins">
+                            <h6>Helene Martins a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Most amazing hotel in Europe</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>This was my third visit to the wonderful Hôtel Chambord and it just keeps getting better. The
+                            spa is
+                            gorgeous and the masseuse was phenomenal. Everything about the hotel is hands on service and
+                            elegance. The breakfast room is amazing and the crystal chandeliers while over the top
+                            anywhere
+                            else work perfectly here. Definitely get a room with a view!
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter37">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter37" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter37" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>L'hôtel le plus fantastique d'Europe</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>C'était mon troisième séjour dans ce merveilleux Hôtel Chambord et il
+                                                    ne cesse
+                                                    de
+                                                    s'améliorer. Le spa est splendide et la masseuse est phénoménale.
+                                                    L'hôtel
+                                                    tout
+                                                    entier est consacré au service et à l'élégance. La pièce du
+                                                    petit-déjeuner
+                                                    est
+                                                    incroyable et les chandeliers en cristal sont tout à fait à leur
+                                                    place
+                                                    ici,
+                                                    alors
+                                                    qu'ils sont de trop n'importe où ailleurs. Il faut que vous preniez
+                                                    une
+                                                    chambre avec
+                                                    vue!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 11/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Pierre Morin" title="Pierre Morin">
+                            <h6>Pierre Morin a écrit un avis (février 2021)</h6>
+                        </div>
+                        <h4>Spa Hôtel Chambord</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Mon avis concerne le Spa et non l’hôtel en lui même. Nous avons été bien accueilli très
+                            chaleureusement, lorsque l'une des masseuses nous a ensuite orienté vers les vestiaires,
+                            j'ai pu
+                            constater beaucoup de propreté et de vigilance. L'espace est d'ailleurs disposé de casiers
+                            ou
+                            muni d'un code personnel vous pouvez déposer vos affaires en toute sécurité. Pour le massage
+                            nous étions en cabine double ou nous disposions d'une salle d'eau privée pour nous changer
+                            et
+                            nous doucher.
+                        </p>
+                        <p><small>le 20/02/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Mary Harris" title="Mary Harris">
+                            <h6>Mary Harris a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Beautiful spa</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>Visited the spa and terrace restaurant for my 21st birthday. The club sandwich I had was the
+                            best I have ever tasted! Staff were fabulous and the surroundings were exceptionally
+                            beautiful.
+                            Our treatments were relaxing and in beautiful rooms. We were able to choose the scent used
+                            which
+                            was a nice personal touch. Only downside would be no proper pool to have a swim. Other than
+                            that
+                            I was given a gift by the spa for my birthday which was incredibly generous and included
+                            some
+                            beautiful door products. Would love to visit here again soon!
+                        </p>
+                        <div class="text-center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter38">Traduction</a>
+                            <div class="modal fade" id="exampleModalCenter38" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenter38" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>beau spa</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalContent row">
+                                                <p>J'ai visité le spa et la terrasse du restaurant pour monn 21ème
+                                                    anniversaire.
+                                                    Le club
+                                                    sandwich que j'y ai mangé était le meilleur que j'ai jamais mangé!
+                                                    Le
+                                                    personnel
+                                                    était fantastique et les environs d'une beauté exceptionnelle. Nous
+                                                    avons
+                                                    été
+                                                    installé dans de belles pièces et ce fut très relaxant. Nous avons
+                                                    pu
+                                                    choisir les
+                                                    senteurs utilisées, ce qui était une touche personnelle très
+                                                    agréable.
+                                                    En
+                                                    plus le
+                                                    personnel du spa m'a offert un cadeau d'anniversaire ce qui était
+                                                    incroyablement
+                                                    généreux de leur part et il comportait de superbes produits maison.
+                                                    J'adorerais y
+                                                    revenir très prochainement!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><small>le 02/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Florence Miso" title="Florence Miso"">
+                         <h6>Florence Miso" a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Parfait</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>La perfection existe peu mais pour le coup au Hôtel Chambord tout y est le spa est
+                            merveilleux, les
+                            massages sont de loin les meilleurs que j ai pu faire et les gens sont aux petits soins,
+                            digne d
+                            un palace comme on les aime. Le service est irréprochable je n ai jamais vu ça.
+                        </p>
+                        <p><small>le 06/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Alexia Couture" title="Alexia Couture">
+                            <h6>Alexia Couture a écrit un avis (mars 2021)</h6>
+                        </div>
+                        <h4>Mémorable</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i>
+                        <p>Un moment magique où tout est perfection. Le décor fait rêver et le spa est également à la
+                            hauteur des lieux. On se sent projeté dans un belle univers où toutes nos volontés sont
+                            accomplies. L'accueil est très parfait, tout comme les chambres et la restauration.
+                        </p>
+                        <p><small>le 15/03/2021</small></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <img src="" alt="Nicolas Anelka" title="Nicolas Anelka">
+                            <h6>Nicolas Anelka a écrit un avis (avril 2021)</h6>
+                        </div>
+                        <h4>Spa Hôtel Chambord</h4>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p>
+                            Quel luxe ! Personnel très professionnel et service haut de gamme. L'hôtel est sublime à la
+                            hauteur de sa légende, la rénovation est magnifique et le spa ne dépareille pas! Le soin
+                            était
+                            simplement divin, j'ai tout oubliė ! Difficile de s'extraire de ce cocon luxueux pour
+                            retrouver
+                            la pluie parisienne! Hâte d'y retourner!</p>
+                        <p><small>le 08/04/2021</small></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin Avis SPA-->
+        <!--Début Formulaire AVIS-->
+
+        <div id="votreAvis"></div>
+        <div class="container">
+            <h3 class="text-center my-5">Donnez vos avis</h3>
+
+
+            <form class="mx-5" id="form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nom">Nom *</label>
+                        <input type="text" class="form-control" placeholder="Nom">
+                        <span>Un nom ne peut pas faire moins de 2 caractères</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" class="form-control" placeholder="Prénom">
+                        <span>Un prénom ne peut pas faire moins de 2 caractères</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="rubrique">Rubriques</label>
+                        <select class="custom-select">
+                            <option>Hôtel</option>
+                            <option>Chambres</option>
+                            <option>Restaurant</option>
+                            <option>Spa</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="notes">Notes</label>
+                        <select class="custom-select" id="inputNotes">
+                            <option>&starf;&starf;&starf;&starf;&starf;</option>
+                            <option>&starf;&starf;&starf;&starf;</option>
+                            <option>&starf;&starf;&starf;</option>
+                            <option>&starf;&starf;</option>
+                            <option>&starf;</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="objet">Titre *</label>
+                        <input type="text" class="form-control">
+                        <span>Le titre ne peut pas faire moins de 2 caractères</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="inputMessage">Message *</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                        <span>Le message ne peut pas faire moins de 2 caractères</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bouton btn-secondary">Envoyer</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <!-- Fin principale -->
+
+
+    <!-- bouton de recherche Jeffrey -->
+    <div id="jeffrey" class="d-block align-items-center nav-item">
+        <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
+        <form action="#" id="search">
+            <input type="search" name="cherche">
+            <button type='submit' class="check"></button>
+        </form>
+    </div>
+    <!-- fin bouton de recherche Jeffrey -->
+
+
+    <!-- bouton de partage -->
+    <div class="box">
+        <input type="checkbox" id="checkbox" />
+        <div class="menu">
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- fin bouton partage -->
+
+
+    <!-- Début pied de page -->
+    <hr>
+    <footer id="foot" class="container-fluid">
+        <!-- Récapitulatif -->
+        <div class="row">
+            <div id="footChambre" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Chambres</h6>
+                <a href="/chambres.html#classique">Classique</a><span> | </span>
+                <a href="/chambres.html#confort">Confort</a><span> | </span>
+                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                <a href="/chambres.html#suite">Suites</a><span> | </span>
+            </div>
+            <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Restaurant</h6>
+                <a href="/restaurant.html#bar">Gastronomique</a><span> | </span>
+                <a href="/restaurant.html#brasserie">Bistro</a><span> | </span>
+                <a href="/restaurant.html#degustation">Cave</a><span> | </span>
+            </div>
+            <div id="footSpa" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Spa</h6>
+                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+            </div>
+            <div id="footHotel" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Hôtel</h6>
+                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                <a href="/hotel.html#acces">Acces</a><span> | </span>
+                <a href="/hotel.html#evenements">Evenements</a><span> | </span>
+                <a href="/hotel.html#presse">Presse</a><span> | </span>
+                <a href="/hotel.html#actualites">Actualités</a><span> | </span>
+            </div>
+        </div>
+        <!-- Fin Récapitulatif -->
+        <hr />
+        <!-- Début lien divers CVG...NewsLetter... -->
+        <div id="liensDivers" class="row mb-5">
+            <div id="recrutement" class="col-6 col-md text-center">
+                <a href="/recrutement.html">Recrutement</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/mention.html"> Mention Legales</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/cvg.html"> CGV </a>
+            </div>
+            <!-- Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                    Newsletter </a>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <label for="emailId">Votre Email</label>
+                                    <input type="email" name="mail" id="emailId">
+                                    <button type="submit" class="btn btn-secondary">Inscription</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p>Vous pourrez vous déinscrire à tout moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/planDuSite.html"> Avis </a>
+            </div>
+        </div>
+        <!-- fin lien divers CVG...NewsLetter... -->
+    </footer>
+    <!-- Fin pied de page -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

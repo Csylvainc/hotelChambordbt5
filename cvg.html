@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Hotel Chambord</title>
+</head>
+
+<body>
+
+    <!-- Slide Bar de Navigation -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbard-brand text-light mt-5">
+            <img src="/img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt5 w-100">
+            <li class="nav-item w-100">
+                <a href="/index.html" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="chambreDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Chambres</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="chambreDropdown">
+                    <li><a href="/chambres.html#classique" class="dropdown-item text-light pl-4 p-2">Classique</a></li>
+                    <li><a href="/chambres.html#confort" class="dropdown-item text-light pl-4 p-2">Confort</a></li>
+                    <li><a href="/chambres.html#deluxe" class="dropdown-item text-light pl-4 p-2">Deluxe</a></li>
+                    <li><a href="/chambres.html#suite" class="dropdown-item text-light pl-4 p-2">Suite</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
+                    <li><a href="/restaurant.html#gastronomique" class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="/restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
+                    <li><a href="/restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="spaDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Spa</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/spa.html#detente" class="dropdown-item text-light pl-4 p-2">Détente</a></li>
+                    <li><a href="/spa.html#decouverte" class="dropdown-item text-light pl-4 p-2">Découverte</a></li>
+                    <li><a href="/spa.html#relaxant" class="dropdown-item text-light pl-4 p-2">Relaxant</a></li>
+                    <li><a href="/spa.html#plaisir" class="dropdown-item text-light pl-4 p-2">Plaisir</a></li>
+                    <li><a href="/spa.html#evasion" class="dropdown-item text-light pl-4 p-2">Evasion</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a></li>
+                    <li><a href="/hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/evenements.html" class="nav-link text-light pl-4">Evènements et presse</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="/contact.html" class="nav-link text-light pl-4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+      <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
+      <header class="sticky-top">
+            <div id="qfc" class="p-5 d-flex justify-content-around align-items-center" style="background-color:rgb(95, 34, 49, 0.8);">
+                <img src="/img/logo.png" alt="logo" style="width: 50px;">
+                <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+                <!-- bouton reserver -->
+                <div id="reservation" class="p-2">
+                    <a href="/reservation.html"
+                        style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+                </div>
+                <!-- fin bouton reserver -->
+                <div id="panier" class="p-2">
+                    <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+                </div>
+                <div id="flag" class="p-2">
+                    <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
+                        onmouseover="this.style.cursor='pointer'">
+                    <img src="img/gb.png" style="width:20px;" alt="gb" id="en"
+                        onmouseover="this.style.cursor='pointer'">
+                </div>
+        
+        <!-- Menu Fixe reservation panier langue -->
+        
+        </div>
+        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+    </header>
+<!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->     
+    <main class="p-4 mainContent" id="mainContent">
+        <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
+        <div id="principale" class="row text-start justify-content-center">
+        <!-- Entete du main a garder dans toutes les pages -->
+        <div class="w-50">
+            <h5>CONDITIONS GENERALES DE VENTE</h5>
+        <p>Les présentes conditions générales de vente sont fictives ce site est réalisé pour l'école IFOCOP,
+            l’hôtel mentionné dans ces CVG est fictif. Aucune réservation ne sera honorée</p>
+        <hr>
+        <p>Article 1- Réservation :</p>
+        <p>Toute réservation n’est valablement effectuée qu’après réception par l’hôtel d’une confirmation ou
+            d’un devis dûment daté et signé par le client et doit mentionner les noms, prénoms adresse, les
+            prestations réservées ainsi que les conditions de paiement retenues et accepté par l’hôtel.
+            La réservation devra être accompagnée des arrhes et d’un exemplaire des présentes dûment signé. A
+            défaut de l’une quelconques de ces obligations d’information ou de versement d’arrhes comme défini
+            ci-après, la réservation ne pourra être retenue ou garantie par l’hôtel. Toutes sommes versées
+            restent la propriété définitive de l’hôtel.
+            Si des modifications étaient à apporter par rapport au devis signé, les modifications seraient à
+            adresser par écrit à l’hôtel. Toutefois et faute d’acceptation écrite de l’hôtel, les termes et
+            conditions du devis initial perdureront et seront applicables de plein droit entre les parties.
+            Dans le cas où la prestation ne pourrait se tenir, totalement ou partiellement, du fait de l’hôtel,
+            et sauf cas de force majeur, ce dernier ne saurait être engagé financièrement au-delà du montant de
+            la prestation prévue au devis accepté par le client et non fournie. Cette indemnisation ne pouvant
+            être liée qu’à un préjudice prouvé par le client.
+        </p>
+        <hr>
+        <p>Article 2- Délais :</p>
+        <p>Le client devra informer l’hôtel, par écrit, au moins huit jours avant la date d’arrivée prévue, du
+            nombre de participant en communiquant leurs noms à la société. Le client devra également préciser le
+            nombre exact de repas qu’il incombera à l’hôtel de servir au moins trois jours avant la date prévue
+            de la manifestation.
+        </p>
+        <hr>
+        <p>Article 3- Annulation :</p>
+        <p>La facturation étant établie d’après la réservation effectuée, toute annulation totale ou partielle
+            devra être indiquée par écrit auprès de l’hôtel et sera prise en compte aux conditions suivantes :
+        </p>
+        <p>Si l’annulation intervient entre trente et quinze jours avant le début prévu de la manifestation, il
+            sera dû à l’hôtel 50 % HT du montant des prestations confirmées.
+        </p>
+        <p>Si l’annulation intervient entre quinze et huit jours avant le début prévu de la manifestation, il
+            sera dû à l’hôtel 75 % HT du montant des prestations confirmées.
+        </p>
+        <p>Si l’annulation intervient moins de huit jours avant la date prévue du début de la manifestation ou
+            sans aucun délai, il sera dû à l’hôtel l’intégralité du montant des prestations confirmées.
+        </p>
+        <p>En cas de survenance d’événement de force majeure (grève, incendie, dégâts des eaux, etc.) ainsi que
+            dans le cas où l’objet ou la cause serait contraire à l’ordre public et aux bonnes mœurs, l’hôtel
+            pourra ne pas donner suite à la réservation confirmée qui aura été passée, celle-ci étant annulée
+            sans recours possible du client contre l’hôtel et sans indemnité d’aucune sorte.
+        </p>
+        <hr>
+        <p>Article 4- Annulation de commandes passées à des sous-traitants :</p>
+
+        <p>En cas de résiliation, à l’initiative du client, d’une prestation devenue définitive, le montant de
+            la/les commande(s) passée(s) pour le compte du client par le prestataire à un/des sous-traitant(s)
+            sera dû dans sa totalité.
+            Par sous-traitants, il est entendu : tout prestataire extérieur aux présentes, et ce quelque soit le
+            type de prestation que ce sous-traitant fourni, se rapportant au devis du client.
+        </p>
+        <hr>
+        <p>Article 5- Délogement : </p>
+        <p>Dans l’hypothèse où l’hôtel ne serait pas à même d’honorer ses prestations, celui-ci se réserve la
+            possibilité de faire héberger, totalement ou partiellement les clients dans un établissement de même
+            nature à proximité, à prestations équivalentes, et sans surcoût pour le client ; les frais de
+            transfert inhérents demeurant à la charge de l’hôtel qui ne saurait être recherchée en
+            responsabilité à cet égard en paiement d’une quelconque indemnité.
+        </p>
+        <hr>
+        <p>Article 6- Responsabilités Assurances :</p>
+        <p>
+            Le client fera son affaire personnelle de la souscription de toutes polices d’assurances pour
+            l’exercice de son activité et le déroulement de sa prestation dans les lieux loués par l’hôtel, et
+            devra pouvoir en justifier à toute réquisition de cette dernière.
+            A la date de début de la location, le client devra avoir fait son affaire personnelle de l’obtention
+            de toutes autorisations administratives (municipales, préfectorales..) ou privées (SACEM,…) qui
+            seraient nécessaires à la manifestation prévue dans les lieux loués et l’obtention des dites
+            autorisations demeureront sous l’entière responsabilité du client.
+            Le client s’engage en fonction de la manifestation prévue, à communiquer toutes autorisations
+            nécessaires préalablement au début de la manifestation à l’hôtel qui ne pourra être recherchée en
+            responsabilité à cet égard pour les faits du client.
+        </p>
+        <hr>
+        <p>Article 7- Facturation :</p>
+        <p>
+            Les montants des facturations annoncées sur devis sont valables 20 jours à compter de la date
+            d’émission du devis.
+            A titre d’arrhes, il devra être versé au plus tard dans un délai de 8 jours à compter de la
+            confirmation de la réservation, un montant correspondant, sauf accord contraire, à trente pour cent
+            (30%) de la facture pro forma ou de la proposition commerciale.
+            Le second versement, sauf accord contraire, au titre de règlement à hauteur de quarante cinq pour
+            cent (45%) s’effectuera sur la base de la facture pro forma ou de la proposition commerciale
+            adressée par l’hôtel et devra lui être adressée au plus tard 15 jours avant la date prévue du début
+            de la manifestation.
+        </p>
+        <hr>
+        <p>Article 8- Paiement – Modalités : </p>
+        <p>
+            Les factures sont payables au siège de l’hôtel – 3 Boulevard de la plage 33680 LACANAU-OCEAN France.
+            Les prix annoncés sont valables pendant 20 jours à compter de la date d’émission du devis et ne sont
+            révisables durant cette période exclusivement pour respecter des modifications législatives,
+            réglementaires, préfectorales ou municipales (taux de TVA en vigueur, taxes de séjours …). Nos
+            tarifs sont susceptibles d’êtres modifiés sans préavis.
+            Sauf conditions particulières indiquées au devis, le solde du prix devra être acquitté à réception
+            de la facturation émise par l’hôtel et au plus tard à la date prévue du début de la location et ne
+            sera valablement effectuée que sous réserve d’encaissement du titre de paiement remis.
+            En cas de contestation d’une partie de la facturation, le client s’engage à régler, avant le début
+            de sa prestation, la facturation émise et initialement acceptée. Le client indiquera ensuite à
+            l’hôtel, par écrit avec accusé de réception, ses motifs de contestation.
+            Toutes sommes qui seraient dues à l’hôtel et qui ne seraient pas réglées à leur échéance porteront
+            un intérêt de retard de 1,5 fois le taux légal, jusqu’au paiement de la totalité.
+            Les frais et droits qui seraient exposés pour obtenir le recouvrement des sommes restant dues seront
+            à la charge du débiteur.
+        </p>
+        <hr>
+        <p>Article 9- Consommations personnelles :</p>
+        <p>
+            Toutes prestations qui seraient sollicitées individuellement par le client (blanchisserie,
+            consommations,…) demeureront à la charge du client. Si celles-ci n’étaient pas réglées avant le
+            départ du client, il est d’ores et déjà convenu que les sommes dues seront compensables de plein
+            droit avec toutes sommes versées par le client.
+        </p>
+        <hr>
+        <p>
+            Article 10- Force majeure :</p>
+        <p>
+            Si l’hôtel se trouvait dans l’impossibilité d’honorer les prestations convenues pour survenance d’un
+            événement exceptionnel ou cas de force majeure, celle-ci serait déliée de ses obligations (ex :
+            destruction totale ou partielle, grève…), et ne pourront donner lieu à aucune indemnisation.
+        </p>
+        <hr>
+        <p>Article 11- Responsabilité – Assurance Vol Casse :</p>
+        <p>
+            L’hôtel ne pourra en aucun cas être tenu responsable des dommages, de quelque nature qu’ils soient
+            (incendie, vol, …), susceptibles de causer un préjudice au client ou aux participants. Chacun des
+            clients ou des participants devant assurer la garde des biens qu’il a sous sa responsabilité.
+            Le client est invité à cet égard à souscrire toutes assurances utiles (dommage- responsabilité
+            civile) en fonction du type de prestation choisie à l’hôtel, y compris pour l’utilisation du
+            parking.
+            Le client sera par ailleurs tenu solidairement avec le participant de tout dommage que ce dernier
+            aurait pu causer dans les lieux loués.
+            L’hôtel est d’ores et déjà autorisé par le client, dans un délai de vingt quatre heures après la
+            date de fin de la location, à compenser toutes sommes qui seraient dues par ce dernier pour un
+            dommage résultant de son fait ou de sa négligence (emport de linge de toilette, de télécommande
+            audiovisuelle, de clé,…) avec les arrhes versées avant restitution du solde selon une évaluation
+            fixée contradictoirement au prix d’achat T.T.C. du matériel détruit, endommagé ou emporté. A défaut
+            de sommes disponible, le Client s’engage à régler l’hôtel et à se retourner, ensuite, contre le(s)
+            participant(s) incriminé(s).
+        </p>
+        <hr>
+        <p>Article 12- Litiges – Clause attributive de juridiction. :</p>
+        <p>
+            Toutes contestations et réclamations ne pourront être prises en compte que si elles sont formulées
+            par écrit et adressées à l’hôtel dans un délai de 7 jours après la date de la manifestation et
+            n’exonère en aucun cas le client du paiement intégral des sommes dues.
+            Elles pourront être soumises à une procédure amiable auprès de la « médiation du commerce coopératif
+            associé » (www.mcca-mediation.fr).
+            En cas de litige persistant, les parties conviennent expressément de se référer à la compétence des
+            tribunaux de Bordeaux.
+        </p>
+        </div>
+        
+        </div>
+    
+    </main>
+    <!-- Fin principale -->
+
+
+    <!-- bouton de recherche Jeffrey -->
+    <div id="jeffrey" class="d-block align-items-center nav-item">
+        <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
+        <form action="#" id="search">
+            <input type="search" name="cherche">
+            <button type='submit' class="check"></button>
+        </form>
+    </div>
+    <!-- fin bouton de recherche Jeffrey -->
+
+
+    <!-- bouton de partage -->
+    <div class="box">
+        <input type="checkbox" id="checkbox" />
+        <div class="menu">
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- fin bouton partage -->
+
+
+    <!-- Début pied de page -->
+    <hr>
+    <footer id="foot" class="container-fluid">
+        <!-- Récapitulatif -->
+        <div class="row">
+            <div id="footChambre" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Chambres</h6>
+                <a href="/chambres.html#classique">Classique</a><span> | </span>
+                <a href="/chambres.html#confort">Confort</a><span> | </span>
+                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                <a href="/chambres.html#suite">Suites</a><span> | </span>
+            </div>
+            <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Restaurant</h6>
+                <a href="/restaurant.html#bar">Gastronomique</a><span> | </span>
+                <a href="/restaurant.html#brasserie">Bistro</a><span> | </span>
+                <a href="/restaurant.html#degustation">Cave</a><span> | </span>
+            </div>
+            <div id="footSpa" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Spa</h6>
+                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+            </div>
+            <div id="footHotel" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Hôtel</h6>
+                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                <a href="/hotel.html#acces">Acces</a><span> | </span>
+                <a href="/hotel.html#evenements">Evenements</a><span> | </span>
+                <a href="/hotel.html#presse">Presse</a><span> | </span>
+                <a href="/hotel.html#actualites">Actualités</a><span> | </span>
+            </div>
+        </div>
+        <!-- Fin Récapitulatif -->
+        <hr />
+        <!-- Début lien divers CVG...NewsLetter... -->
+        <div id="liensDivers" class="row mb-5">
+            <div id="recrutement" class="col-6 col-md text-center">
+                <a href="/recrutement.html">Recrutement</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/mention.html"> Mention Legales</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/cvg.html"> CGV </a>
+            </div>
+            <!-- Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                    Newsletter </a>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <label for="emailId">Votre Email</label>
+                                    <input type="email" name="mail" id="emailId">
+                                    <button type="submit" class="btn btn-secondary">Inscription</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p>Vous pourrez vous déinscrire à tout moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/planDuSite.html"> Avis </a>
+            </div>
+        </div>
+        <!-- fin lien divers CVG...NewsLetter... -->
+    </footer>
+    <!-- Fin pied de page -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
