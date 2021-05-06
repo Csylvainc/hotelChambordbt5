@@ -57,14 +57,14 @@ header{
     font-size: 1.25em;
 }
 .nav-link:hover{
-    background-color: var(--lienshover);
+    background-color: var(--liens);
 }
 .dropdown-menu{
     background-color:rgb(95, 34, 49);
     font-size: 1.25rem;
 }
 .dropdown-item:hover{
-    background-color: black;
+    background-color:var(--liens);
 }
 .my-container{
     transition: 1s;
@@ -530,6 +530,8 @@ h1{
       color: #1da1f2;
     }
 /* Fin Bouton Partage reseau sociaux  ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Modi datepicker */
+
 
 /* Bouton Recherche Jeffrey//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #jeffrey{
@@ -547,16 +549,31 @@ h1{
 
 /* ///////////////////////// Media Queries//////////////////////////////////////////////////////// */
 /*// X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { ... }
+@media (min-width: 575.98px) { 
+#acces{
+  width: 400px;
+}
+ }
 
 /*// Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { ... }
+@media (min-width: 767.98px) { 
+  #acces{
+    width: 500px;
+  } 
+ }
 
 /*// Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
+@media (min-width: 991.98px) { 
+  #acces{
+    width: 800px;
+  }
+ }
 
 /*// Large devices (desktops, less than 1200px)*/
-@media (min-width: 1199.98px) { 
+@media (min-width: 1199.98px) {
+  #acces{
+    width: 1100px;
+  } 
  /* animation photo accueil */
  .card1 {
   border-radius: 16px;

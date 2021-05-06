@@ -100,7 +100,7 @@
     <!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->
     <main class="p-4 mainContent" id="mainContent">
         <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
-        <div id="principale" class="row text-center justify-content-between">
+        <div id="principale" class="row text-center justify-content-between w-75 offset-2">
             <!-- Entete du main a garder dans toutes les pages -->
             <h2 class="text-center my-5">Les avis</h2>
             <hr>
@@ -109,7 +109,7 @@
                 <button onclick="window.location ='avis.html#votreAvis';" type="button"
                     class="bouton btn-secondary text-center">Cliquez ici pour partager votre avis</button>
             </div>
-
+            
             <ul class="nav nav-tabs my-5"  role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active"  data-bs-toggle="tab" href="#avis-hotel" role="tab"
@@ -136,7 +136,7 @@
                     aria-labelledby="home-tab">
 
                     <div class="subReviews">
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around">
                             <img src="img/zh2.jpg" alt="Zalatan Huntelar" title="Zalatan Huntelar">
                             <h6>Zalatan Huntelar a écrit un avis (Janvier 2021)</h6>
                         </div>
@@ -156,16 +156,14 @@
                             mycket
                             påminner om Grand Hotells egna rum.</p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#modalCenter">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#modalCenter">Traduction</a>
                             <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog"
                                 aria-labelledby="modalCenter" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>L'un des meilleurs hôtels de Paris</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="modalContent row">
@@ -195,7 +193,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/paulo.jpg" alt="Paulo Maldini" title="Paulo Maldini">
                             <h6>Paulo Maldini a écrit un avis (Janvier 2021)</h6>
                         </div>
@@ -208,16 +206,14 @@
                             pulizia impeccabile.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter2">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter2" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Romantique</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="modalContent row">
@@ -240,7 +236,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/hamilton.jpg" alt="Lewis Hamilton" title="Lewis Hamilton">
                             <h6>Lewis Hamilton a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -257,14 +253,14 @@
                             The room breakfast is very good and the food is amazing.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter4">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter4">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter4" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Séjour digne d'un Roi !</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -287,7 +283,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/watson.jpg" alt="Clara Watson" title="Claire Lawson">
                             <h6>Claire Lawson a écrit un avis (février 2021)</h6>
                         </div>
@@ -300,14 +296,14 @@
                             city break super special
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter3">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter3" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Week-end fantastique au Hôtel Montaigne</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -333,7 +329,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/lg.jpg" alt="Laurent Gris" title="Laurent Gris">
                             <h6>Laurent Grist a écrit un avis (février 2021)</h6>
                         </div>
@@ -360,7 +356,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/ringer.jpg" alt="Caroline Ringer" title="Caroline Ringer">
                             <h6>Caroline Ringer a écrit un avis (février 2021)</h6>
                         </div>
@@ -386,7 +382,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/diego1.jpg" alt="Diego y Carla Armendo" title="Diego y Carla Armendo">
                             <h6>Diego y Carla Armendo a écrit un avis (mars 2021)</h6>
                         </div>
@@ -404,14 +400,14 @@
                             palabras. Citando al hotel... perfection just happens. Y tanto.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter5">traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter5">traduction</a>
                             <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter5" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Comment décrire le paradis</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -447,7 +443,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/lee.jpg" alt="Lee Xing" title="Lee Xing">
                             <h6>Lee Xing a écrit un avis (mars 2021)</h6>
                         </div>
@@ -459,7 +455,7 @@
                             三星餐厅用餐，餐点品质佳，用餐环境非常华美，值得期待。
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter6">traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter6">traduction</a>
                             <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter6" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -467,7 +463,7 @@
                                         <div class="modal-header">
                                             <h5>"La Suite a une vue imprenable et le service est également satisfaisant"
                                             </h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -508,7 +504,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="img/mario.jpg" alt="Mario Ballo" title="Mario Ballo">
                             <h6>Mario Ballo a écrit un avis (mars 2021)</h6>
                         </div>
@@ -523,14 +519,14 @@
                             Inutile dire che tutto si paga, ma non può essere altrimenti.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter7">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter7">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter7" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Tout est parfait</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -558,7 +554,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Klass Yhan" title="Klass Yhan">
                             <h6>Klass Yhan a écrit un avis (mars 2021)</h6>
                         </div>
@@ -571,14 +567,14 @@
                             ursnygga nya rum i den nyförvärvade delen av byggnaden.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter8">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter8">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter8" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Une semaine dans un cocon</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -605,7 +601,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Crista Rolando" title="Crista Rolando">
                             <h6>Crista Rolando a écrit un avis (mars 2021)</h6>
                         </div>
@@ -624,14 +620,14 @@
                             lugar
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter9">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter9">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter9" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter9" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Parfait !!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -665,7 +661,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Andreï Styschev" title="Andreï Styschev">
                             <h6>Andreï Styschev a écrit un avis (mars 2021)</h6>
                         </div>
@@ -678,14 +674,14 @@
                             Живописный уличный дворик с галереей картин. Стоит ли посетить это место? - однозначно Да !
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter10">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter10">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter10" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Un endroit où vous voulez revenir encore et encore ...</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -710,7 +706,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Karlemo Anthony" title="Karlemo Anthony">
                             <h6>Karlemo Anthony a écrit un avis (mars 2021)</h6>
                         </div>
@@ -724,14 +720,14 @@
                             comfort of room, we don't want to leave.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter11">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter11">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter11" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Exceptionnel</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -757,7 +753,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Florentino Peres" title="Florentino Peres">
                             <h6>Florentino Peres a écrit un avis (mars 2021)</h6>
                         </div>
@@ -769,14 +765,14 @@
                             todo es elegancia de los mejores del Mundo
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter12">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter12">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter12" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Ce qu'il y a de mieux</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -800,7 +796,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Cristina Maldenovic" title="Cristina Maldenovic">
                             <h6>Cristina Maldenovic a écrit un avis (avril 2021)</h6>
                         </div>
@@ -813,14 +809,14 @@
                             двоем. Романтичность зашкаливает, но так и должно быть в Париже.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter13">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter13">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter13" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Hôtel de luxe avec vue</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -845,7 +841,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Kim Sun Yong" title="Kim Sun Yong">
                             <h6>Kim Sun Yong a écrit un avis (avril 2021)</h6>
                         </div>
@@ -861,14 +857,14 @@
                             유럽 여행중 호텔의 불친절함으로 인해 여행기분을 여러번 망쳤던 나의경험으로서 여기는 최고의 호텔이다
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter14">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter14">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter14" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Je peux dire que c'est le meilleur hôtel que j'aie jamais connu.</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -894,7 +890,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Giannis Anthetokupo" title="Giannis Anthetokupo">
                             <h6>Giannis Anthetokupo a écrit un avis (avril 2021)</h6>
                         </div>
@@ -911,14 +907,14 @@
                             υπέροχες ολανθιστες ζαρντινιερες σε όλα τα μπαλκόνια.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter15">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter15">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter15" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter15" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Unique</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -948,7 +944,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Karl Lagerfield" title="Karl Lagerfield">
                             <h6>Karl Lagerfield a écrit un avis (avril 2021)</h6>
                         </div>
@@ -965,14 +961,14 @@
                             will, das Must HAVE Hotel in Paris.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter16">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter16">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter16" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter16" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>5 étoiles ne suffisent pas ...</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1016,7 +1012,7 @@
                 <div class="tab-pane fade show reviews" id="avis-chambres" role="tabpanel" aria-labelledby="rooms-tab">
 
                     <div class="subReviews">
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Marine Fois" title="Marine Fois">
                             <h6>Marine Fois a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1036,7 +1032,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Jason Brown" title="Jason Brown">
                             <h6>Jason Brown écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1050,14 +1046,14 @@
                             Seine river and luxurious shops.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter17">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter17">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter17" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter17" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Crème de la crème</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1083,7 +1079,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Didier Blanc" title="Didier Blanc">
                             <h6>Didier Blanc a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1107,7 +1103,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Monica Bing" title="Monica Bing">
                             <h6>Monica Bing a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1122,14 +1118,14 @@
                             outstanding.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter18">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter18">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter18" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter18" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Hôtel vraiment exceptionnel</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1155,7 +1151,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Charlotte Rempling" title="Charlotte Rempling">
                             <h6>Charlotte Rempling a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1174,7 +1170,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Esteban Oconne" title="Esteban Oconne">
                             <h6>Esteban Oconne a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1192,7 +1188,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Charles Bietry" title="Charles Bietry">
                             <h6>Charles Bietry a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1212,7 +1208,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Roberta Schmitt" title="Roberta Schmitt">
                             <h6>Roberta Schmitt a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1228,14 +1224,14 @@
                             Aufenthalt.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter19">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter19">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter19" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter19" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Magnifique grand Hôtel</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1264,7 +1260,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Corrinne Simon" title="Corrinne Simon">
                             <h6>Corrinne Simon a écrit un avis (février 2021)</h6>
                         </div>
@@ -1282,7 +1278,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Jessica Moreau" title="Jessica Moreau">
                             <h6>Jessica Moreau a écrit un avis (février 2021)</h6>
                         </div>
@@ -1306,7 +1302,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Erika Molodov" title="Erika Molodov">
                             <h6>Erika Molodov a écrit un avis (février 2021)</h6>
                         </div>
@@ -1320,14 +1316,14 @@
                             её!
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter20">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter20">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter20" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter20" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Inoubliable</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1356,7 +1352,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Guillaume Hoareau" title="Guillaume Hoareau">
                             <h6>Guillaume Hoareau a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1372,7 +1368,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Dimitris Smirnov" title="Dimitris Smirnov">
                             <h6>Dimitris Smirnov a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1385,14 +1381,14 @@
                             Монтень и чудесный внутренний дворик, где так приятно выпить бокал шампанского...
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter21">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter21">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter21" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter21" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Pour les romantiques</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1416,7 +1412,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Martha Hikins" title="Martha Hikins">
                             <h6>Martha Hikins a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1429,14 +1425,14 @@
                             a queen. My favorite vacation ever.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter22">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter22">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter22" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter22" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Quel endroit magique</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1462,7 +1458,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Richard Pierre" title="Richard Pierre">
                             <h6>Richard Pierre a écrit un avis (avril 2021)</h6>
                         </div>
@@ -1478,7 +1474,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="g" alt="Nagamoto" title="Nagamoto">
                             <h6>Nagamoto a écrit un avis (avril 2021)</h6>
                         </div>
@@ -1487,14 +1483,14 @@
                             class="fas fa-star"></i><i class="fas fa-star"></i>
                         <p>評判通り、立地、内装、部屋、サービス、食事、全てにおいて非の打ちどころがなく、優雅な滞在ができる。大変満足。</p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter23">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter23">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter23" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter23" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Le meilleur!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1529,7 +1525,7 @@
                 <div class="tab-pane fade reviews" id="avis-restaurant" role="tabpanel" aria-labelledby="profile-tab">
 
                     <div class="subReviews">
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Hugo Vincent" title="Hugo Vincent">
                             <h6>Hugo Vincent a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1545,7 +1541,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Jordan Clarkson" title="Jordan Clarkson">
                             <h6>Jordan Clarkson a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1559,14 +1555,14 @@
                             in my top 3 in France. Thanks so much.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter26">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter26">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter26" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter26" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Mon préféré à Paris</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1592,7 +1588,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Kevin Roubeau" title="Kevin Roubeau">
                             <h6>Kevin Roubeau a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1615,7 +1611,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Magalie Forte" title="Magalie Forte">
                             <h6>Magalie Forte a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1632,7 +1628,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Louison Montron" title="Louison Montron">
                             <h6>Louison Montron a écrit un avis (février 2021)</h6>
                         </div>
@@ -1648,7 +1644,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Rebecca Bryant" title="Rebecca Bryant">
                             <h6>Rebecca Bryant a écrit un avis (février 2021)</h6>
                         </div>
@@ -1665,14 +1661,14 @@
                             is the best brunch you can find in Paris.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter27">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter27">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter27" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter27" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Brunch excellent au Hôtel Chambord</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1708,7 +1704,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Michel Brun" title="Michel Brun">
                             <h6>Michel Brun a écrit un avis (février 2021)</h6>
                         </div>
@@ -1727,7 +1723,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Murielle Vico" title="Murielle Vico">
                             <h6>Murielle Vico a écrit un avis (février 2021)</h6>
                         </div>
@@ -1742,7 +1738,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Marks Wolff" title="Marks Wolff">
                             <h6>Marks Wolff a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1757,14 +1753,14 @@
 
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter28">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter28">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter28" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter28" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Une classe à part</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1787,7 +1783,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Coralie Jean" title="Coralie Jean">
                             <h6>Coralie Jean a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1805,7 +1801,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Fernando Torres" title="Fernando Torres">
                             <h6>Fernando Torres a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1821,14 +1817,14 @@
                             lo mejor.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter29">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter29">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter29" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter29" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Hôtel spectaculaire</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1862,7 +1858,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Louise Bourgoin" title="Louise Bourgoin">
                             <h6>Louise Bourgoin a écrit un avis (mars 2021)</h6>
                         </div>
@@ -1878,7 +1874,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Ronaldo Da Simiento" title="Ronaldo Da Simiento">
                             <h6>Ronaldo Da Simiento a écrit un avis (avril 2021)</h6>
                         </div>
@@ -1892,14 +1888,14 @@
                             mas ok, nada demais comparado ao valor.
                         </p>
                         <div class="txt-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter30">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter30">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter30" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter30" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Très bon</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1932,7 +1928,7 @@
                 <div class="tab-pane fade reviews" id="avis-spa" role="tabpanel" aria-labelledby="contact-tab">
 
                     <div class="subReviews">
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Emiline Barreau" title="Emiline Barreau">
                             <h6>Emiline Barreau a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1955,7 +1951,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Yumy Qwang" title="Yumy Qwang">
                             <h6>Yumy Qwang a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -1964,14 +1960,14 @@
                             class="fas fa-star"></i><i class="fas fa-star"></i>
                         <p>我和我的家人在巴黎玩了5天。离塞纳河很近，离 香榭丽舍大道不远。酒店提供一流的服务，有一家Spa。这里绝对值得你住一住</p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter35">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter35">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter35" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter35" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Excellent!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -1999,7 +1995,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Agnes Pierre" title="Agnes Pierre">
                             <h6>Agnes Pierre a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -2015,7 +2011,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Eugénie Luis" title="Eugénie Luis">
                             <h6>Eugénie Luis a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -2031,7 +2027,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Monica Oliviera" title="Monica Oliviera">
                             <h6>Monica Oliviera a écrit un avis (janvier 2021)</h6>
                         </div>
@@ -2045,14 +2041,14 @@
                             comentários com un serviço incrível.
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter36">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter36">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter36" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter36" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>Expérience unique!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -2082,7 +2078,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Bénedicte Borne" title="Bénedicte Borne">
                             <h6>Bénedicte Borne a écrit un avis (février 2021)</h6>
                         </div>
@@ -2101,7 +2097,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Cédric Longueau" title="Cédric Longueau">
                             <h6>Cédric Longueau a écrit un avis (février 2021)</h6>
                         </div>
@@ -2121,7 +2117,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Helene Martins" title="Helene Martins">
                             <h6>Helene Martins a écrit un avis (février 2021)</h6>
                         </div>
@@ -2136,14 +2132,14 @@
                             else work perfectly here. Definitely get a room with a view!
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter37">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter37">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter37" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter37" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>L'hôtel le plus fantastique d'Europe</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -2177,7 +2173,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Pierre Morin" title="Pierre Morin">
                             <h6>Pierre Morin a écrit un avis (février 2021)</h6>
                         </div>
@@ -2198,7 +2194,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Mary Harris" title="Mary Harris">
                             <h6>Mary Harris a écrit un avis (mars 2021)</h6>
                         </div>
@@ -2217,14 +2213,14 @@
                             beautiful door products. Would love to visit here again soon!
                         </p>
                         <div class="text-center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter38">Traduction</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter38">Traduction</a>
                             <div class="modal fade" id="exampleModalCenter38" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenter38" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5>beau spa</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -2262,7 +2258,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Florence Miso" title="Florence Miso"">
                          <h6>Florence Miso" a écrit un avis (mars 2021)</h6>
                         </div>
@@ -2279,7 +2275,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Alexia Couture" title="Alexia Couture">
                             <h6>Alexia Couture a écrit un avis (mars 2021)</h6>
                         </div>
@@ -2294,7 +2290,7 @@
 
                         <hr>
 
-                        <div class="row">
+                        <div class="d-flex justify-content-around">
                             <img src="" alt="Nicolas Anelka" title="Nicolas Anelka">
                             <h6>Nicolas Anelka a écrit un avis (avril 2021)</h6>
                         </div>
@@ -2317,65 +2313,71 @@
         <!--Fin Avis SPA-->
         <!--Début Formulaire AVIS-->
 
-        <div id="votreAvis"></div>
+        <div id="votreAvis">
         <div class="container">
-            <h3 class="text-center my-5">Donnez vos avis</h3>
+            <h3 class="text-center my-5">Votre avis compte pour nous</h3>
+            <form class="row g-3 needs-validation w-75 offset-2">
+                <div class="col-md-6">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" value="" required>
+                  <div class="valid-feedback">
+                    ok
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="nom" value="" required>
+                  <div class="valid-feedback">
+                    ok
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="rebrique" class="form-label">Rubrique</label>
+                    <select class="form-select" id="rebrique" required>
+                      <option selected disabled value="">Choisissez...</option>
+                      <option>Hôtel</option>
+                      <option>Chambres</option>
+                      <option>Restaurant</option>
+                      <option>Spa</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="note" class="form-label">Note</label>
+                    <select class="form-select" id="note" required>
+                      <option selected disabled value="">Choisissez...</option>
+                      <option>&starf;&starf;&starf;&starf;&starf;</option>
+                      <option>&starf;&starf;&starf;&starf;</option>
+                      <option>&starf;&starf;&starf;</option>
+                      <option>&starf;&starf;</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="titre" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="titre">
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Votre message" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Votre Message</label>
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      En cochant cette case vous accepter que nous puissions partger votre avis sur d'autre plateform
+                    </label>
+                    <div class="invalid-feedback">
+                      Vous devez accpter pour poster votre message.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn bouton" type="submit">Envoyer</button>
+                </div>
+              </form>
 
-
-            <form class="mx-5" id="form">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nom">Nom *</label>
-                        <input type="text" class="form-control" placeholder="Nom">
-                        <span>Un nom ne peut pas faire moins de 2 caractères</span>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="prenom">Prénom *</label>
-                        <input type="text" class="form-control" placeholder="Prénom">
-                        <span>Un prénom ne peut pas faire moins de 2 caractères</span>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-6">
-                        <label for="rubrique">Rubriques</label>
-                        <select class="custom-select">
-                            <option>Hôtel</option>
-                            <option>Chambres</option>
-                            <option>Restaurant</option>
-                            <option>Spa</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-6">
-                        <label for="notes">Notes</label>
-                        <select class="custom-select" id="inputNotes">
-                            <option>&starf;&starf;&starf;&starf;&starf;</option>
-                            <option>&starf;&starf;&starf;&starf;</option>
-                            <option>&starf;&starf;&starf;</option>
-                            <option>&starf;&starf;</option>
-                            <option>&starf;</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-12">
-                        <label for="objet">Titre *</label>
-                        <input type="text" class="form-control">
-                        <span>Le titre ne peut pas faire moins de 2 caractères</span>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-12">
-                        <label for="inputMessage">Message *</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
-                        <span>Le message ne peut pas faire moins de 2 caractères</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="bouton btn-secondary">Envoyer</button>
-                </div>
-            </form>
+           
         </div>
-
+        
     </main>
     <!-- Fin principale -->
 
@@ -2424,7 +2426,7 @@
     <hr>
     <footer id="foot" class="container-fluid">
         <!-- Récapitulatif -->
-        <div class="row">
+        <div class="d-flex justify-content-around">
             <div id="footChambre" class="col-12 col-md-3 text-center">
                 <h6 class="text-center">Chambres</h6>
                 <a href="/chambres.html#classique">Classique</a><span> | </span>
@@ -2434,9 +2436,9 @@
             </div>
             <div id="footRestaurant" class="col-12 col-md-3 text-center">
                 <h6 class="text-center">Restaurant</h6>
-                <a href="/restaurant.html#bar">Gastronomique</a><span> | </span>
-                <a href="/restaurant.html#brasserie">Bistro</a><span> | </span>
-                <a href="/restaurant.html#degustation">Cave</a><span> | </span>
+                <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
+                <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
+                <a href="/restaurant.html#cave">Cave</a><span> | </span>
             </div>
             <div id="footSpa" class="col-12 col-md-3 text-center">
                 <h6 class="text-center">Spa</h6>
@@ -2503,7 +2505,7 @@
             </div>
 
             <div class="col-6 col-md text-center">
-                <a href="/planDuSite.html"> Avis </a>
+                <a href="/avis.html"> Avis </a>
             </div>
         </div>
         <!-- fin lien divers CVG...NewsLetter... -->
