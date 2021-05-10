@@ -101,8 +101,8 @@ header{
 }
 #menu-btn{
   position: fixed;
-  top: 150px;
-  z-index: 10;
+  top: 160px;
+  z-index: 15;
 }
 #menu-btn:hover{
     box-shadow: 0 0 0 0.25rem #eae5e7;
