@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="L'hôtel Chambord vient d'ouvrir ces portes, venez découvrir son parfait emplacement au coer de la capital et son service voituirer">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Hotel Chambord</title>
+    <title>qui sommes nous acces</title>
 </head>
 
 <body>
@@ -37,7 +39,8 @@
                 <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
-                    <li><a href="/restaurant.html#gastronomique" class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="/restaurant.html#gastronomique"
+                            class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
                     <li><a href="/restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
                     <li><a href="/restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
                 </ul>
@@ -54,10 +57,11 @@
                 </ul>
             </li>
             <li class="nav-item dropdown w-100">
-                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="hotelDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
-                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a></li>
+                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
+                    </li>
                     <li><a href="/hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
                 </ul>
             </li>
@@ -69,63 +73,97 @@
             </li>
         </ul>
     </nav>
-      <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
-      <header class="sticky-top">
-            <div id="qfc" class="p-5 d-flex justify-content-around align-items-center" style="background-color:rgb(95, 34, 49, 0.8);">
-                <img src="/img/logo.png" alt="logo" style="width: 50px;">
-                <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
-                <!-- bouton reserver -->
-                <div id="reservation" class="p-2">
-                    <a href="/reservation.html"
-                        style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
-                </div>
-                <!-- fin bouton reserver -->
-                <div id="panier" class="p-2">
-                    <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
-                </div>
-                <div id="flag" class="p-2">
-                    <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
-                        onmouseover="this.style.cursor='pointer'">
-                    <img src="img/gb.png" style="width:20px;" alt="gb" id="en"
-                        onmouseover="this.style.cursor='pointer'">
-                </div>
-        
-        <!-- Menu Fixe reservation panier langue -->
-        
+    <!-- Debut Header  -->
+    <header class="sticky-top">
+        <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
+            style="background-color:rgb(95, 34, 49, 0.8);">
+            <img src="/img/logo.png" alt="logo" style="width: 50px;">
+            <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+            <!-- bouton reserver -->
+            <div id="reservation" class="p-2">
+                <a href="/reservation.html"
+                    style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+            </div>
+            <!-- fin bouton reserver -->
+            <div id="panier" class="p-2">
+                <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+            </div>
+            <div id="flag" class="p-2">
+                <!-- GTranslate: https://gtranslate.io/ -->
+                <a href="#" onclick="doGTranslate('fr|en');return false;" title="English" class="gflag nturl"
+                    style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                        width="16" alt="English" /></a><a href="#" onclick="doGTranslate('fr|fr');return false;"
+                    title="French" class="gflag nturl" style="background-position:-200px -100px;"><img
+                        src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a>
+
+               
+
+                <div id="google_translate_element2"></div>
+                
+            </div>
+
+            <!-- Menu Fixe reservation panier langue -->
+
         </div>
-        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Fin Menu Fixe   -->
     </header>
-<!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->     
+    <!-- Fin Header   -->
     <main class="p-4 mainContent" id="mainContent">
         <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
-        <div id="principale" class="row text-center justify-content-between">
-        <!-- Entete du main a garder dans toutes les pages -->
-        <article class="m-5">
-            <p class="m-5"><em class="h3">L'hôtel Chambord</em> à ouvert ses portes le 1<sup>er</sup> Mai 2021, cette date à son
-                importance. Dès que vous aurez pousser les portes , votre vie professionnelle
-                disparait pour laisser place à la quiétude</p>
-            <p>Notre établissement situer à deux pas des Champs Elysée vous offre une vue panoramique
-                exceptionnelle sur Paris</p>
-            <p> L'efficacité, le charme et l'accueil chaleureux de tout le personnel de l'hôtel feront de
-                votre séjour un souvenir inoubliable...</p>
+        <div id="principale" class="row text-center justify-content-around">
+            <!-- Entete du main a garder dans toutes les pages -->
+            <article class="m-5">
+                <h2>Qui sommes nous ?</h2>
+                <p>120 ans de traditions et de savoir recevoir à la française,
+                    120 ans au service d’une clientèle exigeante,
+                    120 ans d’art et de mode,
+                    120 ans d’histoire,
+                    et un futur à inventer…</p>
+                <p class="tracking-in-expand h4">Mais non, ça c'est pas chez nous. L'hôtel Chambord vien tout juste
+                    d'ouvir ces portes, le futur c'est NOUS ! </p>
+                <p class="m-5"><em class="h3">L'hôtel Chambord</em> à ouvert ses portes le 1<sup>er</sup> Mai 2021,
+                    cette date à son
+                    importance. Dès que vous aurez pousser les portes , votre vie professionnelle
+                    disparait pour laisser place à la quiétude</p>
+                <p>Notre établissement situer à deux pas des Champs Elysée vous offre une vue panoramique
+                    exceptionnelle sur Paris</p>
+                <p> L'efficacité, le charme et l'accueil chaleureux de tout le personnel de l'hôtel feront de
+                    votre séjour un souvenir inoubliable...</p>
+            </article>
+            <h2 class="text-center">Pourquoi venir chez nous ?</h2>
+            <article class="m-5 d-flex justify-content-center align-items-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NlyDc75FTzc?controls=0"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p class="m-5 p-5">Paris est un monde à lui tout seul, l'hôtel Chambord est son centre</p>
+            </article>
 
-            
-        </article>
-       
+            <!-- Fin A propos -->
+            <!--Notre quartier vu de la seine -->
 
-        
-    
-    <!-- Fin A propos -->
-   
-    <!-- Acces -->
-</div>
-<div id="acces" class="col-12 text-center mt-5 p-2 container embed-responsive">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=132BXD7c8l12mCLjMW2k8C7HgeHE_0PfB" height="480" class="embed-responsive-item" id="acces"></iframe>
-</div>
-<!-- fin acces -->
 
+
+            <!-- Acces -->
+            <article>
+                <h3 class="text-center">Accés à Notre établissement</h3>
+                <div id="accesCarte" class="col-12 text-center mt-5 p-2 container embed-responsive">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=132BXD7c8l12mCLjMW2k8C7HgeHE_0PfB"
+                        height="480" class="embed-responsive-item" id="acces"></iframe>
+                </div>
+            </article>
+            <article class="text-center">
+                <h5>Comment nous trouver</h5>
+                <p> metro Alma-Marceau Ligne 9 | position GPS 48.86918, 2.30222</p>
+                <p>Nous mettons bien évidement un service de voiturier à votre disposition 24h/24 et si vous souhaitez
+                    un chauffeur particulier pour toute la durée de votre séjour rien de plus simple c'est déjà prévu !
+                    Il va en faire des va-et-vien</p>
+                <img src="/img/voiturier.jpg" alt="voiturier" id="voiturier">
+            </article>
+            <!-- fin acces -->
         </div>
-    
+
+
     </main>
     <!-- Fin principale -->
 
@@ -133,7 +171,7 @@
     <!-- bouton de recherche Jeffrey -->
     <div id="jeffrey" class="d-block align-items-center nav-item cache">
         <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
-        <form action="#" id="search">
+        <form action="#" id="search" class="cache">
             <input type="search" name="cherche">
             <button type='submit' class="check"></button>
         </form>
@@ -224,8 +262,8 @@
             <div class="col-6 col-md text-center">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
                     Newsletter </a>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -257,7 +295,13 @@
             </div>
         </div>
         <!-- fin lien divers CVG...NewsLetter... -->
+        <div class="text-center m-3">
+            &copy;
+            <script>new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());</script>, Baptiste
+            Viomesnil & Sylvain Campos.
+        </div>
     </footer>
+    
     <!-- Fin pied de page -->
 
 
@@ -266,6 +310,18 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, 'google_translate_element2'); }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+    <script type="text/javascript">
+
+        eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+
+    </script>
 </body>
 
 </html>

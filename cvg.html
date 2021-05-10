@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici les conditions générale de vente de l'hôtel Chambord">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Hotel Chambord</title>
+    <title>CVG Hotel Chambord</title>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown w-100">
-                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="hotelDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
                     <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a></li>
@@ -69,7 +70,7 @@
             </li>
         </ul>
     </nav>
-      <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
+      <!-- Debut Header  -->
       <header class="sticky-top">
             <div id="qfc" class="p-5 d-flex justify-content-around align-items-center" style="background-color:rgb(95, 34, 49, 0.8);">
                 <img src="/img/logo.png" alt="logo" style="width: 50px;">
@@ -84,24 +85,31 @@
                     <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
                 </div>
                 <div id="flag" class="p-2">
-                    <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
-                        onmouseover="this.style.cursor='pointer'">
-                    <img src="img/gb.png" style="width:20px;" alt="gb" id="en"
-                        onmouseover="this.style.cursor='pointer'">
+                   <!-- GTranslate: https://gtranslate.io/ -->
+              <a href="#" onclick="doGTranslate('fr|en');return false;" title="English" class="gflag nturl"
+              style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                  width="16" alt="English" /></a><a href="#" onclick="doGTranslate('fr|fr');return false;"
+              title="French" class="gflag nturl" style="background-position:-200px -100px;"><img
+                  src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a>
+
+          
+
+          <div id="google_translate_element2"></div>
+          
                 </div>
         
         <!-- Menu Fixe reservation panier langue -->
         
         </div>
-        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Fin Menu Fixe   -->
     </header>
-<!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->     
+<!-- Fin Header   -->     
     <main class="p-4 mainContent" id="mainContent">
         <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
         <div id="principale" class="row text-start justify-content-center">
         <!-- Entete du main a garder dans toutes les pages -->
         <div class="w-50">
-            <h5>CONDITIONS GENERALES DE VENTE</h5>
+            <h1>Conditions générales de vente</h1>
         <p>Les présentes conditions générales de vente sont fictives ce site est réalisé pour l'école IFOCOP,
             l’hôtel mentionné dans ces CVG est fictif. Aucune réservation ne sera honorée</p>
         <hr>
@@ -267,7 +275,7 @@
     <!-- bouton de recherche Jeffrey -->
     <div id="jeffrey" class="d-block align-items-center nav-item">
         <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
-        <form action="#" id="search">
+        <form action="#" id="search" class="cache">
             <input type="search" name="cherche">
             <button type='submit' class="check"></button>
         </form>
@@ -304,95 +312,105 @@
     <!-- fin bouton partage -->
 
 
-    <!-- Début pied de page -->
-    <hr>
-    <footer id="foot" class="container-fluid">
-        <!-- Récapitulatif -->
-        <div class="row">
-            <div id="footChambre" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Chambres</h6>
-                <a href="/chambres.html#classique">Classique</a><span> | </span>
-                <a href="/chambres.html#confort">Confort</a><span> | </span>
-                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
-                <a href="/chambres.html#suite">Suites</a><span> | </span>
-            </div>
-            <div id="footRestaurant" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Restaurant</h6>
-                <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
-                <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
-                <a href="/restaurant.html#cave">Cave</a><span> | </span>
-            </div>
-            <div id="footSpa" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Spa</h6>
-                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
-                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
-                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
-                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
-                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
-            </div>
-            <div id="footHotel" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Hôtel</h6>
-                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
-                <a href="/hotel.html#acces">Acces</a><span> | </span>
-                <a href="/hotel.html#evenements">Evenements</a><span> | </span>
-                <a href="/hotel.html#presse">Presse</a><span> | </span>
-                <a href="/hotel.html#actualites">Actualités</a><span> | </span>
-            </div>
+     <!-- Début pied de page -->
+     <hr>
+     <footer id="foot" class="container-fluid">
+         <!-- Récapitulatif -->
+         <div class="row">
+             <div id="footChambre" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Chambres</h6>
+                 <a href="/chambres.html#classique">Classique</a><span> | </span>
+                 <a href="/chambres.html#confort">Confort</a><span> | </span>
+                 <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                 <a href="/chambres.html#suite">Suites</a><span> | </span>
+             </div>
+             <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Restaurant</h6>
+                 <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
+                 <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
+                 <a href="/restaurant.html#cave">Cave</a><span> | </span>
+             </div>
+             <div id="footSpa" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Spa</h6>
+                 <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                 <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                 <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                 <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                 <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+             </div>
+             <div id="footHotel" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Hôtel</h6>
+                 <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                 <a href="/hotel.html#acces">Acces</a><span> | </span>
+                 <a href="/evenements.html#evenements">Evenements</a><span> | </span>
+                 <a href="/evenements.html#presse">Presse</a><span> | </span>
+                 <a href="/evenements.html#actus">Actualités</a><span> | </span>
+             </div>
+         </div>
+         <!-- Fin Récapitulatif -->
+         <hr />
+         <!-- Début lien divers CVG...NewsLetter... -->
+         <div id="liensDivers" class="row mb-5">
+             <div id="recrutement" class="col-6 col-md text-center">
+                 <a href="/recrutement.html">Recrutement</a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/mention.html"> Mention Legales</a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/cvg.html"> CGV </a>
+             </div>
+             <!-- Modal NewsLetter -->
+             <div class="col-6 col-md text-center">
+                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                     Newsletter </a>
+                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
+                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                 </button>
+                             </div>
+                             <div class="modal-body">
+                                 <form action="#">
+                                     <label for="emailId">Votre Email</label>
+                                     <input type="email" name="mail" id="emailId">
+                                     <button type="submit" class="btn btn-secondary">Inscription</button>
+                                 </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <p>Vous pourrez vous déinscrire à tout moment</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Fin Modal NewsLetter -->
+             <div class="col-6 col-md text-center">
+                 <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/avis.html"> Avis </a>
+             </div>
+             <div class="col-6 col-md text-center">
+                 <a href="/PlanDuSite.html"> Plan Du Site </a>
+             </div>
+         </div>
+         <!-- fin lien divers CVG...NewsLetter... -->
+         <div class="text-center m-3">
+            &copy;
+            <script>new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());</script>, Baptiste
+            Viomesnil & Sylvain Campos.
         </div>
-        <!-- Fin Récapitulatif -->
-        <hr />
-        <!-- Début lien divers CVG...NewsLetter... -->
-        <div id="liensDivers" class="row mb-5">
-            <div id="recrutement" class="col-6 col-md text-center">
-                <a href="/recrutement.html">Recrutement</a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/mention.html"> Mention Legales</a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/cvg.html"> CGV </a>
-            </div>
-            <!-- Modal NewsLetter -->
-            <div class="col-6 col-md text-center">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
-                    Newsletter </a>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="#">
-                                    <label for="emailId">Votre Email</label>
-                                    <input type="email" name="mail" id="emailId">
-                                    <button type="submit" class="btn btn-secondary">Inscription</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <p>Vous pourrez vous déinscrire à tout moment</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin Modal NewsLetter -->
-            <div class="col-6 col-md text-center">
-                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/avis.html"> Avis </a>
-            </div>
-        </div>
-        <!-- fin lien divers CVG...NewsLetter... -->
     </footer>
-    <!-- Fin pied de page -->
+     
+     <!-- Fin pied de page -->
+ 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -400,6 +418,18 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, 'google_translate_element2'); }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+    <script type="text/javascript">
+
+        eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+
+    </script>
 </body>
 
 </html>

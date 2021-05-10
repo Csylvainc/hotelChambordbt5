@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laissez et vérifiez les avis sur l'hotel Chambord le meilleur des nouveaux palace parisien">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Hotel Chambord</title>
+    <title>Vos Avis</title>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown w-100">
-                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="hotelDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
                     <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
@@ -71,7 +72,7 @@
             </li>
         </ul>
     </nav>
-    <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
+    <!-- Debut Header  -->
     <header class="sticky-top">
         <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
             style="background-color:rgb(95, 34, 49, 0.8);">
@@ -87,22 +88,29 @@
                 <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
             </div>
             <div id="flag" class="p-2">
-                <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
-                    onmouseover="this.style.cursor='pointer'">
-                <img src="img/gb.png" style="width:20px;" alt="gb" id="en" onmouseover="this.style.cursor='pointer'">
+              <!-- GTranslate: https://gtranslate.io/ -->
+              <a href="#" onclick="doGTranslate('fr|en');return false;" title="English" class="gflag nturl"
+              style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                  width="16" alt="English" /></a><a href="#" onclick="doGTranslate('fr|fr');return false;"
+              title="French" class="gflag nturl" style="background-position:-200px -100px;"><img
+                  src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a>
+
+          
+          <div id="google_translate_element2"></div>
+         
             </div>
 
             <!-- Menu Fixe reservation panier langue -->
 
         </div>
-        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Fin Menu Fixe   -->
     </header>
-    <!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Fin Header   -->
     <main class="p-4 mainContent" id="mainContent">
         <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
         <div id="principale" class="row text-center justify-content-between w-75 offset-2">
             <!-- Entete du main a garder dans toutes les pages -->
-            <h2 class="text-center my-5">Les avis</h2>
+            <h1 class="text-center my-5 h2">Les retours de nos cLients sont important pour nous</h1>
             <hr>
 
             <div class="text-center my-5">
@@ -113,20 +121,20 @@
             <ul class="nav nav-tabs my-5"  role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active"  data-bs-toggle="tab" href="#avis-hotel" role="tab"
-                        aria-controls="home-tab" aria-selected="true">L'hôtel</a>
+                        aria-controls="home-tab" aria-selected="true" id="hotel">L'hôtel</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"  data-bs-toggle="tab" href="#avis-chambres" role="tab" aria-controls="rooms-tab"
-                        aria-selected="false">Chambres</a>
+                        aria-selected="false" id="chambres">Chambres</a>
                 </li>
     
                 <li class="nav-item">
                     <a class="nav-link"  data-bs-toggle="tab" href="#avis-restaurant" role="tab"
-                        aria-controls="profile-tab" aria-selected="false">Restaurant</a>
+                        aria-controls="profile-tab" aria-selected="false" id="restaurant">Restaurant</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"  data-bs-toggle="tab" href="#avis-spa" role="tab"
-                        aria-controls="contact-tab" aria-selected="false">Spa</a>
+                        aria-controls="contact-tab" aria-selected="false" id="spa">Spa</a>
                 </li>
             </ul>
 
@@ -555,7 +563,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Klass Yhan" title="Klass Yhan">
+                            <img src="#" alt="Klass Yhan" title="Klass Yhan">
                             <h6>Klass Yhan a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>En vecka i en kokong</h4>
@@ -602,7 +610,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Crista Rolando" title="Crista Rolando">
+                            <img src="#" alt="Crista Rolando" title="Crista Rolando">
                             <h6>Crista Rolando a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Perfeito !!</h4>
@@ -662,7 +670,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Andreï Styschev" title="Andreï Styschev">
+                            <img src="#" alt="Andreï Styschev" title="Andreï Styschev">
                             <h6>Andreï Styschev a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Место, в которое хочется возвращаться снова и снова....</h4>
@@ -707,7 +715,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Karlemo Anthony" title="Karlemo Anthony">
+                            <img src="#" alt="Karlemo Anthony" title="Karlemo Anthony">
                             <h6>Karlemo Anthony a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Exceptional</h4>
@@ -754,7 +762,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Florentino Peres" title="Florentino Peres">
+                            <img src="#" alt="Florentino Peres" title="Florentino Peres">
                             <h6>Florentino Peres a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>De lo mejor</h4>
@@ -797,7 +805,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Cristina Maldenovic" title="Cristina Maldenovic">
+                            <img src="#" alt="Cristina Maldenovic" title="Cristina Maldenovic">
                             <h6>Cristina Maldenovic a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>Шикарный отель с видом</h4>
@@ -842,7 +850,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Kim Sun Yong" title="Kim Sun Yong">
+                            <img src="#" alt="Kim Sun Yong" title="Kim Sun Yong">
                             <h6>Kim Sun Yong a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>지금 까지 경험해본 호텔중 최고라고 말할수 있어요！</h4>
@@ -891,7 +899,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Giannis Anthetokupo" title="Giannis Anthetokupo">
+                            <img src="#" alt="Giannis Anthetokupo" title="Giannis Anthetokupo">
                             <h6>Giannis Anthetokupo a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>Μοναδικό</h4>
@@ -945,7 +953,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Karl Lagerfield" title="Karl Lagerfield">
+                            <img src="#" alt="Karl Lagerfield" title="Karl Lagerfield">
                             <h6>Karl Lagerfield a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>5 Sterne sind zuwenig....</h4>
@@ -1013,7 +1021,7 @@
 
                     <div class="subReviews">
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Marine Fois" title="Marine Fois">
+                            <img src="#" alt="Marine Fois" title="Marine Fois">
                             <h6>Marine Fois a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Palace de l'excellence</h4>
@@ -1033,7 +1041,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Jason Brown" title="Jason Brown">
+                            <img src="#" alt="Jason Brown" title="Jason Brown">
                             <h6>Jason Brown écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Crème de la crème</h4>
@@ -1080,7 +1088,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Didier Blanc" title="Didier Blanc">
+                            <img src="#" alt="Didier Blanc" title="Didier Blanc">
                             <h6>Didier Blanc a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Un souvenir mémorable pour mon épouse</h4>
@@ -1104,7 +1112,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Monica Bing" title="Monica Bing">
+                            <img src="#" alt="Monica Bing" title="Monica Bing">
                             <h6>Monica Bing a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Truly outstanding hotel</h4>
@@ -1152,7 +1160,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Charlotte Rempling" title="Charlotte Rempling">
+                            <img src="#" alt="Charlotte Rempling" title="Charlotte Rempling">
                             <h6>Charlotte Rempling a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Hôtel de prestige</h4>
@@ -1171,7 +1179,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Esteban Oconne" title="Esteban Oconne">
+                            <img src="#" alt="Esteban Oconne" title="Esteban Oconne">
                             <h6>Esteban Oconne a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>L'excellence dans tous les domaines</h4>
@@ -1189,7 +1197,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Charles Bietry" title="Charles Bietry">
+                            <img src="#" alt="Charles Bietry" title="Charles Bietry">
                             <h6>Charles Bietry a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Fabuleux</h4>
@@ -1209,7 +1217,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Roberta Schmitt" title="Roberta Schmitt">
+                            <img src="#" alt="Roberta Schmitt" title="Roberta Schmitt">
                             <h6>Roberta Schmitt a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Wunderbares Grand Hotel</h4>
@@ -1261,7 +1269,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Corrinne Simon" title="Corrinne Simon">
+                            <img src="#" alt="Corrinne Simon" title="Corrinne Simon">
                             <h6>Corrinne Simon a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Quel service !!</h4>
@@ -1279,7 +1287,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Jessica Moreau" title="Jessica Moreau">
+                            <img src="#" alt="Jessica Moreau" title="Jessica Moreau">
                             <h6>Jessica Moreau a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>L'excellence</h4>
@@ -1303,7 +1311,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Erika Molodov" title="Erika Molodov">
+                            <img src="#" alt="Erika Molodov" title="Erika Molodov">
                             <h6>Erika Molodov a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Незабываемо!</h4>
@@ -1353,7 +1361,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Guillaume Hoareau" title="Guillaume Hoareau">
+                            <img src="#" alt="Guillaume Hoareau" title="Guillaume Hoareau">
                             <h6>Guillaume Hoareau a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Magnifique mieux que le Mandarin Oriental !!! PALACE !!!</h4>
@@ -1369,7 +1377,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Dimitris Smirnov" title="Dimitris Smirnov">
+                            <img src="#" alt="Dimitris Smirnov" title="Dimitris Smirnov">
                             <h6>Dimitris Smirnov a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Для романтиков</h4>
@@ -1413,7 +1421,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Martha Hikins" title="Martha Hikins">
+                            <img src="#" alt="Martha Hikins" title="Martha Hikins">
                             <h6>Martha Hikins a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>What a magical place</h4>
@@ -1459,7 +1467,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Richard Pierre" title="Richard Pierre">
+                            <img src="#" alt="Richard Pierre" title="Richard Pierre">
                             <h6>Richard Pierre a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>Un séjour de rêve dans une ville qui ne dort presque jamais</h4>
@@ -1526,7 +1534,7 @@
 
                     <div class="subReviews">
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Hugo Vincent" title="Hugo Vincent">
+                            <img src="#" alt="Hugo Vincent" title="Hugo Vincent">
                             <h6>Hugo Vincent a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Somptueux</h4>
@@ -1542,7 +1550,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Jordan Clarkson" title="Jordan Clarkson">
+                            <img src="#" alt="Jordan Clarkson" title="Jordan Clarkson">
                             <h6>Jordan Clarkson a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Favorite in Paris</h4>
@@ -1589,7 +1597,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Kevin Roubeau" title="Kevin Roubeau">
+                            <img src="#" alt="Kevin Roubeau" title="Kevin Roubeau">
                             <h6>Kevin Roubeau a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Le temps s'arrête</h4>
@@ -1612,7 +1620,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Magalie Forte" title="Magalie Forte">
+                            <img src="#" alt="Magalie Forte" title="Magalie Forte">
                             <h6>Magalie Forte a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Parfait</h4>
@@ -1629,7 +1637,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Louison Montron" title="Louison Montron">
+                            <img src="#" alt="Louison Montron" title="Louison Montron">
                             <h6>Louison Montron a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Perfection</h4>
@@ -1645,7 +1653,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Rebecca Bryant" title="Rebecca Bryant">
+                            <img src="#" alt="Rebecca Bryant" title="Rebecca Bryant">
                             <h6>Rebecca Bryant a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Excellent Brunch at the Hôtel Chambord</h4>
@@ -1705,7 +1713,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Michel Brun" title="Michel Brun">
+                            <img src="#" alt="Michel Brun" title="Michel Brun">
                             <h6>Michel Brun a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Très bon petit déjeuner</h4>
@@ -1724,7 +1732,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Murielle Vico" title="Murielle Vico">
+                            <img src="#" alt="Murielle Vico" title="Murielle Vico">
                             <h6>Murielle Vico a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Luxe calme et volupté</h4>
@@ -1739,7 +1747,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Marks Wolff" title="Marks Wolff">
+                            <img src="#" alt="Marks Wolff" title="Marks Wolff">
                             <h6>Marks Wolff a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Eine Klasse für sich</h4>
@@ -1784,7 +1792,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Coralie Jean" title="Coralie Jean">
+                            <img src="#" alt="Coralie Jean" title="Coralie Jean">
                             <h6>Coralie Jean a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>L'excellence</h4>
@@ -1802,7 +1810,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Fernando Torres" title="Fernando Torres">
+                            <img src="#" alt="Fernando Torres" title="Fernando Torres">
                             <h6>Fernando Torres a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Hotel espectacular</h4>
@@ -1859,7 +1867,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Louise Bourgoin" title="Louise Bourgoin">
+                            <img src="#" alt="Louise Bourgoin" title="Louise Bourgoin">
                             <h6>Louise Bourgoin a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Excellence</h4>
@@ -1875,7 +1883,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Ronaldo Da Simiento" title="Ronaldo Da Simiento">
+                            <img src="#" alt="Ronaldo Da Simiento" title="Ronaldo Da Simiento">
                             <h6>Ronaldo Da Simiento a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>Muito bom</h4>
@@ -1929,7 +1937,7 @@
 
                     <div class="subReviews">
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Emiline Barreau" title="Emiline Barreau">
+                            <img src="#" alt="Emiline Barreau" title="Emiline Barreau">
                             <h6>Emiline Barreau a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Spa - Soin parfait</h4>
@@ -1952,7 +1960,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Yumy Qwang" title="Yumy Qwang">
+                            <img src="#" alt="Yumy Qwang" title="Yumy Qwang">
                             <h6>Yumy Qwang a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>棒极了！</h4>
@@ -1996,7 +2004,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Agnes Pierre" title="Agnes Pierre">
+                            <img src="#" alt="Agnes Pierre" title="Agnes Pierre">
                             <h6>Agnes Pierre a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Quel souvenir !</h4>
@@ -2012,7 +2020,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Eugénie Luis" title="Eugénie Luis">
+                            <img src="#" alt="Eugénie Luis" title="Eugénie Luis">
                             <h6>Eugénie Luis a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Spa très agréable ...</h4>
@@ -2028,7 +2036,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Monica Oliviera" title="Monica Oliviera">
+                            <img src="#" alt="Monica Oliviera" title="Monica Oliviera">
                             <h6>Monica Oliviera a écrit un avis (janvier 2021)</h6>
                         </div>
                         <h4>Experiência única!</h4>
@@ -2079,7 +2087,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Bénedicte Borne" title="Bénedicte Borne">
+                            <img src="#" alt="Bénedicte Borne" title="Bénedicte Borne">
                             <h6>Bénedicte Borne a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Un monde d'attentions dans un palace mythique</h4>
@@ -2098,7 +2106,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Cédric Longueau" title="Cédric Longueau">
+                            <img src="#" alt="Cédric Longueau" title="Cédric Longueau">
                             <h6>Cédric Longueau a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>L'excellence du savoir-faire français !</h4>
@@ -2118,7 +2126,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Helene Martins" title="Helene Martins">
+                            <img src="#" alt="Helene Martins" title="Helene Martins">
                             <h6>Helene Martins a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Most amazing hotel in Europe</h4>
@@ -2174,7 +2182,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Pierre Morin" title="Pierre Morin">
+                            <img src="#" alt="Pierre Morin" title="Pierre Morin">
                             <h6>Pierre Morin a écrit un avis (février 2021)</h6>
                         </div>
                         <h4>Spa Hôtel Chambord</h4>
@@ -2195,7 +2203,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Mary Harris" title="Mary Harris">
+                            <img src="#" alt="Mary Harris" title="Mary Harris">
                             <h6>Mary Harris a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Beautiful spa</h4>
@@ -2259,7 +2267,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Florence Miso" title="Florence Miso"">
+                            <img src="#" alt="Florence Miso" title="Florence Miso">
                          <h6>Florence Miso" a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Parfait</h4>
@@ -2276,7 +2284,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Alexia Couture" title="Alexia Couture">
+                            <img src="#" alt="Alexia Couture" title="Alexia Couture">
                             <h6>Alexia Couture a écrit un avis (mars 2021)</h6>
                         </div>
                         <h4>Mémorable</h4>
@@ -2291,7 +2299,7 @@
                         <hr>
 
                         <div class="d-flex justify-content-around">
-                            <img src="" alt="Nicolas Anelka" title="Nicolas Anelka">
+                            <img src="#" alt="Nicolas Anelka" title="Nicolas Anelka">
                             <h6>Nicolas Anelka a écrit un avis (avril 2021)</h6>
                         </div>
                         <h4>Spa Hôtel Chambord</h4>
@@ -2385,7 +2393,7 @@
     <!-- bouton de recherche Jeffrey -->
     <div id="jeffrey" class="d-block align-items-center nav-item">
         <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
-        <form action="#" id="search">
+        <form action="#" id="search" class="cache">
             <input type="search" name="cherche">
             <button type='submit' class="check"></button>
         </form>
@@ -2422,95 +2430,105 @@
     <!-- fin bouton partage -->
 
 
-    <!-- Début pied de page -->
-    <hr>
-    <footer id="foot" class="container-fluid">
-        <!-- Récapitulatif -->
-        <div class="d-flex justify-content-around">
-            <div id="footChambre" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Chambres</h6>
-                <a href="/chambres.html#classique">Classique</a><span> | </span>
-                <a href="/chambres.html#confort">Confort</a><span> | </span>
-                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
-                <a href="/chambres.html#suite">Suites</a><span> | </span>
-            </div>
-            <div id="footRestaurant" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Restaurant</h6>
-                <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
-                <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
-                <a href="/restaurant.html#cave">Cave</a><span> | </span>
-            </div>
-            <div id="footSpa" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Spa</h6>
-                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
-                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
-                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
-                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
-                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
-            </div>
-            <div id="footHotel" class="col-12 col-md-3 text-center">
-                <h6 class="text-center">Hôtel</h6>
-                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
-                <a href="/hotel.html#acces">Acces</a><span> | </span>
-                <a href="/hotel.html#evenements">Evenements</a><span> | </span>
-                <a href="/hotel.html#presse">Presse</a><span> | </span>
-                <a href="/hotel.html#actualites">Actualités</a><span> | </span>
-            </div>
+     <!-- Début pied de page -->
+     <hr>
+     <footer id="foot" class="container-fluid">
+         <!-- Récapitulatif -->
+         <div class="row">
+             <div id="footChambre" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Chambres</h6>
+                 <a href="/chambres.html#classique">Classique</a><span> | </span>
+                 <a href="/chambres.html#confort">Confort</a><span> | </span>
+                 <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                 <a href="/chambres.html#suite">Suites</a><span> | </span>
+             </div>
+             <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Restaurant</h6>
+                 <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
+                 <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
+                 <a href="/restaurant.html#cave">Cave</a><span> | </span>
+             </div>
+             <div id="footSpa" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Spa</h6>
+                 <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                 <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                 <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                 <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                 <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+             </div>
+             <div id="footHotel" class="col-12 col-md-3 text-center">
+                 <h6 class="text-center">Hôtel</h6>
+                 <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                 <a href="/hotel.html#acces">Acces</a><span> | </span>
+                 <a href="/evenements.html#evenements">Evenements</a><span> | </span>
+                 <a href="/evenements.html#presse">Presse</a><span> | </span>
+                 <a href="/evenements.html#actus">Actualités</a><span> | </span>
+             </div>
+         </div>
+         <!-- Fin Récapitulatif -->
+         <hr />
+         <!-- Début lien divers CVG...NewsLetter... -->
+         <div id="liensDivers" class="row mb-5">
+             <div id="recrutement" class="col-6 col-md text-center">
+                 <a href="/recrutement.html">Recrutement</a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/mention.html"> Mention Legales</a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/cvg.html"> CGV </a>
+             </div>
+             <!-- Modal NewsLetter -->
+             <div class="col-6 col-md text-center">
+                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                     Newsletter </a>
+                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
+                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                 </button>
+                             </div>
+                             <div class="modal-body">
+                                 <form action="#">
+                                     <label for="emailId">Votre Email</label>
+                                     <input type="email" name="mail" id="emailId">
+                                     <button type="submit" class="btn btn-secondary">Inscription</button>
+                                 </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <p>Vous pourrez vous déinscrire à tout moment</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Fin Modal NewsLetter -->
+             <div class="col-6 col-md text-center">
+                 <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+             </div>
+ 
+             <div class="col-6 col-md text-center">
+                 <a href="/avis.html"> Avis </a>
+             </div>
+             <div class="col-6 col-md text-center">
+                 <a href="/PlanDuSite.html"> Plan Du Site </a>
+             </div>
+         </div>
+         <!-- fin lien divers CVG...NewsLetter... -->
+         <div class="text-center m-3">
+            &copy;
+            <script>new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());</script>, Baptiste
+            Viomesnil & Sylvain Campos.
         </div>
-        <!-- Fin Récapitulatif -->
-        <hr />
-        <!-- Début lien divers CVG...NewsLetter... -->
-        <div id="liensDivers" class="row mb-5">
-            <div id="recrutement" class="col-6 col-md text-center">
-                <a href="/recrutement.html">Recrutement</a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/mention.html"> Mention Legales</a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/cvg.html"> CGV </a>
-            </div>
-            <!-- Modal NewsLetter -->
-            <div class="col-6 col-md text-center">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
-                    Newsletter </a>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="#">
-                                    <label for="emailId">Votre Email</label>
-                                    <input type="email" name="mail" id="emailId">
-                                    <button type="submit" class="btn btn-secondary">Inscription</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <p>Vous pourrez vous déinscrire à tout moment</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin Modal NewsLetter -->
-            <div class="col-6 col-md text-center">
-                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
-            </div>
-
-            <div class="col-6 col-md text-center">
-                <a href="/avis.html"> Avis </a>
-            </div>
-        </div>
-        <!-- fin lien divers CVG...NewsLetter... -->
     </footer>
-    <!-- Fin pied de page -->
+    
+     <!-- Fin pied de page -->
+ 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -2518,6 +2536,26 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("a[href='" + window.location.hash + "']").trigger('click');
+   
+  
+});
+    </script>
+    <!-- script google translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, 'google_translate_element2'); }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+    <script type="text/javascript">
+
+        eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+
+    </script>
 </body>
 
 </html>

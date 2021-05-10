@@ -27,6 +27,21 @@ ul{
 .cache{
   display: none;
 }
+.bgInfo{
+  background-color: var(--vin);
+  opacity:0.8;
+  border-radius: 15px;
+}
+p{
+  line-height: 2rem;
+  
+}
+iframe{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--lienshover);
+  box-shadow: 0 4px 8px var(--vin);
+}
 /* modal newsletter */
 .modal-content{
   color: var(--lienshover);
@@ -39,6 +54,13 @@ ul{
 .bouton{
   padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);
 }
+.boutoncar{
+  padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255)!important; background-color: rgba(95, 34, 49,0.6);
+}
+#reservation a:hover{
+  background-color: var(--liens)!important;
+}
+
 /* Reglages Navigation */
 header{
   z-index: -1;
@@ -86,6 +108,56 @@ header{
     box-shadow: 0 0 0 0.25rem #eae5e7;
 }
 /* Fin réglages navigation //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Réglages page hotel ////////////////////////////////////////////////////////*/
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: tracking-in-expand 3s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* animation voiturie */
+#voiturier{
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: -200px 40px 0px rgba(80, 3, 3, 0.3);
+  background-color: var(--lienshover);
+  width: 500px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   { left: -600px; top:0px;}
+  25%  { left: 00px; top:0px;}
+  50%  { left: 00px; top:00px;}
+  75%  { left: 00px; top:00px;}
+  100% { left: 1500px; top:0px;}
+}
 /* Réglages de la page chambre */
 /*Chambres Classique */
 .roomClassic{
@@ -137,6 +209,18 @@ header{
   background-color: #eae5e7;
 }
 /* Fin réglages SPA ///////////////////////////////////////////////////////////////////////// */
+
+/*réglage ACTU et EVENEMENTS /////////////////////*/
+
+
+
+.hotelNews {
+  border: 1px solid var(--vin);
+  box-shadow: 0 3px 6px var(--liens);
+}
+
+/*Fin régales ACTU et EVENEMENTS ///////////////////*/
+
 /* réglages Main */
 a{
     text-decoration: none;
@@ -158,7 +242,7 @@ h1{
     border-radius: 16px;
     width: 350px;
     height: 210px;
-    background: url(/img/spaxs.jpg);
+    background: url(../img/spaxs.jpg);
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 30px var(--vin);
@@ -183,7 +267,7 @@ h1{
   .card1 .img span {
     width: 25%;
     height: 100%;
-    background: url(/img/spaxs.jpg);
+    background: url(../img/spaxs.jpg);
     transition: 0.5s;
   }
   .card1 .img span:nth-child(1) {
@@ -231,7 +315,7 @@ h1{
     border-radius: 16px;
     width: 350px;
     height: 210px;
-    background: url(/img/degustationxs.jpg);
+    background: url(../img/degustationxs.jpg);
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 30px var(--vin);
@@ -256,7 +340,7 @@ h1{
   .card2 .img span {
     width: 25%;
     height: 100%;
-    background: url(/img/degustationxs.jpg);
+    background: url(../img/degustationxs.jpg);
     transition: 0.5s;
   }
   .card2 .img span:nth-child(1) {
@@ -303,7 +387,7 @@ h1{
     border-radius: 16px;
     width: 350px;
     height: 210px;
-    background: url(/img/chambreluxexs.jpg);
+    background: url(../img/chambreluxexs.jpg);
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 30px var(--vin);
@@ -328,7 +412,7 @@ h1{
   .card3 .img span {
     width: 25%;
     height: 100%;
-    background: url(/img/chambreluxexs.jpg);
+    background: url(../img/chambreluxexs.jpg);
     transition: 0.5s;
   }
   .card3 .img span:nth-child(1) {
@@ -375,7 +459,7 @@ h1{
     border-radius: 16px;
     width: 350px;
     height: 210px;
-    background: url(/img/restoxs.jpg);
+    background: url(../img/restoxs.jpg);
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 30px var(--vin);
@@ -400,7 +484,7 @@ h1{
   .card4 .img span {
     width: 25%;
     height: 100%;
-    background: url(/img/restoxs.jpg);
+    background: url(../img/restoxs.jpg);
     transition: 0.5s;
   }
   .card4 .img span:nth-child(1) {
@@ -530,7 +614,45 @@ h1{
       color: #1da1f2;
     }
 /* Fin Bouton Partage reseau sociaux  ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* Modi datepicker */
+
+/* google traduction */
+a.gflag {
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 1px 0;
+  background-repeat: no-repeat;
+  background-image: url(//gtranslate.net/flags/16.png);
+}
+
+a.gflag img {
+  border: 0;
+}
+
+a.gflag:hover {
+  background-image: url(//gtranslate.net/flags/16a.png);
+}
+
+#goog-gt-tt {
+  display: none !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+#google_translate_element2 {
+  display: none !important;
+}
+
+/* fin google traduction */
 
 
 /* Bouton Recherche Jeffrey//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -543,7 +665,7 @@ h1{
   background: var(--vin);
   height: 20px;
   width: 20px;
-  background-image: url('/img/check.svg');
+  background-image: url('../img/check.svg');
 }
 
 
@@ -553,6 +675,7 @@ h1{
 #acces{
   width: 400px;
 }
+
  }
 
 /*// Small devices (landscape phones, less than 768px)*/
@@ -560,6 +683,7 @@ h1{
   #acces{
     width: 500px;
   } 
+  
  }
 
 /*// Medium devices (tablets, less than 992px)*/
@@ -567,6 +691,7 @@ h1{
   #acces{
     width: 800px;
   }
+  
  }
 
 /*// Large devices (desktops, less than 1200px)*/
@@ -574,12 +699,14 @@ h1{
   #acces{
     width: 1100px;
   } 
+  
+  
  /* animation photo accueil */
  .card1 {
   border-radius: 16px;
   width: 500px;
   height: 300px;
-  background: url(/img/spa.jpg);
+  background: url(../img/spa.jpg);
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 30px var(--vin);
@@ -604,7 +731,7 @@ h1{
 .card1 .img span {
   width: 25%;
   height: 100%;
-  background: url(/img/spa.jpg);
+  background: url(../img/spa.jpg);
   transition: 0.5s;
 }
 .card1 .img span:nth-child(1) {
@@ -652,7 +779,7 @@ h1{
   border-radius: 16px;
   width: 500px;
   height: 300px;
-  background: url(/img/degustation.jpg);
+  background: url(../img/degustation.jpg);
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 30px var(--vin);
@@ -677,7 +804,7 @@ h1{
 .card2 .img span {
   width: 25%;
   height: 100%;
-  background: url(/img/degustation.jpg);
+  background: url(../img/degustation.jpg);
   transition: 0.5s;
 }
 .card2 .img span:nth-child(1) {
@@ -724,7 +851,7 @@ h1{
   border-radius: 16px;
   width: 500px;
   height: 300px;
-  background: url(/img/chambreluxe.jpg);
+  background: url(../img/chambreluxe.jpg);
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 30px var(--vin);
@@ -749,7 +876,7 @@ h1{
 .card3 .img span {
   width: 25%;
   height: 100%;
-  background: url(/img/chambreluxe.jpg);
+  background: url(../img/chambreluxe.jpg);
   transition: 0.5s;
 }
 .card3 .img span:nth-child(1) {
@@ -796,7 +923,7 @@ h1{
   border-radius: 16px;
   width: 500px;
   height: 300px;
-  background: url(/img/resto.jpg);
+  background: url(../img/resto.jpg);
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 30px var(--vin);
@@ -821,7 +948,7 @@ h1{
 .card4 .img span {
   width: 25%;
   height: 100%;
-  background: url(/img/resto.jpg);
+  background: url(../img/resto.jpg);
   transition: 0.5s;
 }
 .card4 .img span:nth-child(1) {
@@ -863,11 +990,12 @@ h1{
   height: 100%;
   transform: translateY(100%);
 }
+}
 /* fin card restaurant */
 /* fin animation photo accueil ////////////////////////////////////////////////////////////////////////////////////////////*/  
   
   
-}
+
 
 /*// X-Large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {

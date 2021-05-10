@@ -1,0 +1,5 @@
+# robots.txt généré par Auto-Ref.org
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://sylvain-campos.pagesperso-orange.fr/sitemap.xlm

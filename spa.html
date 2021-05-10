@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/jquery-ui.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Hotel Chambord</title>
+    <title>Le Spa</title>
 </head>
 
 <body>
@@ -37,7 +37,8 @@
                 <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
-                    <li><a href="/restaurant.html#gastronomique" class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="/restaurant.html#gastronomique"
+                            class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
                     <li><a href="/restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
                     <li><a href="/restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
                 </ul>
@@ -57,7 +58,8 @@
                 <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
                 <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
-                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a></li>
+                    <li><a href="/hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
+                    </li>
                     <li><a href="/hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
                 </ul>
             </li>
@@ -69,33 +71,41 @@
             </li>
         </ul>
     </nav>
-      <!-- Debut Header--------------------------------------------------------------------------------------------------- -->
-      <header class="sticky-top">
-            <div id="qfc" class="p-5 d-flex justify-content-around align-items-center" style="background-color:rgb(95, 34, 49, 0.8);">
-                <img src="/img/logo.png" alt="logo" style="width: 50px;">
-                <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
-                <!-- bouton reserver -->
-                <div id="reservation" class="p-2">
-                    <a href="/reservation.html"
-                        style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
-                </div>
-                <!-- fin bouton reserver -->
-                <div id="panier" class="p-2">
-                    <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
-                </div>
-                <div id="flag" class="p-2">
-                    <img src="img/france.png" style="width: 20px;" alt="france" id="fr"
-                        onmouseover="this.style.cursor='pointer'">
-                    <img src="img/gb.png" style="width:20px;" alt="gb" id="en"
-                        onmouseover="this.style.cursor='pointer'">
-                </div>
-        
-        <!-- Menu Fixe reservation panier langue -->
-        
+    <!-- Debut Header  -->
+    <header class="sticky-top">
+        <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
+            style="background-color:rgb(95, 34, 49, 0.8);">
+            <img src="/img/logo.png" alt="logo" style="width: 50px;">
+            <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+            <!-- bouton reserver -->
+            <div id="reservation" class="p-2">
+                <a href="/reservation.html"
+                    style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+            </div>
+            <!-- fin bouton reserver -->
+            <div id="panier" class="p-2">
+                <a href="/panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+            </div>
+            <div id="flag" class="p-2">
+               <!-- GTranslate: https://gtranslate.io/ -->
+              <a href="#" onclick="doGTranslate('fr|en');return false;" title="English" class="gflag nturl"
+              style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                  width="16" alt="English" /></a><a href="#" onclick="doGTranslate('fr|fr');return false;"
+              title="French" class="gflag nturl" style="background-position:-200px -100px;"><img
+                  src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a>
+
+         
+
+          <div id="google_translate_element2"></div>
+          
+            </div>
+
+            <!-- Menu Fixe reservation panier langue -->
+
         </div>
-        <!-- Fin Menu Fixe--------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Fin Menu Fixe   -->
     </header>
-<!-- Fin Header---------------------------------------------------------------------------------------------------------------------------------- -->     
+    <!-- Fin Header   -->
     <main class="p-4 mainContent" id="mainContent">
         <img src="/img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
         <div id="principale" class="row text-center justify-content-around">
@@ -111,8 +121,8 @@
             </article>
             <article class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-4 m-5 ">
-                    <img id="massageDuo" src="/img/massageDuo.jpg" alt="Massage Duo"
-                        style="width:100%;max-width:300px" data-bs-toggle="modal" data-bs-target="#modalDuo">
+                    <img id="massageDuo" src="/img/massageDuo.jpg" alt="Massage Duo" style="width:100%;max-width:300px"
+                        data-bs-toggle="modal" data-bs-target="#modalDuo">
                 </div>
                 <div class="col-12 col-lg-2 mb-5">
                     <a href="/img/CARTE_DES_SOINS_SPA_2020.pdf" class="bouton">Télécharger la carte des soins</a>
@@ -122,13 +132,14 @@
                         style="width:100%;max-width:300px" data-bs-toggle="modal" data-bs-target="#modalSolo">
                 </div>
                 <!-- Modal 1 -->
-                <div class="modal fade" id="modalDuo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="labelModalDuo"
-                    aria-hidden="true">
+                <div class="modal fade" id="modalDuo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="labelModalDuo" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Massage en duo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <div><img src="/img/massageDuo.jpg" alt="test" style="width: 100%;"></div>
@@ -140,13 +151,14 @@
                     </div>
                 </div>
                 <!-- Modal 2 -->
-                <div class="modal fade" id="modalSolo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="modalSolo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Massage en solo</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <div><img src="/img/massageSolo.jpg" alt="test" style="width: 100%;"></div>
@@ -159,147 +171,158 @@
                 </div>
             </article>
             <!-- <div class="row m-5 justify-content-between"> -->
-                <!-- --------------------------------Soin Détente----------------------------------------------------- -->
-                <article id="#detente" class="row align-items-center justify-content-center my-5">
-                    <div class="card bgInfo col-12 col-md-3 p-3" style="width: 35rem;">
-                        <img src="/img/hamam6palces.jpg" class="card-img-top" alt="spa 5 places">
-                        <div class="card-body">
+            <!-- --------------------------------Soin Détente-----------------------------------  -->
+            <article id="#detente" class="row align-items-center justify-content-center my-5">
+                <div class="card  col-12 col-md-3 p-3" style="width: 35rem;">
+                    <img src="/img/hamam6palces.jpg" class="card-img-top" alt="spa 5 places">
+                    <div class="card-body">
                         <h5 class="card-title">HAMMAM</h5>
                         <p class="card-text">La vapeur du hammam et l’humidité combinée à la chaleur permet de
                             nettoyer en profondeur la peau, éliminant les effets d'une vie quotidienne qui nous
                             exposent à des polluants parfois invisibles. Les bienfaits des bains de vapeur sont
                             multiples : détente des muscles, soulagement des courbatures et élimination des
                             toxines.</p>
-                            </div>
                     </div>
-                    
-                    <div  class="col-12 col-md-3 p-3">
-                        <h2>Soin Détente 1h30</h2>
-                        <ul>
-                            <li>Séance de Hammam</li>
-                            <li>Massage du monde au Choix</li>
-                            <li>84 € en Solo</li>
-                            <li>160 € en Duo</li>
-                        </ul>
-                    </div>
-                </article>
+                </div>
 
-                <hr>
-                <!-- ---------------------------------------------Soin Découverte------------------------------------------------- -->
-                <article id="decouverte" class="row align-items-center justify-content-center my-5">
-                    <div class="col-12 col-md-3 p-3">
-                        <h2>Soin Découverte 2h30</h2>
-                        <ul>
-                            <li>Séance Spa</li>
-                            <li>Massage du monde au Choix</li>
-                            <li>Soin des mains à l'orientale</li>
-                            <li>120 € en Solo</li>
-                            <li>210 € en Duo</li>
-                        </ul>
-                    </div>
-                    <div class="card bgInfo col-12 col-md-3 p-3" style="width: 35rem;">
-                        <img src="/img/spa5places.jpg" class="card-img-top" alt="spa 5 places">
-                        <div class="card-body">
+                <div class="col-12 col-md-3 p-3">
+                    <h2>Soin Détente 1h30</h2>
+                    <ul>
+                        <li>Séance de Hammam</li>
+                        <li>Massage du monde au Choix</li>
+                        <li>84 € en Solo</li>
+                        <li>160 € en Duo</li>
+                    </ul>
+                </div>
+            </article>
+
+            <hr>
+            <!-- ---------------------------------------------Soin Découverte-------------------------------  -->
+            <article id="decouverte" class="row align-items-center justify-content-center my-5">
+                <div class="col-12 col-md-3 p-3">
+                    <h2>Soin Découverte 2h30</h2>
+                    <ul>
+                        <li>Séance Spa</li>
+                        <li>Massage du monde au Choix</li>
+                        <li>Soin des mains à l'orientale</li>
+                        <li>120 € en Solo</li>
+                        <li>210 € en Duo</li>
+                    </ul>
+                </div>
+                <div class="card  col-12 col-md-3 p-3" style="width: 35rem;">
+                    <img src="/img/spa5places.jpg" class="card-img-top" alt="spa 5 places">
+                    <div class="card-body">
                         <h5 class="card-title">SPA</h5><br>
-                        <p class="card-text ">Le spa procure l'hydromassage complet pour un moment de bien-être encore plus délassant. L’immersion dans cette eau chaude à remous                             procure
-                        une sensation immédiate de détente. Cet effet relaxant aide à lutter contre le stress, l’anxiété et améliore la qualité de votre sommeil.</p>
-                        </div>
+                        <p class="card-text ">Le spa procure l'hydromassage complet pour un moment de bien-être encore
+                            plus délassant. L’immersion dans cette eau chaude à remous procure
+                            une sensation immédiate de détente. Cet effet relaxant aide à lutter contre le stress,
+                            l’anxiété et améliore la qualité de votre sommeil.</p>
                     </div>
-                </article>
-                <hr>
-                <!-- -----------------------------------------------Soin Relaxant----------------------------------------------- -->
-                <article id="relaxant" class="row align-items-center justify-content-center my-5">
-                    <div class="card bgInfo col-12 col-md-3 p-3" style="width: 35rem;">
-                        <img src="/img/sauna6places.jpg" class="card-img-top" alt="sauna 6 places">
-                        <div class="card-body">
-                            <h5 class="card-title">SAUNA (6 PLACES)</h5>
-                            <p class="card-text">Ce rituel bien-être originaire de Finlande est une véritable source
+                </div>
+            </article>
+            <hr>
+            <!-- -----------------------------------------------Soin Relaxant-----------------------------  -->
+            <article id="relaxant" class="row align-items-center justify-content-center my-5">
+                <div class="card  col-12 col-md-3 p-3" style="width: 35rem;">
+                    <img src="/img/sauna6places.jpg" class="card-img-top" alt="sauna 6 places">
+                    <div class="card-body">
+                        <h5 class="card-title">SAUNA (6 PLACES)</h5>
+                        <p class="card-text">Ce rituel bien-être originaire de Finlande est une véritable source
                             de relaxation. Ce bain de vapeur est particulièrement bénéfique pour la santé. Les
                             bienfaits du sauna : il soulage les douleurs musculaires, stimule la circulation
                             sanguine, nettoie la peau, réduit les risques de maladies cardiovasculaires.</p>
-                        </div>
-                        
                     </div>
-                    <div class="col-12 col-md-3 p-3">
-                        <h2>Soin Relaxant 3h30</h2>
-                        <ul>
-                            <li>Séance Sauna</li>
-                            <li>Massage du monde au Choix</li>
-                            <li> Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>170 € en Solo</li>
-                            <li>300 € en Duo</li>
-                        </ul>
-                    </div>
-                </article>
-                <hr>
-                <!-- ----------------------------------------Soin Plaisir---------------------------------------------------------- -->
-                <article id="plaisir" class="row align-items-center justify-content-center my-5">
-                    <div class="col-12 col-md-3 p-3">
-                        <h2>Soin Plaisir Demi-journée</h2>
-                        <ul>
-                            <li>Séance de Sport</li>
-                            <li>Massage du monde au Choix</li>
-                            <li>Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>Séance de relaxation balancelle</li>
-                            <li>210 € en Solo</li>
-                            <li>400 € en Duo</li>
-                        </ul>
-                    </div>
-                    <div class="card bgInfo col-12 col-md-3 p-3" style="width: 35rem;">
-                        <img src="/img/salledesport.jpg" class="card-img-top" alt="salle de sport">
-                        <div class="card-body">
-                            <h5 class="card-title">CENTRE DE REMISE EN FORME – FITNESS</h5>
-                            <p class="card-text">Le SPA met à votre disposition une salle de remise en forme pour
+
+                </div>
+                <div class="col-12 col-md-3 p-3">
+                    <h2>Soin Relaxant 3h30</h2>
+                    <ul>
+                        <li>Séance Sauna</li>
+                        <li>Massage du monde au Choix</li>
+                        <li> Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>170 € en Solo</li>
+                        <li>300 € en Duo</li>
+                    </ul>
+                </div>
+            </article>
+            <hr>
+            <!-- ----------------------------------------Soin Plaisir----------------------------------------  -->
+            <article id="plaisir" class="row align-items-center justify-content-center my-5">
+                <div class="col-12 col-md-3 p-3">
+                    <h2>Soin Plaisir Demi-journée</h2>
+                    <ul>
+                        <li>Séance de Sport</li>
+                        <li>Massage du monde au Choix</li>
+                        <li>Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>Séance de relaxation balancelle</li>
+                        <li>210 € en Solo</li>
+                        <li>400 € en Duo</li>
+                    </ul>
+                </div>
+                <div class="card  col-12 col-md-3 p-3" style="width: 35rem;">
+                    <img src="/img/salledesport.jpg" class="card-img-top" alt="salle de sport">
+                    <div class="card-body">
+                        <h5 class="card-title">CENTRE DE REMISE EN FORME – FITNESS</h5>
+                        <p class="card-text">Le SPA met à votre disposition une salle de remise en forme pour
                             prendre soin de votre corps et vous évader. Équipé d’appareils de cardio-training,
                             l'espace vous permet de profiter de vélos debout, vélo elliptique, tapis de
                             course,rameur et haltères de musculation. Tous nos appareils dernière génération
                             Technogym permettent d’améliorer votre vitesse, votre puissance, votre agilité et
                             votre
                             endurance.</p>
-                        </div>
                     </div>
-                </article>
-                <hr>
-                <!-- ---------------------------------------------Soin Evasion-------------------------------------------- -->
-                <article id="evasion" class="row align-items-center justify-content-center my-5">
-                    <div class="card bgInfo col-12 col-md-3 p-3" style="width: 35rem;">
-                        <img src="/img/fontaineglace.jpg" class="card-img-top" alt="fontaine à glace">
-                        <div class="card-body">
-                            <h5 class="card-title">FONTAINE À GLACE</h5>
-                            <p class="card-text">La fontaine revigorante est un complément thérapeutique aux soins
+                </div>
+            </article>
+            <hr>
+            <!-- ---------------------------------------------Soin Evasion--------------------------  -->
+            <article id="evasion" class="row align-items-center justify-content-center my-5">
+                <div class="card  col-12 col-md-3 p-3" style="width: 35rem;">
+                    <img src="/img/fontaineglace.jpg" class="card-img-top" alt="fontaine à glace">
+                    <div class="card-body">
+                        <h5 class="card-title">FONTAINE À GLACE</h5>
+                        <p class="card-text">La fontaine revigorante est un complément thérapeutique aux soins
                             traditionnels qui permet d’offrir au corps un bain ermique après un passage en
                             espace
                             chaud. La fontaine de glace constitue une étape essentielle au réveil du corps qui
                             permet de vitaliser et raffermir votre peau pour compléter des séances de sauna ou
                             de
                             hammam et en optimiser les effets.</p>
-                        </div>   
                     </div>
-                    <div class="col-12 col-md-3 p-3">
-                        <h2>Soin Evasion Journée</h2>
-                        <ul>
-                            <li>Séance de Sport</li>
-                            <li>Hammam</li>
-                            <li>Massage du monde au Choix</li>
-                            <li>Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>Séance d'eye-bar ou de ceinture massage yakha</li>
-                            <li>Pause gourmande</li>
-                            <li>Gommage du corps (au choix parmi tous nos gommages du monde)</li>
-                            <li>Séance de relaxation balancelle</li>
-                            <li>Sauna</li>
-                            <li>Fontaine à Glace</li>
-                            <li>430 € en Solo</li>
-                            <li>810 € en Duo</li>
-                        </ul>
-                    </div>
-                    
-                </article>
+                </div>
+                <div class="col-12 col-md-3 p-3">
+                    <h2>Soin Evasion Journée</h2>
+                    <ul>
+                        <li>Séance de Sport</li>
+                        <li>Hammam</li>
+                        <li>Massage du monde au Choix</li>
+                        <li>Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>Séance d'eye-bar ou de ceinture massage yakha</li>
+                        <li>Pause gourmande</li>
+                        <li>Gommage du corps (au choix parmi tous nos gommages du monde)</li>
+                        <li>Séance de relaxation balancelle</li>
+                        <li>Sauna</li>
+                        <li>Fontaine à Glace</li>
+                        <li>430 € en Solo</li>
+                        <li>810 € en Duo</li>
+                    </ul>
+                </div>
+
+            </article>
         </div>
-    
+
     </main>
     <!-- Fin principale -->
+    <!-- bouton de recherche Jeffrey -->
+    <div id="jeffrey" class="d-block align-items-center nav-item">
+        <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
+        <form action="#" id="search" class="cache">
+            <input type="search" name="cherche">
+            <button type='submit' class="check"></button>
+        </form>
+    </div>
+    <!-- fin bouton de recherche Jeffrey -->
 
     <!-- bouton de partage -->
     <div class="box">
@@ -384,8 +407,8 @@
             <div class="col-6 col-md text-center">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
                     Newsletter </a>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -417,7 +440,13 @@
             </div>
         </div>
         <!-- fin lien divers CVG...NewsLetter... -->
+        <div class="text-center m-3">
+            &copy;
+            <script>new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());</script>, Baptiste
+            Viomesnil & Sylvain Campos.
+        </div>
     </footer>
+    
     <!-- Fin pied de page -->
 
 
@@ -426,6 +455,686 @@
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+    <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un mariage ou encore mieux un anniversaire de mariage, un voyage d'affaire, ou de découverte de paris, toutes les occasion sont bonnes pour organiser votre un évènement à l'hôtel Chambord">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Evenements et presse</title>
+</head>
+
+<body>
+
+    <!-- Slide Bar de Navigation -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="#" class="navbard-brand text-light mt-5">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt5 w-100">
+            <li class="nav-item w-100">
+                <a href="index.html" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="chambreDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Chambres</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="chambreDropdown">
+                    <li><a href="chambres.html#classique" class="dropdown-item text-light pl-4 p-2">Classique</a></li>
+                    <li><a href="chambres.html#confort" class="dropdown-item text-light pl-4 p-2">Confort</a></li>
+                    <li><a href="chambres.html#deluxe" class="dropdown-item text-light pl-4 p-2">Deluxe</a></li>
+                    <li><a href="chambres.html#suite" class="dropdown-item text-light pl-4 p-2">Suite</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="restaurantDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Restaurant</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="restaurantDropdown">
+                    <li><a href="restaurant.html#gastronomique"
+                            class="dropdown-item text-light pl-4 p-2">Gastronomique</a></li>
+                    <li><a href="restaurant.html#bistro" class="dropdown-item text-light pl-4 p-2">Bistro</a></li>
+                    <li><a href="restaurant.html#cave" class="dropdown-item text-light pl-4 p-2">Cave</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="spaDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Spa</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="spa.html#detente" class="dropdown-item text-light pl-4 p-2">Détente</a></li>
+                    <li><a href="spa.html#decouverte" class="dropdown-item text-light pl-4 p-2">Découverte</a></li>
+                    <li><a href="spa.html#relaxant" class="dropdown-item text-light pl-4 p-2">Relaxant</a></li>
+                    <li><a href="spa.html#plaisir" class="dropdown-item text-light pl-4 p-2">Plaisir</a></li>
+                    <li><a href="spa.html#evasion" class="dropdown-item text-light pl-4 p-2">Evasion</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link text-light pl-4 dropdown-toggle" id="hotelDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Hotel</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="spaDropdown">
+                    <li><a href="hotel.html#presentation" class="dropdown-item text-light pl-4 p-2">Présentation</a>
+                    </li>
+                    <li><a href="hotel.html#acces" class="dropdown-item text-light pl-4 p-2">Accés</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="evenements.html" class="nav-link text-light pl-4">Evènements et presse</a>
+            </li>
+            <li class="nav-item w-100">
+                <a href="contact.html" class="nav-link text-light pl-4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Debut Header  -->
+    <header class="sticky-top">
+        <div id="qfc" class="p-5 d-flex justify-content-around align-items-center"
+            style="background-color:rgb(95, 34, 49, 0.8);">
+            <img src="img/logo.png" alt="logo" style="width: 50px;">
+            <h1>Hôtel Chambord <sup><span id="etoile">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></sup></h1>
+            <!-- bouton reserver -->
+            <div id="reservation" class="p-2">
+                <a href="reservation.html"
+                    style="padding: 8px 13px; font-family: 'Roboto Slab', sans-serif; font-size: 21px; font-weight: normal; text-decoration: none; text-align: center; display: table-cell; vertical-align: middle; border-radius: 25px; color: rgb(255, 255, 255); background-color: rgb(95, 34, 49);">Réserver</a>
+            </div>
+            <!-- fin bouton reserver -->
+            <div id="panier" class="p-2">
+                <a href="panier.html"><img src="img/panier.svg" style="width:50px;" alt="panier"></a>
+            </div>
+            <div id="flag" class="p-2">
+                <!-- GTranslate: https://gtranslate.io/ -->
+              <a href="#" onclick="doGTranslate('fr|en');return false;" title="English" class="gflag nturl"
+              style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                  width="16" alt="English" /></a><a href="#" onclick="doGTranslate('fr|fr');return false;"
+              title="French" class="gflag nturl" style="background-position:-200px -100px;"><img
+                  src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a>
+
+         
+
+          <div id="google_translate_element2"></div>
+          
+            </div>
+
+            <!-- Menu Fixe reservation panier langue -->
+
+        </div>
+        <!-- Fin Menu Fixe   -->
+    </header>
+    <!-- Fin Header   -->
+    
+    <main class="p-4 mainContent" id="mainContent">
+        <img src="img/accueil.svg" alt="accueil" class="btn my-5 p-1" id="menu-btn" title="Menu">
+        <div id="principale" class="row text-center justify-content-around">
+            <!-- Entete du main a garder dans toutes les pages -->
+            <article>
+                <h1 class="text-center my-5" id="evenements">Revivez les évènements de l'hôtel</h1>
+                <hr>
+                <h4 class="text-center my-5">Découvrez un lieu unique pour tous vos évènements d'exception</h4>
+                <div class="text-center p-5 m-5 ">
+                    <p>"Paris est une fête". En son temps, Hemingway était déjà convaincu du potentiel exceptionnel de
+                        la capitale française. Plus de cinquante ans plus tard, Paris est toujours autant plébiscitée
+                        par les musiciens, les écrivains, les artistes, les penseurs et les rêveurs. Et par les
+                        entreprises. La ville lumière est le lieu idéal pour organiser un événement quel qu'il soit.
+                        Séminaire professionnel, mariage, anniversaire : tout est possible à Paris. Pour profiter
+                        pleinement des charmes de la capitale tout en bénéficiant d'un endroit sublime où séjourner,
+                        réservez sans plus attendre une chambre au centre de Paris. En particulier, dans un hôtel 5
+                        étoiles au cœur du 1er arrondissement pour organiser des événements inoubliables. Une fois
+                        installé dans votre chambre spacieuse, vous voilà prêt à vivre un moment intense qui vous
+                        laissera des impressions mémorables.</p>
+                </div>
+
+
+                <hr>
+                <h4 class="text-center my-5">Organisez votre événement à Hôtel Chambord</h4>
+                <div class="container row px-5 my-5 align-items-center offset-2">
+
+                    <div class=" col-12 col-md-6  ">
+                        <div class="  text-justify  ">
+                            <p>Hôtel Chambord est un excellent hôtel parisien, situé sur l'Avenue Montaigne, il jouit
+                                d'un environnement idyllique dans le 1er arrondissement entre le Palais de Tokyo et Les
+                                Champs Elysées. Choisissez cet hôtel de luxe situé dans le 1er arrondissement pour
+                                organiser des événements d'exception.</p>
+                            <p>En l'espace de trente ans, plus de 100 films ont été tournés cet établissement
+                                légendaire, signe de sa nature tout à fait exceptionnelle. Que vous ayez prévu un
+                                mariage, des retrouvailles entre amis ou un séminaire d'entreprise, Hôtel Chambord
+                                répondra à vos besoins. Ses 99 chambres au design classique peuvent accueillir un grand
+                                nombre d'invités. Certaines d'entre elles offrent même une vue inspirante sur le petit
+                                jardin intérieur.</p>
+                            <p> Dégustez une sélection de thés raffinés, de chocolats gourmands et de pâtisseries
+                                délicieuses dans la somptueuse Tea Room qui fait face au musée du Louvre. Cet hôtel 5
+                                étoiles au cœur du 1er arrondissement pour organiser des événements inoubliables dispose
+                                même d'un bar à l'atmosphère britannique. En fin de journée, osez embarquer pour un
+                                voyage dans le temps et plongez dans l'Angleterre victorienne.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 mt-5 p-2 embed-responsive video ">
+
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/3lXgId9F5YU"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen> </iframe>
+
+                    </div>
+                </div>
+
+                <hr>
+                <h4 class="text-center my-5">Une soirée spéciale pour célébrer un mariage</h4>
+                <div class="container row px-5 my-5 align-items-center offset-2">
+
+                    <div class="col-12 col-md-6 text-justify ">
+
+                        <p>Le Chambord situé à quelques pas de la Tour Eiffel dans le 1er arrondissement de Paris
+                            accueille votre réception de mariage dans un décor prestigieux. Treize salons y sont
+                            disponibles pour recevoir tous vos proches dans un cadre luxueux où boiseries, lustres,
+                            miroirs et marbres vous feront passer pour la princesse des lieux. En plus d’ouvrir ses
+                            portes à votre mariage, l’Hôtel Chambord vous propose des prestations haut-de-gamme pour
+                            faire de cette célébration un moment magique et inoubliable. Vous pourrez ainsi compter sur
+                            ces professionnels pour l’animation musicale de votre événement, la décoration de vos tables
+                            et les compositions florales. L’hébergement est bien entendu possible sur place et on vous
+                            le recommande fortement ! Après avoir dormi dans une suite avec vue sur la Tour Eiffel ou le
+                            Palais de Tokyo, passez un moment détente avec vos témoins dans le Spa de l’hôtel puis
+                            dégustez un brunch gourmet pour finir votre fiesta de mariage en beauté !</p>
+
+                    </div>
+                    <div class="col-12 col-md-6  mt-5 p-2 embed-responsive video ">
+
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/ckgNVHVWOSY"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen> </iframe>
+
+                    </div>
+                </div>
+
+                <hr>
+                <h4 class="text-center my-5">ORGANISER VOS PLUS BEAUX SÉMINAIRES À PARIS</h4>
+                <div class="row container px-5 my-5 align-items-center offset-2">
+
+
+                    <div class="col-12 col-md-6 text-justify ">
+                        <p>Pour vos évènements de grandes envergures, notre hôtel 5 étoiles met à votre disposition ses
+                            suites d’exception. Déployées tout au long d'un patio intérieur, elles offrent de beaux
+                            volumes et constituent de véritables espaces de vie. Idéales pour y organiser un séminaire
+                            d’exception à Paris. La Suite dispose d'un piano à queue, il honore toujours la suite de sa
+                            présence, vous offre un très bel espace de 85 m² (dont 50 m² de salon et pouvant accueillir
+                            jusqu'à 40 invités). La Suite Exécutive dont les toiles décorent encore aujourd'hui les murs
+                            de l'hôtel, vous offre un espace de 66 m² pouvant également accueillir jusqu'à 40 personnes.
+                            Les deux Suites sont communicantes et peuvent ainsi accueillir des réceptions jusqu’à 80
+                            personnes. L’Hôtel Lancaster offre également deux salons privés de 30m² (pouvant accueillir
+                            jusqu’à 20 personnes) et une alcôve discrète pour recevoir des tablées confidentielles de 7
+                            personnes.</p>
+
+                    </div>
+                    <div class="col-12 col-md-6 ">
+
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/gvSijrTLVB0"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <h2 class="text-center my-5" id="actus">Actualités du secteur</h2>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/lechotour.jpg" alt="Article 1" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Coronavirus : les clients d’un hôtel confinés dans les Canaries</h4>
+                            <p>Plusieurs centaines de touristes logés dans l’hôtel H10 Costa Adeje Palace, sur l’île
+                                de Tenerife, dans l’archipel espagnol des Canaries, ont été confinés dans leur
+                                chambre mardi après l’annonce d’un cas suspect de coronavirus. Ce possible cas
+                                concerne un ressortissant italien dont le premier test de dépistage effectué s’est
+                                révélé positif, selon le ministère espagnol de la Santé.</p>
+                            <a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/lechotour.jpg" alt="Article 2" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Attitude Hotels poursuit sa croissance à Maurice</h4>
+                            <p>La chaîne mauricienne Attitude Hotels continue son développement avec le passage d’un
+                                ancien Sensimar du groupe TUI sous le nom Lagoon Attitude. Situé au Nord de l’île
+                                près de Grand Baie, ce 4* de 182 chambres proposé en formules tout compris et adult
+                                only a bénéficié de 2,5M€ de rénovation pour l’adapter au concept Attitude. Sur ses
+                                huit établissements, Attitude Hotels en consacre désormais la moitié aux familles
+                                (Zilwa, Coin de Mire, Friday, The Ravenala), l’autre aux adultes (Emeraude Beach,
+                                Tropical, Récif, Lagoon). Sur ce créneau « adult only », le groupe familial a par
+                                ailleurs de récupéré la gestion du Paradise Cove, un hôtel de 75 chambres qui a
+                                rouvert ses portes début septembre après une rénovation complète. Classé 5*, cet
+                                établissement situé à Cap Malheureux est toutefois commercialisé son le nom de
+                                Paradise Cove Boutique Hotel en raison de sa forte notoriété à l’île Maurice.</p>
+                            <a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4"><img src="img/lechotour.jpg" alt="Article 3" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Thomas Cook : 500 hôtels vont fermer leurs portes en Espagne</h4>
+                            <p>Près de 500 hôtels pourraient « immédiatement » fermer en Espagne en raison de la
+                                faillite du voyagiste britannique Thomas Cook, selon le président de la
+                                Confédération des hôtels et des logements touristiques. « La situation pourrait
+                                empirer si le gouvernement ne prend pas immédiatement des mesures », prévient Juan
+                                Molas. <br>
+
+                                Selon Juan Molas, dont l’organisation représente 15 000 entreprises du secteur en
+                                Espagne, la facture d’impayés laissée au pays de Dali par Thomas Cook pourrait
+                                dépasser l’estimation initiale de 200 millions évoquée par le secteur. « Ce sera
+                                beaucoup plus. Le montant pour huit chaînes hôtelières seulement est proche de 100
+                                millions », affirme-t-il.
+
+                            </p><a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 4" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Leading Hotels of the World dévoile ses 13 nouveaux membres et ouvertures en 2021
+                            </h4>
+                            <p>Shannon Knapp, présidente et directrice générale de The Leading Hotels of the World
+                                se réjouit de ces additions à sa collection et rappelle le dynamisme d’une
+                                hôtellerie de luxe indépendante : « Notre sol...
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 5" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Le Pullman Paris Montparnasse recrute pour sa réouverture </h4>
+                            <p>Son design contemporain et haut de gamme, ses nouvelles offres de service, sa
+                                capacité d'accueil exceptionnelle ainsi que sa localisation stratégique, font de cet
+                                établissement LA référence de la marque Pullman.
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 6" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Rejoignez les équipes du Chef Mauro Colagreco </h4>
+                            <p>Le Chef Mauro Colagreco répond à nos questions. 1/ Quelles qualités humaines
+                                recherchez-vous chez un candidat ? Les qualités humaines sont aujourd’hui pour nous
+                                plus qu’essentielles. L’humain, ...
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 7" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Hôtellerie et restauration de luxe - Connaître, travailler, progresser : un livre
+                                passionnant et nécessaire</h4>
+                            <p>Cet ouvrage est destiné tout particulièrement aux étudiants qui se destinent à une
+                                carrière en hôtellerie de luxe ou en restauration gastronomique.La très grande
+                                majorité d’entre nous, professionn...
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 8" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Accompagner les étudiants en temps de pandémie </h4>
+                            <p>Les écoles et lycées hôteliers ont tous le même défi à relever : permettre à leurs
+                                élèves et étudiants de découvrir le monde de l’entreprise en ...
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/jdp.jpg" alt="Article 9" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Covid-19 : Les extras de l’évènementiel en grande précarité </h4>
+                            <p>Deux élus La République en marche (LREM), le député du Val de Marne Jean-François
+                                Mbaye et le sénateur des Hauts de Seine Xavier Iacovelli ont déposé, chacun dans son
+                                assemblée respective, un...
+
+                            </p><a href="https://www.journaldespalaces.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/lechotour.jpg" alt="Article 10" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>J.-B. Lemoyne : « Les Français pourront voyager cet été » à l’étranger</h4>
+                            <p>« Les Français peuvent réserver », a-t-il ajouté. En France, c’est certain, mais quid
+                                de l’étranger et de l’outre-mer ? C’est la question que Laurent Abitbol, président
+                                de Marietton (Havas Voyages) et de Selectour – lui aussi invité sur le plateau de
+                                BFMTV – a posé à Jean-Baptiste Lemoyne. Pour mémoire, les Dom-Tom et les pays en
+                                dehors de l’espace européen sont soumis au motif impérieux.
+
+                            </p><a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/lechotour.jpg" alt="Article 11" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Prolongation des classements hôteliers jusqu’au 31 décembre 2021</h4>
+                            <p>Pour les hébergeurs dont le classement arrivait à échéance en mars 2021, une nouvelle
+                                prolongation du classement a été instaurée. Le gouvernement avait déjà pris une
+                                mesure analogue en août dernier : la durée de validité du classement avait alors été
+                                prolongée jusqu’au 1er mai 2021.
+
+                            </p><a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotelNews my-4">
+                    <div class="row">
+                        <div class="col-4 col-md-4">
+                            <img src="img/lechotour.jpg" alt="Article 12" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <h4>Hôtellerie : ce qui énerve les voyageurs français</h4>
+                            <p>Exigeant, voire… capricieux, le voyageur peut vite montrer les dents quand quelque
+                                chose ne va pas… Et ça, les pros le savent bien (relire à ce sujet notre article :
+                                Le coup de gueule d’une hôtelière face aux clients invivables). Dans sa dernière
+                                étude*, SiteMinder a dressé la liste des petites contrariétés qui agacent le plus
+                                les clients français. Principale source de frustration : une connexion wifi instable
+                                (40%) et des cartes d’accès défectueuses (28%). Autre écueil à éviter pour éviter de
+                                s’attirer les foudres de ses clients : des délais trop longs à leur demandes ou de
+                                la part du service client (16%), l’attente au moment d’effectuer le check-out (10%)
+                                ou le fait de n’avoir accès qu’aux chaînes numériques (5%).
+
+                            </p><a href="https://www.lechotouristique.com/">
+                                <h6>Lire la suite</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <h4 class="text-center my-5">PRESSE</h4>
+
+                <h3>La presse parle de nous ...</h3>
+                <div class="row justify-content-around" id="presse">
+                    <div class="col-12 col-lg-3 bgInfo text-left mt-5">
+                        <figure class="mt-5">
+                            <img src="img/fogaro.png" style="width: 50px;" alt="figaro">
+
+                        </figure>
+                        <q><em>10/04/2021<br>
+                                Par Lea Samalou</em></q>
+                        <h5><q>Une nuit magique dans un lieu enchanté</q></h5>
+                        <p><q>C’est le plus jeunes palaces parisiens. Et sans aucun doute l’un des plus réussis. Après
+                                quatre années de travaux titanesques, le Chambord a ouvert ses portes en 2021 avec une
+                                ambition assumée : devenir le plus bel hôtel européen. Pour ce faire, la société
+                                Vio&Camp Hotel, qui gère l’établissement, a cogné fort en atteignant des summums dans
+                                l’idée qu’on peut se faire du luxe version cinq étoiles.</q></p>
+                    </div>
+                    <div class="col-12 col-lg-3 bgInfo text-left mt-5">
+                        <figure class="mt-5">
+                            <img src="img/lobs.png" style="width: 70px;" alt="figaro">
+
+                        </figure>
+                        <q><em>09/04/2021<br>
+                                Par David Japoudas</em></q>
+                        <h5><q>Luxe, calme et volupté, tel est le crédo de l’hôtel Chambord.</q></h5>
+                        <p><q>Il est de ces centenaires qui gardent toute leur splendeur. L’hôtel Chambord, bien caché
+                                derière le Sacré Cœur, brille par sa discrétion et son élégance. L’entrée déjà, puis
+                                l’ascenseur, tout en bois et verre, entouré de vitraux d’époque laissant pénétrer la
+                                lumière, vous donnent une idée certaine de la noblesse qui habite les lieux.</q></p>
+                    </div>
+                    <div class="col-12 col-lg-3 bgInfo text-left mt-5">
+                        <figure class="mt-5">
+                            <img src="img/le-monde.jpg" style="width: 80px;" alt="figaro">
+
+                        </figure>
+                        <q><em>05/04/2021<br>
+                                Par Elise Loucette</em></q>
+                        <h5><q>L'Hotel Chambord réussit un pari ô combien difficile : imposer brillamment une empreinte
+                                qui lui est propre.</q></h5>
+                        <p><q>A quelques minutes du Sacré Cœur, l’hôtel du Collectionneur vous fait découvrir le faste
+                                des années trente dans le pur style art déco. A peine la porte franchie, on est ébahi
+                                par les matériaux nobles d’époque qui côtoient majestueusement des matières plus
+                                contemporaines pour une alliance réussie. En traversant le lobby, un jardin, magnifié
+                                par le paysagiste Olivier Ravioli, résonne comme un appel à la sérénité. Huit cents
+                                mètres carrés de verdure qui font de cet espace l’un des plus grands jardins d’hôtel de
+                                Paris.</q></p>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </article>
+        </div>
+
+    </main>
+    <!-- Fin principale -->
+
+
+    <!-- bouton de recherche Jeffrey -->
+    <div id="jeffrey" class="d-block align-items-center nav-item cache">
+        <img src="img/majordhomme.svg" style="height: 50px;" alt="jeffrey">
+        <form action="#" id="search" class="cache">
+            <input type="search" name="cherche">
+            <button type='submit' class="check"></button>
+        </form>
+    </div>
+    <!-- fin bouton de recherche Jeffrey -->
+
+
+    <!-- bouton de partage -->
+    <div class="box">
+        <input type="checkbox" id="checkbox" />
+        <div class="menu">
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="menuItems">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- fin bouton partage -->
+
+
+    <!-- Début pied de page -->
+    <hr>
+    <footer id="foot" class="container-fluid">
+        <!-- Récapitulatif -->
+        <div class="row">
+            <div id="footChambre" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Chambres</h6>
+                <a href="/chambres.html#classique">Classique</a><span> | </span>
+                <a href="/chambres.html#confort">Confort</a><span> | </span>
+                <a href="/chambres.html#luxe">Luxe</a><span> | </span>
+                <a href="/chambres.html#suite">Suites</a><span> | </span>
+            </div>
+            <div id="footRestaurant" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Restaurant</h6>
+                <a href="/restaurant.html#gastronomique">Gastronomique</a><span> | </span>
+                <a href="/restaurant.html#bistro">Bistro</a><span> | </span>
+                <a href="/restaurant.html#cave">Cave</a><span> | </span>
+            </div>
+            <div id="footSpa" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Spa</h6>
+                <a href="/spa.html#detente">Soin Détente</a><span> | </span>
+                <a href="/spa.html#decouverte">Soin Découverte</a><span> | </span>
+                <a href="/spa.html#relaxant">Soin Relaxant</a><span> | </span>
+                <a href="/spa.html#plaisir">Soin Plaisir</a><span> | </span>
+                <a href="/spa.html#evasion">Soin Evasion</a><span> | </span>
+            </div>
+            <div id="footHotel" class="col-12 col-md-3 text-center">
+                <h6 class="text-center">Hôtel</h6>
+                <a href="/hotel.html#apropos">A Propos</a><span> | </span>
+                <a href="/hotel.html#acces">Acces</a><span> | </span>
+                <a href="/evenements.html#evenements">Evenements</a><span> | </span>
+                <a href="/evenements.html#presse">Presse</a><span> | </span>
+                <a href="/evenements.html#actus">Actualités</a><span> | </span>
+            </div>
+        </div>
+        <!-- Fin Récapitulatif -->
+        <hr />
+        <!-- Début lien divers CVG...NewsLetter... -->
+        <div id="liensDivers" class="row mb-5">
+            <div id="recrutement" class="col-6 col-md text-center">
+                <a href="/recrutement.html">Recrutement</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/mention.html"> Mention Legales</a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/cvg.html"> CGV </a>
+            </div>
+            <!-- Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Inscription
+                    Newsletter </a>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Inscription à notre Newsletter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <label for="emailId">Votre Email</label>
+                                    <input type="email" name="mail" id="emailId">
+                                    <button type="submit" class="btn btn-secondary">Inscription</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <p>Vous pourrez vous déinscrire à tout moment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Modal NewsLetter -->
+            <div class="col-6 col-md text-center">
+                <a href="#" OnClick="javascript:window.print()"> Imprimer </a>
+            </div>
+
+            <div class="col-6 col-md text-center">
+                <a href="/avis.html"> Avis </a>
+            </div>
+            <div class="col-6 col-md text-center">
+                <a href="/PlanDuSite.html"> Plan Du Site </a>
+            </div>
+        </div>
+        <!-- fin lien divers CVG...NewsLetter... -->
+        <div class="text-center m-3">
+            &copy;
+            <script>new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());</script>, Baptiste
+            Viomesnil & Sylvain Campos.
+        </div>
+    </footer>
+    </footer>
+    <!-- Fin pied de page -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7941ba6713.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, 'google_translate_element2'); }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+    <script type="text/javascript">
+
+        eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+
+    </script>
+</body>
+
+</html>
 </body>
 
 </html>

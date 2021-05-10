@@ -48,7 +48,7 @@ $(".visible3").on('click',function(){
 });
 // ----------------------Fin Chambre------------------------------//
 
-// --------------------- Début Restaurant ------------------------//
+// ---  Début Restaurant ------------------------//
 
 $(".visibler").on('click',function(){
     $("#motChef").toggleClass('cache');
@@ -64,7 +64,7 @@ $(".visibler3").on('click',function(){
     $("#caveVin").toggleClass('cache');
 });
 
-//--------------------- Fin restaurant ---------------------------------//
+//---  Fin restaurant ---------------------------------//
 
 // ---------------------Reservation---------------------------//
 
@@ -95,9 +95,9 @@ $.datepicker.regional['fr'] = {
     };
     $( "#datepicker" ).datepicker( "option",
     $.datepicker.regional['fr'] );
-//   $.datepicker.setDefaults($.datepicker.regional['fr']);
+  $.datepicker.setDefaults($.datepicker.regional['fr']);
 
-var dateFormat = "mm/dd/yy",
+var dateFormat = "dd/mm/yy",
 from = $( "#from" )
   .datepicker({
     defaultDate: "+1w",
@@ -107,7 +107,11 @@ from = $( "#from" )
     dayNames: $.datepicker.regional[ "fr" ].dayNames,
     monthNamesShort: $.datepicker.regional[ "fr" ].monthNamesShort,
     dayNamesMin: $.datepicker.regional[ "fr" ].dayNamesMin,
-    monthNames: $.datepicker.regional[ "fr" ].monthNames
+    monthNames: $.datepicker.regional[ "fr" ].monthNames,
+    minDate:0,
+    onSelect: function(date){
+        $(`#to`).datepicker('option', 'minDate',date);
+    }
   })
   .on( "change", function() {
     to.datepicker( "option", "minDate", getDate( this ) );
@@ -115,7 +119,7 @@ from = $( "#from" )
 to = $( "#to" ).datepicker({
   defaultDate: "+1w",
   changeMonth: true,
-  numberOfMonths: 3,
+  numberOfMonths: 2,
   dayNamesShort: $.datepicker.regional[ "fr" ].dayNamesShort,
   dayNames: $.datepicker.regional[ "fr" ].dayNames,
   monthNamesShort: $.datepicker.regional[ "fr" ].monthNamesShort,
@@ -136,25 +140,67 @@ try {
 
 return date;
 }
+
 // $('#datedebut').datepicker( $.datepicker.regional[ "fr" ] );
 // --------Test Date fin apres date debut----------------//
 $('#datefin').on('change',function(){
-    let endDate = $(this).datepicker("getDate");
-    let startDate = $('#datedebut').datepicker("getDate");
-    let diff = endDate - startDate;
-    let diffjours = diff / 86400000;
-    console.log(diffjours);
+    var endDate = $(this).datepicker("getDate");
+    var startDate = $('#datedebut').datepicker("getDate");
+    var diff = endDate - startDate;
+    var diffjours = diff / 86400000;
+    // console.log(diffjours);
         if(diffjours < 0){
         alert("vous ne pouvez pas partir avant d'ariver");
     }
 })
 // -------------Fin datepicker ---------------------------//
 
+// -------------Recupère et intègre le formulaire de reservation --//
+
+$("#reserver").click(function(){
+    let nom = $(`input[name=nom]`).val();
+    console.log(nom);
+    let prenom = $(`input[name=prenom]`).val();
+    let chambre = $(`#chambreId option:selected`).text();
+    var endDate = $("#to").datepicker("getDate");
+    var startDate = $('#from').datepicker("getDate");
+    var diff = endDate - startDate;
+    var diffjours = diff / 86400000;
+    console.log(diff);
+    console.log(chambre);
+    if (nom =="" || chambre == 'à vous de choisir'){
+        
+        alert('merci de remplir le formulaire complètement');
+    }else{
+        console.log(diffjours);
+        let nomChambre = chambre.substring(0,chambre.indexOf(' '));
+        let prix;
+        if(nomChambre=='Classique'){
+            prix=150;
+        }else if(nomChambre=='Confort'){
+            prix=300;
+        }else if(nomChambre=='Deluxe'){
+            prix=600;
+        }else if(nomChambre=='Suite'){
+            prix=1200
+        }
+        alert(`Merci ${prenom} ${nom} d'avoir réservé la chambre ${nomChambre} à ${prix} € pour ${diffjours} nuit(s) à l'hôtel chambord`);
+
+       
+    }
+    
+});
 
 
 
 
 
+// google translate//
+function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'fr', autoDisplay: false }, 'google_translate_element2'); }
+
+src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2">
+
+eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
 
 
 
